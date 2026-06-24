@@ -627,7 +627,9 @@ The viewer is not the primary output of the pipeline. It is the review interface
 > 
 > Overall, the number of cases we processed in 4 batches does not provide a conclusive judgement, though it does reveal an interest trend in the frequency of certain businesses in AML proceedings.
 >
-> Due to the sheer volume of outputs, I have a sample of cases that cross all three categories that can be used in the Streamlit app/JSON Reader, as well as the full Excel output of all cases for explaratory analysis.
+> Due to the sheer volume of outputs, I have a sample of [cases](https://github.com/kwabenayeboah1/Legal-AI-Agent/tree/main/Analysis%20Notebooks) that outline the possible categories cases can be classified under. These JSONs can be used in the Streamlit_app.py/JSON Reader.py.
+> 
+> The full [Excel]([https://example.com](https://github.com/kwabenayeboah1/Legal-AI-Agent/blob/main/Analysis%20Notebooks/AML%20Analysis.xlsx)) output of all cases for explaratory analysis.
 
 ### Verdict Distribution (Defendants)
 
@@ -652,7 +654,7 @@ I wouldn't consider these wholly consistent with existing AML typology literatur
 ### Confidence Score Distribution
 
 Mean confidence across all verdicts: **90%**.
-`UNCLEAR` verdicts returned a mean of **[0]%**, providing complete face validity — the model is performing to the level it was designed to.
+`UNCLEAR` verdicts returned a mean of **0%**, providing complete face validity — the model is performing to the level it was designed to.
 
 ---
 
@@ -819,12 +821,13 @@ Not all BAILII documents conform identically to the AkomaNtoso standard. Older j
 
 ### C. Case Log
 
-| Case Reference | Case Name | Verdict | Confidence | Primary SIC | AML as Precedent |
-|---|---|---|---|---|---|
-| [ref] | [name] | [verdict] | [%] | [code] | [true/false] |
-
+| Case Reference | Case Name | Verdict |
+|---|---|---|
+| [2008 EWCA CIV 1007] | [Attorney General of Zambia v Meer Care & Desai (A Firm) &a Ors] | [PRECEDENT ONLY] |
+| [2018 EWCA CRIM 1170] | [Adair, R v] | [CONFIRMED VERDICT] |
+| [2007 EWCA CRIM 491] | [K, R v] | [ALLEGED/CHARGED] |
 *Full case log available on request.*
 
 ---
 
-*This write-up is a technical companion to the LinkedIn Article and post summarising this project. It is not legal advice. All case analysis is experimental and should not be relied upon for any legal or compliance purpose. This project represents independent research and does not reflect the views of my employer.*
+*This write-up is a technical companion to the [LinkedIn Post](https://www.linkedin.com/posts/kwabena-yeboah-810727166_ai-datascience-aml-ugcPost-7466158046080135168-W_wY/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACeeScwBujQtxaIRw-O14153gR56hJ2VlxM) and post summarising this project. It is not legal advice. All case analysis is experimental and should not be relied upon for any legal or compliance purpose. This project represents independent research and does not reflect the views of my employer.*
