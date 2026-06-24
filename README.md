@@ -613,7 +613,8 @@ The viewer is not the primary output of the pipeline. It is the review interface
 
 ## 11. Findings
 
-> ⚠️ **Important caveat:** The sample size is **100 cases**, of which **19** returned a verdict of `CONVICTED` for AML offences, which saw **100 Defendants** charged and convicted for crimes under the POCA 2002. The initial run of 100 cases saw **1171 Total Defendants**. One finding that I found very interesting within my batch of randomly selected cases, 'R v Herbert Charles Austin' saw a confirmed conviction - but no application of statutory law as per the instructions. Further analysis reveals the agent had recognised the crimes had taken place prior to the introduction of POCA 2002, having been committed in 2000, meaning our system prompts worked very well in making the agent strict in its judgement. It's analysis still picked up on the 'CONVICTED' status.
+> ⚠️
+> **Important caveat:** The sample size is **100 cases**, of which **19** returned a verdict of `CONVICTED` for AML offences, which saw **100 Defendants** charged and convicted for crimes under the POCA 2002. The initial run of 100 cases saw **1171 Total Defendants**. One finding that I found very interesting within my batch of randomly selected cases, 'R v Herbert Charles Austin' saw a confirmed conviction - but no application of statutory law as per the instructions. Further analysis reveals the agent had recognised the crimes had taken place prior to the introduction of POCA 2002, having been committed in 2000, meaning our system prompts worked very well in making the agent strict in its judgement. It's analysis still picked up on the 'CONVICTED' status.
 >
 > Our initial hypothesis of looking in the legal sector, before branching out to other SIC Codes saw Solicitors account for a small number of the defendants seen in the case filings. 48 Defendants in total, with only **2** that were convicted of AML offences,  with a further **2** awaiting appropriate charges and **12** defendants that had not finished proceedings for their cases. Our initial 'Better Call Saul' hypothesis holds some weight considering it was the 6th most common SIC Code found in our outputs. The full table tells a story of the most common SIC Codes found in AML Cases, though a few of them can be explained as institutions that are often used or report AML offences, hence their frequent appearance in findings.
 > 
@@ -635,17 +636,16 @@ The viewer is not the primary output of the pipeline. It is the review interface
 
 Early patterns are emerging around certain SIC code clusters appearing disproportionately in convicted cases:
 
-- **[96090]** — [Other service activities n.e.c.] ([**23**] occurrences out of )
-- 96090	Other service activities n.e.c.
-- **[SIC code]** — [Description] ([N] occurrences)
-- 49410	Freight transport by road
-- **[SIC code]** — [Description] ([N] occurrences)
-64999	Financial intermediation not elsewhere classified
-These are directionally consistent with existing AML typology literature — but cannot be treated as confirmatory at this sample size.
+- **[96090]** — [Other service activities n.e.c.] ([**23**] occurrences out of **45** total)
+- **[49410]** — [Freight transport by road] ([**17**] occurrences out of **21** total) 
+- **[64999]** — [Financial intermediation not elsewhere classified] ([**15**] occurrences out of **78** total)
+	
+I wouldn't consider these wholly consistent with existing AML typology literature — but these initial findings cannot be treated as confirmatory at this sample size.
 
 ### Confidence Score Distribution
 
-Mean confidence across all verdicts: **[X]%**. `UNCLEAR` verdicts returned a mean of **[X]%**, providing some face validity — the model is appropriately less certain on cases it cannot resolve than on cases it can.
+Mean confidence across all verdicts: **90%**.
+`UNCLEAR` verdicts returned a mean of **[0]%**, providing complete face validity — the model is performing to the level it was designed to.
 
 ---
 
@@ -653,11 +653,11 @@ Mean confidence across all verdicts: **[X]%**. `UNCLEAR` verdicts returned a mea
 
 This section exists because it has direct implications for anyone building LLM-based legal reasoning tools — and because the architectural response to it shaped several design decisions in this pipeline.
 
-My mentor and I both ran the case **[case name]** through our respective setups and arrived at **different verdicts**.
+My mentor and I both ran the case **D v Law** through our respective setups and arrived at **different verdicts**.
 
 ### The Root Cause
 
-The case references POCA 2002 — specifically as legal precedent cited by one party. The **primary conviction** is for a separate offence. The AML charge was not upheld.
+The case makes references to POCA 2002 — specifically as legal precedent cited by one party. The **primary conviction** is for a separate offence. The AML charge was not upheld.
 
 Models without explicit instruction to distinguish between these two scenarios frequently misclassify this as an AML conviction. The model sees POCA 2002, sees conviction language, and pattern-matches to `CONVICTED`. It is not wrong that AML appears in the case — it is wrong about what role it plays.
 
@@ -716,7 +716,7 @@ Understanding these failure modes is the precondition for expanding the corpus c
 
 **Mitigation:** The `lookup_poca_section` tool keeps statutory reasoning anchored to POCA 2002 specifically. The system instruction explicitly names POCA 2002 sections rather than referring generically to "money laundering." The `poca_sections_identified` field in the output schema forces the model to name the specific sections it applied — making cross-statute conflation detectable in the output rather than buried in the reasoning.
 
-**Current status:** Not observed in the corpus to date. This is partly attributable to the mitigation design and partly to sample size — complex multi-statute cases are more likely to surface this failure mode as the corpus grows.
+**Current status:** Observed twice in the corpus to date. The first instance was a crime that was committed before the introduction of the 2002 POCA. The second referenced Criminal Justice and Police Act 2001 (CJPA 2001), but flagged this upon retrieval.
 
 ---
 
@@ -738,17 +738,17 @@ Understanding these failure modes is the precondition for expanding the corpus c
 | Type | Description | Encountered | Mitigated By |
 |---|---|---|---|
 | 1 | Precedent/conviction conflation | Yes | System instruction scope boundary · `aml_referenced_as_precedent` flag |
-| 2 | Cross-statute conflation | No (anticipated) | `lookup_poca_section` tool · explicit section naming · `poca_sections_identified` field |
+| 2 | Cross-statute conflation | Yes (anticipated) | `lookup_poca_section` tool · explicit section naming · `poca_sections_identified` field |
 | 3 | Dropped charge misreading | No (anticipated) | Mandatory reasoning chain · `aml_referenced_as_precedent` flag · low-confidence review |
 
-The fact that Types 2 and 3 have not been observed in practice is not grounds for removing their mitigations. It is grounds for ensuring those mitigations remain structurally intact as the corpus scales and case complexity increases.
+The fact that Types 2 and 3 have not been observed in huge quantities in practice is not grounds for removing their mitigations. It is grounds for ensuring those mitigations remain structurally intact as the corpus scales and case complexity increases.
 
 ---
 
 ## 14. Limitations
 
 ### Sample Size
-The most significant constraint. [X] cases is sufficient to demonstrate the tool works and the approach is sound. It is not sufficient to evidence the hypothesis. Any pattern at this scale is a signal to investigate, not a finding to publish.
+The most significant constraint. **100** cases is sufficient to demonstrate the tool works and the approach is sound. It is not sufficient to evidence the hypothesis. Any pattern at this scale is a signal to investigate, not a finding to publish.
 
 ### Model Confidence Calibration
 Confidence scores are relative, not calibrated. 85% means the model is more certain than when it returns 60% — it does not mean the model is correct 85% of the time. True calibration requires a labelled ground-truth dataset, which does not yet exist for this corpus.
@@ -767,7 +767,7 @@ Not all BAILII documents conform identically to the AkomaNtoso standard. Older j
 ## 15. Future Work
 
 ### Near-Term
-- **Expand the corpus** — the single highest-impact change. [N] cases minimum before any pattern can be treated as evidenced
+- **Expand the corpus** — the single highest-impact change. **1,000** cases minimum before any pattern can be treated as evidenced
 - **SQL database layer** — PostgreSQL to replace Excel export as the primary storage layer, enabling structured querying at scale
 - **Multi-model validation** — route `UNCLEAR` and low-confidence cases through a second model; flag divergent verdicts for manual review
 
