@@ -1,0 +1,488 @@
+{
+  "case_name": "The Attorney General of Zambia for and on behalf of the Republic of Zambia v Meer Care & Desai (a firm) and others",
+  "case_reference": "[2008] EWCA Civ 1007",
+  "court": "Court of Appeal of England and Wales (Civil Division)",
+  "jurisdiction": "England and Wales",
+  "case_date": "2008-07-31",
+  "judge": "Lord Justice Tuckey, Lord Justice Lloyd, and Lord Justice Lawrence Collins",
+  "docket_number": "Case Nos: 2007 / 1146, 1708, 1709, 1751, 1752 (Docket 1007)",
+  "parties": [
+    "The Attorney General of Zambia (Claimant/Respondent)",
+    "Meer Care & Desai (a firm) (Defendant/Appellant)",
+    "Mohammed Iqbal Meer (Defendant/Appellant)",
+    "Naynesh Gunvant Desai (Defendant/Appellant)"
+  ],
+  "case_summary": "The Attorney General of Zambia initiated civil proceedings in London on behalf of the Republic of Zambia against twenty individuals and entities, seeking to recover over US$50 million of public funds diverted during the presidency of Dr. Frederick Chiluba. The primary mechanism of the fraud involved two conspiracies: the 'Zamtrop' conspiracy and the 'BK' military purchase conspiracy. Under the Zamtrop conspiracy, funds were routed from the Ministry of Finance to a London bank account at the Zambia National Commercial Bank (Zanaco), known as the Zamtrop account, of which Xavier Chungu (Director-General of the Zambian Security and Intelligence Services - ZSIS) was the sole signatory. Over US$9 million was transferred from this account to the client account of London solicitors Meer Care & Desai (MCD), ostensibly for ZSIS secret services carried out by Access Financial Services Ltd (AFSL), run by Faustin Kabwe. Instead, the funds were disbursed on Kabwe's instructions for the personal benefit of President Chiluba, Chungu, and Kabwe's family. The BK conspiracy involved US$20 million paid to accounts controlled by Raphael Soriano for military purchases where no equipment was delivered; MCD received US$1.3 million of these funds.\n\nThe primary legal issue was whether Mr. Meer (and Mr. Desai vicariously as a partner under Section 10 of the Partnership Act 1890) possessed the requisite state of mind to be liable for dishonest assistance and conspiracy to defraud. Mr. Justice Peter Smith in the Chancery Division held Mr. Meer and MCD liable, finding that Mr. Meer was dishonest because he failed to comply with the Law Society's 'Blue Card' money laundering warnings and performed a 'no questions asked' banking service. On appeal, the Court of Appeal reversed the decision. It held that the trial judge conflated professional negligence and incompetence with subjective dishonesty. Although Mr. Meer was highly negligent, did not maintain proper records, and mixed client funds, he genuinely and honestly trusted Mr. Kabwe and believed he was assisting secret government operations. Absent a finding of subjective dishonesty or deliberate 'blind-eye' (Nelsonian) knowledge, the claim against the solicitors failed, and the vicarious liability claims against Mr. Desai were dismissed.",
+  "aml_status": "Precedent Only",
+  "aml_status_reasoning": "This is a civil asset recovery action brought by the Attorney General of Zambia to establish liability for dishonest assistance and conspiracy to defraud. Although the High Court held Mr. Meer, Mr. Desai, and the firm Meer Care & Desai civilly liable, the Court of Appeal allowed the appeal, setting aside all liability findings. The Court of Appeal held that Mr. Meer's failures, while highly negligent and incompetent, did not cross the line into subjective dishonesty or 'blind-eye' (Nelsonian) knowledge. Therefore, no civil liability for laundering assistance was established against the appellants in this judgment, which serves as a key legal precedent on the civil standard of dishonesty.",
+  "poca_sections": [
+    "s10"
+  ],
+  "poca_sections_enriched": {
+    "s10": {
+      "title": "Assumptions",
+      "full": "Section 10 of the Proceeds of Crime Act 2002 mandates that if the court decides a defendant has a criminal lifestyle, it must make four statutory assumptions to calculate their benefit from general criminal conduct. These assumptions cover property transferred to, held by, or spent by the defendant during the six years prior to the commencement of proceedings, and must be applied unless proven incorrect or if they would create a serious risk of injustice.",
+      "elements": [
+        "Triggered only when the court determines the defendant has a criminal lifestyle under section 6",
+        "Assumption 1: Property transferred to the defendant after the relevant day was obtained via general criminal conduct",
+        "Assumption 2: Property held by the defendant after conviction was obtained via general criminal conduct",
+        "Assumption 3: Expenditure incurred by the defendant after the relevant day was met from property obtained via general criminal conduct",
+        "Assumption 4: Property obtained (or assumed obtained) is valued as if obtained free of other interests",
+        "Disapplied if an assumption is shown to be incorrect or if there is a serious risk of injustice"
+      ],
+      "notes": "The 'relevant day' is defined as the day six years prior to the date on which proceedings were started. Note that the provided judgment snippet actually refers to Section 10 of the Partnership Act 1890 (vicarious liability of partners) rather than Section 10 of POCA 2002.",
+      "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+      "confidence": "high",
+      "confidence_reasoning": "I have precise recall of Section 10 of POCA 2002 (the statutory assumptions for criminal lifestyle confiscation in England and Wales). I have correctly identified that the provided judgment snippet is a false match, as it refers to the Partnership Act 1890."
+    }
+  },
+  "poca_analysis": "This is a civil asset recovery action brought in equity for dishonest assistance and conspiracy to defraud, rather than a statutory proceeding under the Proceeds of Crime Act 2002 (POCA). The primary statutory section discussed under the pre-extracted 's10' is Section 10 of the Partnership Act 1890, which governs the vicarious liability of partner Naynesh Desai for the acts of Mohammed Meer. However, the court's detailed examination of 'blind-eye' or Nelsonian knowledge directly intersects with the mental element required under POCA money laundering provisions (s327-s329). The court analysed the Law Society's 'Blue Card' warnings and the 2000 Money Laundering Guidance for Solicitors. It held that while these guidelines establish professional standards to prevent solicitors' client accounts from being abused as banking facilities or money-laundering channels, a solicitor's failure to comply with them constitutes gross professional negligence but does not automatically establish the subjective dishonesty or blind-eye knowledge necessary for civil dishonest assistance or conspiracy to defraud.",
+  "precedent_value": "This case is a leading authority on the boundary between gross professional negligence and subjective dishonesty (specifically 'blind-eye' or Nelsonian knowledge) in civil claims for dishonest assistance in breaches of fiduciary duty and conspiracy to defraud. It establishes that a professional's failure to follow regulatory money laundering guidelines (such as the Law Society Blue Cards) or to investigate suspicious, uncommercial transaction patterns is not, without subjective suspicion and a deliberate decision to avoid enquiry, sufficient to prove dishonesty. It is widely cited in professional liability, civil asset recovery, and commercial litigation contexts to defend professional enablers who acted incompetently but honestly.",
+  "key_findings": [
+    "The standard for civil liability in dishonest assistance requires proof of subjective dishonesty or 'blind-eye' (Nelsonian) knowledge, which is established only when a defendant has a clear suspicion of the facts but deliberately decides not to make enquiries to avoid learning the truth.",
+    "Professional negligence, incompetence, or a failure to apply caution\u2014even to a high degree\u2014is not equivalent to dishonesty and does not satisfy the subjective standard required for dishonest assistance or conspiracy to defraud.",
+    "Under Section 10 of the Partnership Act 1890, a partner is only vicariously liable for the wrongful acts or omissions of another partner if those acts were committed in the ordinary course of the firm's business.",
+    "Professional regulatory guidance, such as the Law Society's 'Blue Card' warnings and Money Laundering Guidance, are relevant to assessing a professional's standards of care but are not determinative of subjective dishonesty.",
+    "The legal burden remains on the claimant in civil fraud actions to prove on the balance of probabilities, with strong and cogent evidence, that the defendant possessed the necessary dishonest state of mind.",
+    "In transactions naturally involving a high degree of government or intelligence service confidentiality, a solicitor's failure to query the commercial justification for payments does not automatically establish blind-eye dishonesty.",
+    "The civil standard of proof (balance of probabilities) applies to allegations of fraud and dishonesty, but the court requires more strong and cogent evidence to find a professional of good standing dishonest compared to a finding of negligence."
+  ],
+  "defendants": [
+    {
+      "name": "Mohammed Iqbal Meer",
+      "role": "Defendant",
+      "verdict": "Acquitted",
+      "verdict_reasoning": "The Court of Appeal allowed his appeal, set aside the trial court's order, and dismissed all civil claims against him. The court ruled that Mr. Meer was highly negligent, incompetent, and foolishly trusted Mr. Kabwe, but that he acted honestly and did not have actual or blind-eye (Nelsonian) knowledge that the funds passing through his client account were stolen government monies.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not substantively applied as this is a civil asset recovery action for dishonest assistance and conspiracy to defraud under common law and equity. Mr. Meer's liability was assessed based on the equitable principles of dishonest assistance in breaches of fiduciary duty. No statutory POCA money laundering charges were brought against him in this case.",
+      "key_facts": [
+        "Senior partner of Meer Care & Desai holding slightly over a 50% partnership share.",
+        "Met with Xavier Chungu and Faustin Kabwe at the Churchill Hotel, London in late 1995 to discuss AFSL's services for ZSIS.",
+        "Received US$9,260,000 of Zamtrop funds into MCD client account, of which US$7,021,020.17 was traced to the Zambian Ministry of Finance.",
+        "Incorporated Harptree Holdings Ltd (BVI) in January 1997 on Kabwe's instructions to buy Jarban SA for Brussels real estate.",
+        "Authorized payment of US$7,500 to Kabwe's lawyer Robert Simeza and US$75,000 to Cave Malik in November 2002.",
+        "Chancery Division found him liable for dishonest assistance and conspiracy, but the Court of Appeal allowed his appeal, dismissing all claims."
+      ],
+      "sic_codes": [],
+      "sic_overall_reasoning": null
+    },
+    {
+      "name": "Naynesh Gunvant Desai",
+      "role": "Defendant",
+      "verdict": "Acquitted",
+      "verdict_reasoning": "The Court of Appeal set aside the vicarious liability order against Mr. Desai. Since Mr. Meer's primary liability for dishonest assistance and conspiracy was dismissed on the merits, there was no underlying wrongful act of a partner for which Mr. Desai or the firm could be held vicariously responsible under Section 10 of the Partnership Act 1890.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not applied in this civil case. The claim against Mr. Desai was brought vicariously under Section 10 of the Partnership Act 1890, asserting that the firm was civilly liable for the wrongful acts of Mr. Meer. No statutory POCA money laundering or asset recovery orders were applied directly to Mr. Desai in this appeal.",
+      "key_facts": [
+        "Born in Zambia in 1960, partner in Meer Care & Desai since 1987.",
+        "Signed bank instructions alongside Mr. Meer to satisfy MCD's dual-signature mandate for client account transfers.",
+        "Not alleged to have been personally dishonest or a conspirator in either the Zamtrop or BK conspiracies.",
+        "Held vicariously liable for Meer's actions under Section 10 of the Partnership Act 1890 by the trial court.",
+        "Court of Appeal allowed his appeal, setting aside the vicarious liability order since Meer's primary liability was dismissed."
+      ],
+      "sic_codes": [],
+      "sic_overall_reasoning": null
+    },
+    {
+      "name": "Meer Care & Desai (a firm)",
+      "role": "Defendant",
+      "verdict": "Acquitted",
+      "verdict_reasoning": "The Court of Appeal set aside the trial court's orders and dismissed all claims against the firm. The court found that because the primary partner (Mr. Meer) did not act dishonestly, there was no liability for dishonest assistance or conspiracy to impute to the partnership.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not substantively applied to the firm. This was a civil litigation proceeding concerning equitable claims of dishonest assistance and conspiracy to defraud. The firm's liability was dependent on the vicarious liability provisions of partnership law.",
+      "key_facts": [
+        "English solicitors' firm operated by partners Meer and Desai.",
+        "Received US$9.26 million of Zamtrop funds and nearly US$1.3 million of BK funds into its client account.",
+        "Maintained ledger accounts such as 2535/1 (FM Kabwe Commercial $), 2535/2 (FM Kabwe sterling), and 3388/1 (Harptree Holdings $).",
+        "Subjected to an OSS forensic investigation starting 10 July 2002.",
+        "Appeal against civil liability for dishonest assistance and conspiracy allowed in full by the Court of Appeal."
+      ],
+      "sic_codes": [
+        {
+          "code": "69102",
+          "description": "Solicitors",
+          "confidence": "100%",
+          "reasoning": "The judgment explicitly identifies Meer Care & Desai as a firm of solicitors of which Mr. Meer and Mr. Desai are the partners."
+        }
+      ],
+      "sic_overall_reasoning": "Meer Care & Desai is a professional partnership of solicitors practicing in commercial, business, and property affairs. The judgment describes their operations as an English legal practice based in London, which also provided client account management services for overseas clients."
+    },
+    {
+      "name": "Dr Frederick Chiluba",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Held civilly liable by Mr. Justice Peter Smith in the Chancery Division for breach of fiduciary duty and participation in the Zamtrop and BK conspiracies, resulting in a judgment of US$57,124,422.72. He did not successfully appeal this liability.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 did not apply as this was a civil lawsuit for breaches of fiduciary duty and conspiracy. Dr. Chiluba's liability was established under equitable principles of breach of fiduciary duty as the former President of Zambia.",
+      "key_facts": [
+        "Former President of the Republic of Zambia whose second term of office expired in late 2001.",
+        "Primary conspirator in the Zamtrop ($52 million total) and BK ($20 million total) conspiracies.",
+        "Personal beneficiary of funds routed through MCD's client account, including US$50,000 of Harptree funds paid to Gstaad International School for his benefit in November 2000.",
+        "Ordered by Peter Smith J to pay US$57,124,422.72."
+      ],
+      "sic_codes": [],
+      "sic_overall_reasoning": null
+    },
+    {
+      "name": "Xavier F. Chungu",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Held civilly liable by the trial judge for breach of fiduciary duty and participation in the Zamtrop and BK conspiracies, resulting in a judgment exceeding US$56 million. He did not successfully appeal this liability.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 did not apply directly to this civil trial. Xavier Chungu's liability was established under civil law for breach of fiduciary duty and conspiracy to defraud the Republic of Zambia.",
+      "key_facts": [
+        "Director-General of the Zambian Security and Intelligence Services (ZSIS).",
+        "Sole signatory of the Zamtrop account at Zanaco London opened in December 1995.",
+        "Attended the Churchill Hotel breakfast meeting in autumn 1995 with Meer and Kabwe.",
+        "Ordered by Peter Smith J to pay over US$56 million."
+      ],
+      "sic_codes": [],
+      "sic_overall_reasoning": null
+    },
+    {
+      "name": "Faustin M. Kabwe",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Held civilly liable by the Chancery Division for dishonest assistance and participation in both conspiracies. His applications for permission to appeal were unsuccessful or did not result in the overturning of the findings of fraud against him.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not substantively applied. Mr. Kabwe was held civilly liable for dishonest assistance in breaches of fiduciary duty and conspiracy to defraud in the civil litigation.",
+      "key_facts": [
+        "Chartered accountant and chief financial officer of ITM International and Meridien Bank.",
+        "Ran and controlled Access Financial Services Ltd (AFSL) in Zambia.",
+        "Instructed Meer to open ledger 2535/1 and make numerous private disbursements (e.g., US$15,000 to wife Irene Kabwe, tuition fees for daughter Alice at Boston University).",
+        "Found to be a primary conspirator in both Zamtrop and BK conspiracies, and held liable in Chancery Division."
+      ],
+      "sic_codes": [],
+      "sic_overall_reasoning": null
+    },
+    {
+      "name": "Stella Chibanda",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Held civilly liable by the Chancery Division for breach of fiduciary duty and conspiracy to defraud Zambia, resulting in a joint and several damages order exceeding US$56 million. She did not appeal successfully.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not substantively applied. Stella Chibanda was held civilly liable for breach of fiduciary duty as a senior government official.",
+      "key_facts": [
+        "Senior official in the Zambian Ministry of Finance.",
+        "Primary conspirator who acted in breach of fiduciary duty to Zambia.",
+        "Ordered by Peter Smith J to pay over US$56 million."
+      ],
+      "sic_codes": [],
+      "sic_overall_reasoning": null
+    },
+    {
+      "name": "Raphael Soriano",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Held civilly liable by Mr. Justice Peter Smith in the Chancery Division for participation in the BK military procurement conspiracy. He did not successfully appeal his liability.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not substantively applied. Mr. Soriano was held civilly liable for conspiracy to defraud and dishonest assistance.",
+      "key_facts": [
+        "Appointed to represent the Zambian Government in purchasing military equipment, concluding a sales contract on 30 August 1999.",
+        "Controlled the Saloman account and the BK account, into which US$20 million of Government money was paid but disappeared.",
+        "Primary conspirator who acted in breach of fiduciary duty and assisted breaches."
+      ],
+      "sic_codes": [],
+      "sic_overall_reasoning": null
+    },
+    {
+      "name": "Boutique Basile",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Held civilly liable by the Chancery Division for receiving misappropriated government funds used to pay for custom menswear. The separate appeal regarding Boutique Basile's liability was dealt with in [2008] EWCA Civ 754.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not substantively applied. Boutique Basile was sued in equity for proprietary restitution and knowing receipt of misappropriated trust funds.",
+      "key_facts": [
+        "Tailor/menswear business in Geneva, Switzerland.",
+        "Received payments of US$100,000 (29 June 1999) and US$80,000 (17 February 2000) from MCD's Harptree client ledger 3388/1 on Kabwe's instructions.",
+        "Payments were for suits and other clothes made for Dr. Chiluba and Mr. X. F. Chungu."
+      ],
+      "sic_codes": [
+        {
+          "code": "47710",
+          "description": "Retail sale of clothing in specialised stores",
+          "confidence": "95%",
+          "reasoning": "Boutique Basile is a retail boutique specializing in high-end bespoke menswear and suits in Geneva."
+        },
+        {
+          "code": "14190",
+          "description": "Manufacture of other wearing apparel and accessories n.e.c.",
+          "confidence": "85%",
+          "reasoning": "Boutique Basile was a custom tailoring outfit engaged in the manufacturing and alteration of bespoke suits and shirts for individual clients."
+        }
+      ],
+      "sic_overall_reasoning": "Boutique Basile is a tailor and custom menswear boutique based in Geneva, Switzerland. It provided custom tailoring and bespoke clothing services to high-ranking Zambian officials, funded by client account transfers from MCD."
+    },
+    {
+      "name": "Cave Malik",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Held civilly liable as a firm by the Chancery Division for dishonest assistance and conspiracy to defraud. The firm's partners filed appeals but subsequently compromised and settled the claims before the final hearing.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not applied. Cave Malik was sued civilly for dishonest assistance and conspiracy to defraud.",
+      "key_facts": [
+        "London firm of solicitors, acting as professional enablers/co-conspirators in the main action.",
+        "Second Defendant in the main proceedings, whose partner was Bimal Thaker.",
+        "Received payments including US$75,000 on 12 November 2002 from MCD's Harptree ledger 3388/1."
+      ],
+      "sic_codes": [
+        {
+          "code": "69102",
+          "description": "Solicitors",
+          "confidence": "100%",
+          "reasoning": "The judgment explicitly identifies Cave Malik as a firm of solicitors of which Bimal Thaker and Bhupendra Bhailal Thaker were partners."
+        }
+      ],
+      "sic_overall_reasoning": "Cave Malik is an English law firm and professional partnership of solicitors based in London. The firm acted as the Second Defendant in the main civil asset recovery action and was represented by partners Bimal Thaker and Bhupendra Bhailal Thaker."
+    },
+    {
+      "name": "Bimal Thaker",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Held civilly liable by the Chancery Division for dishonest assistance and conspiracy. He appealed but subsequently entered into a compromise and settlement agreement, resulting in the withdrawal of his appeal.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not applied. Bimal Thaker was sued civilly for dishonest assistance.",
+      "key_facts": [
+        "Partner in the solicitors' firm Cave Malik.",
+        "Eighth Defendant in the main action, found liable by Peter Smith J but compromised his appeal."
+      ],
+      "sic_codes": [],
+      "sic_overall_reasoning": null
+    },
+    {
+      "name": "Bhupendra Bhailal Thaker",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Held civilly liable by the trial court under partnership law. He appealed the finding of partnership but compromised and settled the claims before the final appeal hearing.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not applied. His liability was based on the Partnership Act 1890 as a partner in Cave Malik.",
+      "key_facts": [
+        "Father of Bimal Thaker, found by the judge to be a partner in Cave Malik and therefore held liable."
+      ],
+      "sic_codes": [],
+      "sic_overall_reasoning": null
+    },
+    {
+      "name": "Attan Shansonga",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Held civilly liable by the Chancery Division for participation in the conspiracies. He appealed the judgment but withdrew his appeal at a late stage, leaving the trial court's order intact.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not applied in this civil conspiracy and asset recovery proceeding.",
+      "key_facts": [
+        "Zambian diplomat/official, defendant in the main action, held liable by Peter Smith J, withdrew his appeal."
+      ],
+      "sic_codes": [],
+      "sic_overall_reasoning": null
+    },
+    {
+      "name": "Aaron Chungu",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Held civilly liable by the Chancery Division for participation in the Zamtrop conspiracy. He did not obtain permission to appeal.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not applied. He was sued civilly for dishonest assistance and conspiracy.",
+      "key_facts": [
+        "Official/director at Access Financial Services Ltd (AFSL).",
+        "Sent memo to Kabwe on 7 May 1998 requesting US$242,484 reimbursement for 'various client affairs' through MCD, which Kabwe forwarded to Meer and was paid."
+      ],
+      "sic_codes": [],
+      "sic_overall_reasoning": null
+    },
+    {
+      "name": "Francis Kaunda",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Held civilly liable by the Chancery Division for participation in the conspiracies. He did not appeal successfully.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not applied. He was sued civilly for dishonest assistance and conspiracy.",
+      "key_facts": [
+        "Chairman of Access Financial Services Ltd (AFSL) in Zambia.",
+        "Father of Chabala Kaunda, who received a US$12,000 transfer from MCD client account on 8 January 1996."
+      ],
+      "sic_codes": [],
+      "sic_overall_reasoning": null
+    },
+    {
+      "name": "Harptree Holdings Ltd",
+      "role": "Associated Corporate Vehicle",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Subject to a proprietary claim by Zambia. The ownership of its assets and shares was resolved in favor of Zambia in a separate trial before Peter Smith J in 2005.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not substantively applied. Harptree Holdings was subject to civil proprietary claims by Zambia.",
+      "key_facts": [
+        "BVI company incorporated/acquired by Meer on Kabwe's instructions in January 1997.",
+        "Held bearer shares through a Channel Islands firm; used as corporate vehicle to buy Jarban SA.",
+        "Received Zamtrop funds and BK funds into MCD dollar ledger 3388/1."
+      ],
+      "sic_codes": [
+        {
+          "code": "64209",
+          "description": "Activities of other holding companies n.e.c.",
+          "confidence": "95%",
+          "reasoning": "Harptree was a BVI company with bearer shares whose sole operational purpose was holding the equity and assets of the Luxembourg company Jarban SA."
+        },
+        {
+          "code": "68209",
+          "description": "Other letting and operating of own or leased real estate",
+          "confidence": "90%",
+          "reasoning": "Harptree was the ultimate corporate holding vehicle for Brussels properties, including a block of flats and an apartment hotel, which were managed for revenue."
+        }
+      ],
+      "sic_overall_reasoning": "Harptree Holdings Ltd is a British Virgin Islands (BVI) company incorporated by Mr. Meer on behalf of Faustin Kabwe. It was used as a holding company to acquire and hold the shares of Luxembourg company Jarban SA, which held real estate assets in Brussels, Belgium."
+    },
+    {
+      "name": "Jarban SA",
+      "role": "Associated Corporate Vehicle",
+      "verdict": "Mentioned Only",
+      "verdict_reasoning": "This is a corporate entity used to hold properties in Belgium. It was not a primary defendant subject to a personal damages order but was central to the proprietary tracing claims conceded in favor of Zambia.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not substantively applied. Jarban SA was involved as an offshore corporate vehicle holding real estate subject to equitable tracing.",
+      "key_facts": [
+        "Luxembourg company acquired by Harptree Holdings Ltd using funds traced to the Zamtrop account.",
+        "Owned Brussels properties (Belsquare Residence and Immo Leasing St Michel) with a purchase funded by stolen Zambian government monies.",
+        "Signatory authority on its bank accounts was held by Mohammed Iqbal Meer, who authorized a transfer of BF 2 million (approx. US$50,000) on 4 May 1999."
+      ],
+      "sic_codes": [
+        {
+          "code": "68209",
+          "description": "Other letting and operating of own or leased real estate",
+          "confidence": "95%",
+          "reasoning": "Jarban SA owned two commercial properties in Brussels (a block of flats and an apartment hotel) via its subsidiaries, which it operated and managed."
+        },
+        {
+          "code": "68100",
+          "description": "Buying and selling of own real estate",
+          "confidence": "90%",
+          "reasoning": "Jarban SA was used as the vehicle to complete the acquisition and sale of Belgian real estate assets funded by Zamtrop money."
+        }
+      ],
+      "sic_overall_reasoning": "Jarban SA is a Luxembourg holding company acquired by Harptree Holdings Ltd. Through its corporate structure, Jarban SA owned and managed real estate assets in Brussels, Belgium, including Belsquare Residence and Immo Leasing St Michel."
+    },
+    {
+      "name": "Belsquare Residence nv",
+      "role": "Associated Corporate Vehicle",
+      "verdict": "Mentioned Only",
+      "verdict_reasoning": "Corporate subsidiary of Jarban SA involved in the property tracing claims. No direct damages verdict was entered against it, but its properties were successfully recovered by Zambia.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not substantively applied. Belsquare was a subsidiary corporate vehicle subject to civil tracing claims.",
+      "key_facts": [
+        "Belgian subsidiary company of Jarban SA, owning a property portfolio in Brussels.",
+        "Signatory authority was held by Mr. Meer, who instructed Jarban's bank to transfer BF 2 million to MCD's client account.",
+        "Subject to proprietary claims in the Belgian property trial before Peter Smith J in 2005, which were resolved in favor of the Republic of Zambia."
+      ],
+      "sic_codes": [
+        {
+          "code": "68209",
+          "description": "Other letting and operating of own or leased real estate",
+          "confidence": "95%",
+          "reasoning": "Belsquare Residence nv was the corporate owner and operator of residential real estate and leasing facilities in Brussels, Belgium."
+        }
+      ],
+      "sic_overall_reasoning": "Belsquare Residence nv is a Belgian subsidiary company of Jarban SA that directly held and operated a real estate property portfolio (an apartment building and residential suites) in Brussels, Belgium."
+    },
+    {
+      "name": "Access Financial Services Ltd (AFSL)",
+      "role": "Associated Corporate Vehicle",
+      "verdict": "Mentioned Only",
+      "verdict_reasoning": "This corporate entity was placed in liquidation in 2003. Its files and accounts were subject to disclosure and preservation orders (e.g., Pitchford J's order), and its transactions were central to the fraud, but it was in liquidation during the trial.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not applied. AFSL was the main corporate client on whose behalf the MCD ledgers were operated.",
+      "key_facts": [
+        "Zambian financial services company licensed by the Bank of Zambia in October 1995.",
+        "Managed and controlled by Faustin Kabwe and Aaron Chungu, acting as the primary vehicle for the Zamtrop conspiracy.",
+        "Received transfers of US$242,484 on 12 May 1998 from MCD client account on the pretext of 'client affairs.'",
+        "Placed into compulsory liquidation by the Bank of Zambia in 2003, with Mr. Mwansompelo appointed as liquidation manager."
+      ],
+      "sic_codes": [
+        {
+          "code": "64929",
+          "description": "Other credit granting n.e.c.",
+          "confidence": "95%",
+          "reasoning": "AFSL was licensed by the Bank of Zambia to provide financial services, including credit granting, leasing, and transaction financing to commercial clients."
+        },
+        {
+          "code": "64999",
+          "description": "Financial intermediation not elsewhere classified",
+          "confidence": "90%",
+          "reasoning": "AFSL operated as an intermediary facilitating transfers and managing commercial transactions on behalf of clients, including ZSIS."
+        }
+      ],
+      "sic_overall_reasoning": "Access Financial Services Ltd (AFSL) is a Zambian financial services company licensed by the Bank of Zambia to provide commercial financial, leasing, and transaction management services to businesses in Zambia, but was not licensed as a commercial retail bank."
+    },
+    {
+      "name": "Zambia National Commercial Bank Ltd (Zanaco)",
+      "role": "Financial Institution",
+      "verdict": "Mentioned Only",
+      "verdict_reasoning": "Zanaco was the clearing bank for Zamtrop funds. It was not a party to the litigation and no civil or criminal liability was assessed against it in this judgment.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not applied. Zanaco acted as the banking institution holding the Zamtrop account and was not a defendant.",
+      "key_facts": [
+        "State-owned bank of Zambia whose London branch held the 'Zamtrop' bank account opened in December 1995.",
+        "Operational channel through which over US$52 million of Zambian public funds were laundered.",
+        "Transferred US$7,021,020.17 from the Zamtrop account directly to MCD's client account between 21 May 1996 and 4 April 2001."
+      ],
+      "sic_codes": [
+        {
+          "code": "64191",
+          "description": "Banks",
+          "confidence": "100%",
+          "reasoning": "Zanaco is explicitly identified as the state-owned commercial bank of Zambia that held the Zamtrop account in London."
+        }
+      ],
+      "sic_overall_reasoning": "Zambia National Commercial Bank Ltd (Zanaco) is the state-owned commercial bank of Zambia. Its London branch operated commercial banking services and held the 'Zamtrop' account under the control of ZSIS."
+    },
+    {
+      "name": "KBC Bank Brugge Belgium",
+      "role": "Financial Institution",
+      "verdict": "Mentioned Only",
+      "verdict_reasoning": "KBC was the financial institution holding the BK account. It was not a party to the litigation and no civil or criminal liability was assessed against it.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 was not applied. KBC was the clearing bank for BK funds and was not a defendant.",
+      "key_facts": [
+        "Belgian commercial bank holding the 'BK account' (Betti Katumbi) in Brugge.",
+        "Received stolen Zambian government funds under the military equipment purchase scheme.",
+        "Source of four separate transfers totaling US$1.3 million to MCD's client account between December 2000 and March 2001."
+      ],
+      "sic_codes": [
+        {
+          "code": "64191",
+          "description": "Banks",
+          "confidence": "100%",
+          "reasoning": "KBC Bank is a leading Belgian commercial banking institution that provided financial accounts used in the BK military equipment procurement scheme."
+        }
+      ],
+      "sic_overall_reasoning": "KBC Bank Brugge Belgium is a commercial retail and corporate bank in Brugge, Belgium. It held the 'BK' (Betti Katumbi) account used to transfer US$20 million of diverted Zambian government funds."
+    },
+    {
+      "name": "The Attorney General of Zambia",
+      "role": "Claimant",
+      "verdict": "Mentioned Only",
+      "verdict_reasoning": "The Attorney General was the claimant/respondent in the proceedings, obtaining damages orders against thirteen defendants at trial, though the judgment against the MCD appellants was set aside on appeal.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "POCA 2002 did not apply. The Attorney General was the civil claimant seeking equitable remedies and damages.",
+      "key_facts": [
+        "Official representative of the Republic of Zambia who initiated civil proceedings on 6 October 2004.",
+        "Seeks to establish civil liability and recover losses from up to twenty individuals and corporate vehicles.",
+        "Obtained freezing orders and judgments totaling over US$57 million against multiple primary conspirators."
+      ],
+      "sic_codes": [
+        {
+          "code": "84230",
+          "description": "Justice and judicial activities",
+          "confidence": "100%",
+          "reasoning": "The Attorney General is a state organ responsible for administering justice, managing legal disputes, and bringing civil fraud claims on behalf of the Republic of Zambia."
+        },
+        {
+          "code": "84110",
+          "description": "General public administration activities",
+          "confidence": "90%",
+          "reasoning": "The Attorney General represents the public executive and state administration of Zambia in legal and recovery operations."
+        }
+      ],
+      "sic_overall_reasoning": "The Attorney General of Zambia is the chief legal officer and a government department of the Republic of Zambia. It conducts civil litigation, represents the sovereign nation in international legal matters, and manages public justice affairs."
+    }
+  ],
+  "defendant_count": 22,
+  "source_file": "Attorney General of Zambia v Meer Care &amp; Desai (A Firm) &amp; Ors-[2007] EWHC 952.xml"
+}
