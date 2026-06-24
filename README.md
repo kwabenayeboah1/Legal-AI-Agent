@@ -826,6 +826,7 @@ Not all BAILII documents conform identically to the AkomaNtoso standard. Older j
 | [2008 EWCA CIV 1007] | [Attorney General of Zambia v Meer Care & Desai (A Firm) &a Ors] | [PRECEDENT ONLY] |
 | [2018 EWCA CRIM 1170] | [Adair, R v] | [CONFIRMED VERDICT] |
 | [2007 EWCA CRIM 491] | [K, R v] | [ALLEGED/CHARGED] |
+
 *Full case log available on request.*
 
 ---
