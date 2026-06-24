@@ -1,0 +1,1839 @@
+{
+    "s240": {
+        "title": "General purpose",
+        "full": "Section 240 sets out the general purpose of Part 5 of POCA, which is to enable the enforcement authority to recover in civil proceedings property which is obtained through unlawful conduct. It specifies that these proceedings may be brought whether or not any criminal proceedings have been brought for an offence in connection with the property.",
+        "elements": [
+            "Civil recovery of property obtained through unlawful conduct",
+            "Enforcement authority as the bringing party",
+            "Independent of criminal proceedings or convictions"
+        ],
+        "notes": "Civil standard of proof applies (balance of probabilities). This is a non-conviction based asset forfeiture regime.",
+        "part_chapter": "Part 5, Chapter 1 \u2014 Introductory",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly references s240(2) and its effect (no conviction required), which aligns perfectly with my precise knowledge of Part 5 Chapter 1."
+    },
+    "s241": {
+        "title": "Unlawful conduct",
+        "full": "Section 241 defines unlawful conduct for the purposes of Part 5. It encompasses conduct occurring in any part of the UK that is unlawful under local criminal law, as well as conduct occurring outside the UK that is unlawful where it occurred and would be unlawful if it had occurred in the UK.",
+        "elements": [
+            "Conduct in the UK unlawful under local criminal law",
+            "Conduct outside the UK unlawful under local law",
+            "Dual criminality requirement for foreign conduct"
+        ],
+        "notes": "Often referred to as the dual criminality test for civil recovery. The judgment snippet quotes s241(1) and (2) directly.",
+        "part_chapter": "Part 5, Chapter 1 \u2014 Introductory",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet quotes s241 verbatim, and it is a core, well-established provision of POCA Part 5."
+    },
+    "s242": {
+        "title": "Property obtained through unlawful conduct",
+        "full": "Section 242 defines when a person obtains property through unlawful conduct. It establishes that property is obtained through unlawful conduct if it is obtained by or in return for that conduct, and it is immaterial whether the conduct was of a specific kind as long as it is shown to be of one of a number of kinds of unlawful conduct.",
+        "elements": [
+            "Property obtained by or in return for unlawful conduct",
+            "Immaterial whether specific kind of conduct is identified",
+            "Applies to property obtained by the person's own or another's conduct"
+        ],
+        "notes": "This allows the enforcement authority to succeed without proving a specific criminal offence, provided they can show the property must have come from one of several kinds of unlawful conduct.",
+        "part_chapter": "Part 5, Chapter 1 \u2014 Introductory",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly references s242 and the requirement to show property was obtained by or in return for unlawful conduct, which matches my precise knowledge of the statute."
+    },
+    "s243": {
+        "title": "Proceedings for recovery orders in England and Wales or Northern Ireland",
+        "full": "Section 243 provides that proceedings for a recovery order in England and Wales or Northern Ireland may be brought by the enforcement authority in the High Court. The purpose of these proceedings is to obtain a recovery order in respect of property that is alleged to be recoverable property.",
+        "elements": [
+            "Proceedings brought by the enforcement authority",
+            "Brought in the High Court",
+            "Targeted at obtaining a recovery order for recoverable property"
+        ],
+        "notes": "This section establishes the jurisdictional and procedural starting point for civil recovery claims in England, Wales, and Northern Ireland.",
+        "part_chapter": "Part 5, Chapter 2 \u2014 Civil Recovery",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet mentions s243 and s266 being used by SOCA (now NCA) for a civil recovery order in the High Court, which is the standard procedural route under Part 5 Chapter 2."
+    },
+    "s266": {
+        "title": "Recovery orders",
+        "full": "Section 266 mandates that if the court is satisfied in civil recovery proceedings that any property is recoverable, it must make a recovery order. The order vests the recoverable property in the trustee for civil recovery, subject to certain statutory exceptions and safeguards for innocent victims or bona fide purchasers.",
+        "elements": [
+            "Mandatory duty to make recovery order if property is recoverable",
+            "Vesting of property in the trustee for civil recovery",
+            "Exceptions and safeguards for innocent parties"
+        ],
+        "notes": "The mandatory nature ('must make') is a key feature, though tempered by exceptions in subsequent subsections (e.g., s266(3) onwards regarding human rights or victim protection).",
+        "part_chapter": "Part 5, Chapter 2 \u2014 Civil Recovery",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet quotes s266(1) directly and discusses the mandatory nature and exceptions, which is highly consistent with my knowledge of the Act."
+    },
+    "s304": {
+        "title": "Property obtained through unlawful conduct",
+        "full": "Section 304 defines recoverable property as property obtained through unlawful conduct. It also provides that if such property has been disposed of, it can be followed into the hands of anyone who obtains it, subject to exceptions for bona fide purchasers without notice.",
+        "elements": [
+            "Definition of recoverable property",
+            "Ability to follow property into the hands of subsequent recipients",
+            "Protection for bona fide purchasers for value without notice"
+        ],
+        "notes": "This is the foundational 'following' provision in civil recovery, allowing the state to trace the property through multiple hands.",
+        "part_chapter": "Part 5, Chapter 4 \u2014 General",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly links s304 to property being passed from one person to another and defines recoverable property, which matches the statutory scheme of Chapter 4."
+    },
+    "s305": {
+        "title": "Traced property",
+        "full": "Section 305 deals with traced property, providing that where recoverable property has been disposed of, any property which represents the original property (whether directly or indirectly) is also recoverable. This allows the enforcement authority to trace the value of the original asset into newly acquired assets.",
+        "elements": [
+            "Disposal of original recoverable property",
+            "Tracing into representing property (direct or indirect)",
+            "Representing property treated as recoverable"
+        ],
+        "notes": "This is the statutory mechanism for tracing, as opposed to following (s304).",
+        "part_chapter": "Part 5, Chapter 4 \u2014 General",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly notes that s305 applies where property has 'changed in form', which is the classic definition of tracing under English law and POCA s305."
+    },
+    "s306": {
+        "title": "Mixing property",
+        "full": "Section 306 provides rules for when recoverable property is mixed with other property (for example, by being deposited into a mixed bank account). It ensures that the portion of the mixed property which represents the recoverable property remains recoverable.",
+        "elements": [
+            "Mixing of recoverable property with other property",
+            "Identification of the recoverable portion",
+            "Mixed property treated as representing the recoverable property to that extent"
+        ],
+        "notes": "Crucial for bank account cases where clean and dirty funds are commingled.",
+        "part_chapter": "Part 5, Chapter 4 \u2014 General",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly notes that s306 applies where property is 'mixed together with other property', which aligns perfectly with the statutory text of s306."
+    },
+    "s307": {
+        "title": "Profits",
+        "full": "Section 307 provides that where a person who has recoverable property obtains further property consisting of profits accruing in respect of that recoverable property, the further property is also treated as representing the property obtained through unlawful conduct.",
+        "elements": [
+            "Accrual of profits on recoverable property",
+            "Treatment of profits as representing the original recoverable property",
+            "Extension of recoverability to the yield/interest/profits"
+        ],
+        "notes": "This ensures that capital gains, interest, or business profits generated directly from tainted assets are also subject to civil recovery.",
+        "part_chapter": "Part 5, Chapter 4 \u2014 General",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet quotes s307(1) and (2) almost verbatim, making this a highly confident entry."
+    },
+    "s353": {
+        "title": "Requirements where warrant applied for",
+        "full": "Section 353 of the Proceeds of Crime Act 2002 sets out the statutory requirements that must be satisfied before a search and seizure warrant can be issued under section 352. It requires reasonable grounds for suspecting that a person has committed a money laundering offence (or is subject to another POCA investigation) and that specific conditions regarding the necessity of the warrant are met.",
+        "elements": [
+            "Reasonable grounds for suspecting a money laundering offence or other POCA trigger",
+            "Satisfaction of the first set of conditions (e.g. production order not complied with)",
+            "Satisfaction of the second set of conditions (e.g. immediate entry is necessary)"
+        ],
+        "notes": "This section acts as a critical judicial safeguard to prevent arbitrary searches, requiring the court to evaluate the necessity and proportionality of the warrant.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 England and Wales and Northern Ireland",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly references s353 and its application to money laundering investigations under subsection (2)(c)."
+    },
+    "s355": {
+        "title": "Further provisions: warrants",
+        "full": "Section 355 of the Proceeds of Crime Act 2002 provides further administrative and procedural rules regarding search and seizure warrants, including the power to modify the application of sections 15 and 16 of the Police and Criminal Evidence Act 1984 (PACE) by Order. This allows the Secretary of State to adapt standard police search safeguards to the specific context of POCA investigations.",
+        "elements": [
+            "Power to modify PACE s15 and s16 safeguards by Order",
+            "Applies to warrants issued under s352",
+            "Excludes items subject to legal privilege or excluded material from standard seizure without specific authority"
+        ],
+        "notes": "The Proceeds of Crime Act 2002 (Application of PACE) Order 2003 was made under this section to adapt PACE safeguards.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 England and Wales and Northern Ireland",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly discusses s355(1)-(3) and its relationship to modifying PACE ss15 and 16 via the 2003 Statutory Instrument."
+    },
+    "s327": {
+        "title": "Concealing etc.",
+        "full": "Section 327 of POCA 2002 makes it a criminal offence to conceal, disguise, convert, transfer, or remove criminal property from England and Wales, Scotland, or Northern Ireland. The prosecution must prove that the property in question is 'criminal property' (representing a benefit from criminal conduct) and that the defendant knew or suspected this.",
+        "elements": [
+            "Concealing, disguising, converting, transferring, or removing criminal property",
+            "Property must represent a benefit from criminal conduct",
+            "Defendant must know or suspect the property represents such a benefit",
+            "Exemptions apply if an authorised disclosure is made or there is a reasonable excuse"
+        ],
+        "notes": "Maximum penalty on indictment is 14 years' imprisonment, a fine, or both. This is one of the three principal money laundering offences.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "Extremely well-established statutory provision, explicitly referenced and partially quoted in the judgment snippet."
+    },
+    "s340": {
+        "title": "Interpretation",
+        "full": "Section 340 provides the key definitions for the money laundering provisions in Part 7 of POCA 2002. It defines 'criminal conduct' as conduct constituting an offence in any part of the UK (or which would do so if it occurred there) and 'criminal property' as property representing a person's benefit from criminal conduct, provided the offender knows or suspects it constitutes such a benefit.",
+        "elements": [
+            "Definition of criminal conduct (s340(2))",
+            "Definition of criminal property (s340(3))",
+            "Definition of money laundering (s340(11))",
+            "Requirement of knowledge or suspicion for property to be 'criminal property'"
+        ],
+        "notes": "This is the foundational interpretation section for all Part 7 offences. The definition of 'money laundering' includes attempts, conspiracies, and aiding/abetting of s327-329 offences.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly quotes s340(11) and s340(2)-(3), confirming the exact statutory definitions and structure."
+    },
+    "s352": {
+        "title": "Search and seizure warrants",
+        "full": "Section 352 of POCA 2002 allows an appropriate officer to apply to a judge for a search and seizure warrant for the purposes of a confiscation, civil recovery, detained cash, or money laundering investigation. The warrant authorises an officer to enter and search premises and seize relevant material.",
+        "elements": [
+            "Application by an appropriate officer to a Crown Court judge",
+            "Warrant authorises entry, search, and seizure of material",
+            "Applies to confiscation, civil recovery, detained cash, or money laundering investigations",
+            "Requires specific statutory conditions to be met under s353"
+        ],
+        "notes": "This section is a powerful investigative tool, heavily litigated regarding the 'reasonable grounds' requirement and procedural safeguards.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 England and Wales and Northern Ireland",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly references s352(1) and s352(6)(b) in the context of search and seizure warrants for a money laundering investigation."
+    },
+    "s329": {
+        "title": "Acquisition, use and possession",
+        "full": "Section 329 of POCA 2002 makes it an offence to acquire, use, or possess criminal property. Like sections 327 and 328, it requires proof that the property is criminal property and that the defendant knew or suspected this, subject to specific statutory defences such as acquiring it for adequate consideration.",
+        "elements": [
+            "Acquiring, using, or possessing criminal property",
+            "Property must represent a benefit from criminal conduct",
+            "Defendant must know or suspect the property represents such a benefit",
+            "Defence of adequate consideration (excluding provision of goods/services that help in criminal conduct)"
+        ],
+        "notes": "Maximum penalty on indictment is 14 years' imprisonment. This section targets the end-user or possessor of the illicit funds.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "Well-known principal money laundering offence, referenced in the judgment snippet."
+    },
+    "s328": {
+        "title": "Arrangements",
+        "full": "Section 328 of POCA 2002 provides that a person commits an offence if they enter into or become concerned in an arrangement which they know or suspect facilitates (by whatever means) the acquisition, retention, use, or control of criminal property by or on behalf of another person. This section is designed to catch professional intermediaries and facilitators of money laundering.",
+        "elements": [
+            "Entering into or becoming concerned in an arrangement",
+            "Arrangement facilitates the acquisition, retention, use, or control of criminal property",
+            "Facilitation is by or on behalf of another person",
+            "Defendant knows or suspects the property is criminal property"
+        ],
+        "notes": "Maximum penalty on indictment is 14 years' imprisonment. Often used against professional enablers (solicitors, accountants, bankers).",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "Directly quoted in the provided judgment snippet and is a core, highly familiar provision of POCA Part 7."
+    },
+    "s240(2)": {
+        "title": "General purpose of civil recovery (proceedings independent of criminal prosecution)",
+        "full": "Section 240(2) of the Proceeds of Crime Act 2002 clarifies that civil recovery proceedings and the making of a recovery order are independent of criminal prosecutions. It explicitly states that a recovery order may be made whether or not any proceedings have been brought for an offence in connection with the property. This establishes the in rem nature of civil recovery, focusing on the property itself rather than the conviction of an individual.",
+        "elements": [
+            "Civil recovery proceedings are independent of criminal prosecution",
+            "A recovery order can be made regardless of whether criminal proceedings have been initiated",
+            "No requirement for a prior criminal conviction to establish that property is recoverable"
+        ],
+        "notes": "This is a foundational provision establishing that civil recovery is an in rem action against the property, not an in personam action against a defendant. The standard of proof is civil (balance of probabilities), and an acquittal in criminal proceedings does not automatically bar civil recovery.",
+        "part_chapter": "Part 5, Chapter 2 \u2014 Civil Recovery",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly quotes and discusses s240(2) confirming that a recovery order may be made 'whether or not any proceedings have been brought for an offence in connection with the property' and that conviction is not a precondition."
+    },
+    "s241(1)": {
+        "title": "Definition of unlawful conduct (domestic conduct)",
+        "full": "Section 241(1) defines 'unlawful conduct' for the purposes of civil recovery when the conduct occurs within the United Kingdom. It states that conduct occurring in any part of the United Kingdom is unlawful conduct if it is unlawful under the criminal law of that specific part. This ensures that the local criminal law of England and Wales, Scotland, or Northern Ireland determines unlawfulness depending on where the conduct took place.",
+        "elements": [
+            "Conduct must occur in a part of the United Kingdom",
+            "Conduct must be unlawful under the criminal law of that specific part of the UK"
+        ],
+        "notes": "This forms the basis of the definition of 'recoverable property' under section 304, which is property obtained through unlawful conduct.",
+        "part_chapter": "Part 5, Chapter 2 \u2014 Civil Recovery",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly quotes s241(1) verbatim: 'Conduct occurring in any part of the United Kingdom is unlawful conduct if it is unlawful under the criminal law of that part.'"
+    },
+    "s241(2)": {
+        "title": "Definition of unlawful conduct (extraterritorial conduct)",
+        "full": "Section 241(2) defines 'unlawful conduct' for conduct occurring outside the United Kingdom. It provides that such conduct is unlawful if it occurs in a country or territory outside the UK, is unlawful under the criminal law applying there, and would be unlawful under the criminal law of any part of the UK if it had occurred there (dual criminality).",
+        "elements": [
+            "Conduct occurs in a country or territory outside the United Kingdom",
+            "Conduct is unlawful under the criminal law applying in that country or territory",
+            "Conduct would be unlawful under the criminal law of a part of the UK if it had occurred there (dual criminality)"
+        ],
+        "notes": "This allows the UK authorities to recover property obtained through foreign crimes, provided the dual criminality test is met.",
+        "part_chapter": "Part 5, Chapter 2 \u2014 Civil Recovery",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet quotes the beginning of s241(2) verbatim, and the dual criminality requirement is a well-established aspect of POCA Part 5."
+    },
+    "s241(3)": {
+        "title": "Standard of proof for unlawful conduct",
+        "full": "Section 241(3) establishes the standard of proof required to show that unlawful conduct has occurred or that a person intended to use property in unlawful conduct. It mandates that the court or sheriff must decide on the balance of probabilities whether these matters are proved. This solidifies the civil standard of proof for civil recovery proceedings under Part 5.",
+        "elements": [
+            "Applies to deciding whether unlawful conduct occurred",
+            "Applies to deciding whether a person intended to use property in unlawful conduct",
+            "Requires the court or sheriff to decide on the balance of probabilities"
+        ],
+        "notes": "Although the allegation involves criminal conduct, the standard remains the civil standard (balance of probabilities), as confirmed by case law (e.g., SOCA v Namli, Gale v SFO).",
+        "part_chapter": "Part 5, Chapter 2 \u2014 Civil Recovery",
+        "confidence": "high",
+        "confidence_reasoning": "While the snippet for s241(3) cuts off before quoting the subsection directly, it references the definitions in s241 and s242, and s241(3) is the well-known provision setting the civil standard of proof ('balance of probabilities') for unlawful conduct in Part 5."
+    },
+    "s242(2)": {
+        "title": "Property obtained through unlawful conduct (general kinds of conduct)",
+        "full": "Section 242(2) provides that in civil recovery proceedings, it is not necessary to show that the property was obtained through a specific, particular offence or kind of unlawful conduct. Instead, it is sufficient to show that the property was obtained through conduct of one of a number of kinds, each of which would constitute unlawful conduct. This relieves the enforcement authority from having to prove a specific criminal charge, allowing them to rely on a class of unlawful activities (e.g., drug trafficking or fraud generally).",
+        "elements": [
+            "No requirement to prove property was obtained through a specific kind of unlawful conduct",
+            "Sufficient to show property was obtained through conduct of one of a number of kinds",
+            "Each of those kinds of conduct must constitute unlawful conduct"
+        ],
+        "notes": "This is a crucial provision for law enforcement, allowing 'dirty money' to be recovered even if the exact crime that generated it cannot be pinpointed, provided it is shown to come from a category of criminal conduct (e.g., the 'unspecified unlawful conduct' route established in Assets Recovery Agency v Dennis).",
+        "part_chapter": "Part 5, Chapter 2 \u2014 Civil Recovery",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet for s242(2) quotes the core text: 'obtained through conduct of one of a number of kinds, each of which would have been unlawful conduct' and explains its application in paragraph 16."
+    },
+    "s266(1)": {
+        "title": "Duty of the court to make a recovery order",
+        "full": "Section 266(1) imposes a mandatory duty on the court to make a recovery order if it is satisfied that any property is recoverable in civil recovery proceedings. Once the statutory test of recoverability is met on the balance of probabilities, the court has no general discretion and must make the order, subject to specific statutory exceptions. This ensures that proven proceeds of crime are systematically confiscated.",
+        "elements": [
+            "Applies to proceedings under Chapter 2 of Part 5",
+            "Court must be satisfied that the property is recoverable",
+            "Mandatory duty ('must make') to make a recovery order, subject to statutory exceptions"
+        ],
+        "notes": "The mandatory nature of the order ('must make') is subject to exceptions designed to protect innocent victims, bona fide purchasers, or to prevent double recovery, as set out in subsequent subsections of s266 and s267.",
+        "part_chapter": "Part 5, Chapter 2 \u2014 Civil Recovery",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet quotes s266(1) verbatim: 'If in proceedings under this Chapter the court is satisfied that any property is recoverable, the court must make a recovery order.'"
+    },
+    "s335": {
+        "title": "Appropriate consent",
+        "full": "Section 335 outlines the mechanism for obtaining appropriate consent from the authorities to proceed with a transaction that would otherwise constitute a money laundering offence. It defines the notice period and the moratorium period during which an institution must wait for consent or refusal before executing the transaction. This section provides a statutory defense to the primary money laundering offences if consent is granted or the statutory periods expire.",
+        "elements": [
+            "A disclosure is made under section 338",
+            "The person requests consent to carry out a prohibited act",
+            "Consent is granted by a nominated officer, constable, or customs officer, or the notice/moratorium periods expire without refusal"
+        ],
+        "notes": "This section is the statutory basis for the consent regime (often referred to as DAML - Defence Against Money Laundering). If consent is refused, the moratorium period prevents the bank from acting, creating a conflict with contractual duties to customers.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet discusses the bank's defense of refusing to process instructions in the absence of consent under s335, which is the classic application of the POCA consent/moratorium regime."
+    },
+    "s330": {
+        "title": "Failure to disclose: regulated sector",
+        "full": "Section 330 creates an offence where a person working in the regulated sector fails to disclose knowledge, suspicion, or reasonable grounds for knowing or suspecting that another person is engaged in money laundering. This duty arises when the information is obtained in the course of business in the regulated sector, and the disclosure must be made as soon as practicable to a nominated officer or a person authorised by the National Crime Agency.",
+        "elements": [
+            "Person is employed in the regulated sector",
+            "Knows, suspects, or has reasonable grounds for knowing or suspecting another is money laundering",
+            "Information came to them in the course of business in the regulated sector",
+            "Fails to make the required disclosure to a nominated officer or authorised person as soon as practicable"
+        ],
+        "notes": "This section introduces an objective test ('reasonable grounds for knowing or suspecting'), making it easier to prosecute than subjective knowledge. It is a key compliance driver for banks and financial institutions.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly confirms s330 applies to the regulated sector and outlines the 'knows or suspects or has reasonable grounds' standard, which aligns perfectly with my precise knowledge of Part 7 POCA."
+    },
+    "s342": {
+        "title": "Offence of prejudicing investigation",
+        "full": "Section 342 creates an offence where a person knows or suspects that an investigation (such as a money laundering, confiscation, or civil recovery investigation) is being, or is about to be, conducted, and they make a disclosure likely to prejudice that investigation, or they falsify, conceal, destroy, or dispose of relevant documents.",
+        "elements": [
+            "Person knows or suspects a relevant investigation is being or is about to be conducted",
+            "Person makes a disclosure likely to prejudice the investigation, OR falsifies, conceals, destroys, or disposes of documents relevant to the investigation",
+            "The person knows or suspects the documents are relevant"
+        ],
+        "notes": "This is a broad offence that applies outside the regulated sector as well. It has specific statutory defenses, such as not knowing that the disclosure or concealment would prejudice the investigation, or professional legal privilege.",
+        "part_chapter": "Part 8 \u2014 Investigations",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly defines s342 as creating the offence of 'prejudicing an investigation' when a person knows or suspects an investigation is underway and makes a disclosure likely to prejudice it."
+    },
+    "s333": {
+        "title": "Tipping off",
+        "full": "Section 333 originally created the offence of tipping off, making it unlawful to disclose to a third party that a money laundering investigation or disclosure had been made if that disclosure was likely to prejudice any subsequent investigation. While largely superseded or restructured into sections 333A-E by later amendments, the core concept remains a prohibition on revealing that a SAR has been filed or that an investigation is underway.",
+        "elements": [
+            "A disclosure has been made under Part 7",
+            "A person makes a disclosure to another which is likely to prejudice any investigation",
+            "The person knows or suspects that the disclosure is likely to prejudice the investigation"
+        ],
+        "notes": "The section is critical for banks when they freeze accounts pending consent under s335, as they must avoid 'tipping off' the customer about the SAR. Note that s333 was substituted by sections 333A-E by the Terrorism Act 2000 and Proceeds of Crime Act 2002 (Amendment) Regulations 2007.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet mentions s333 in the context of withholding information from a customer to avoid breaking a legal duty, and notes that s333 was replaced by s333A-E, which matches my knowledge of the statutory evolution."
+    },
+    "s331": {
+        "title": "Failure to disclose: nominated officers in the regulated sector",
+        "full": "Section 331 creates an offence specifically for nominated officers (Money Laundering Reporting Officers) within the regulated sector who fail to pass on a disclosure. If a nominated officer receives a disclosure under section 330 and knows, suspects, or has reasonable grounds to suspect money laundering, they commit an offence if they do not make an authorised disclosure to the National Crime Agency as soon as practicable.",
+        "elements": [
+            "Individual is a nominated officer in the regulated sector",
+            "Receives a disclosure under section 330",
+            "Knows, suspects, or has reasonable grounds to suspect another is engaged in money laundering as a result",
+            "Fails to make the required disclosure to the NCA (or authorised person) as soon as practicable"
+        ],
+        "notes": "This section ensures that internal reports (SARs) made by employees are properly vetted and escalated externally by the designated compliance officer.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly details the relationship between s330 and s331, confirming that s331 applies to nominated officers who fail to escalate internal disclosures."
+    },
+    "s338": {
+        "title": "Authorised disclosure",
+        "full": "Section 338 defines what constitutes an 'authorised disclosure' for the purposes of providing a defense against the principal money laundering offences (sections 327-329). A disclosure is authorised if it is made to a constable, customs officer, or nominated officer, reveals that property is criminal property, and is made before the person does the prohibited act (or after, with a reasonable excuse).",
+        "elements": [
+            "Disclosure is made to a constable, customs officer, or nominated officer",
+            "Discloses that property is criminal property",
+            "Made before the prohibited act occurs, or after with a reasonable excuse for the delay",
+            "Form and manner comply with any prescribed regulations"
+        ],
+        "notes": "Making an authorised disclosure and obtaining appropriate consent under s335 provides a complete defense to the primary money laundering offences under sections 327, 328, and 329.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet quotes s338(1) directly, defining an authorised disclosure and its role in preventing a person from committing a principal money laundering offence."
+    },
+    "s316": {
+        "title": "General interpretation",
+        "full": "Section 316 provides the general interpretation and definitions for terms used throughout Part 5 of the Act, which governs the civil recovery of the proceeds of unlawful conduct. Crucially, section 316(3) establishes the retrospective effect of Part 5, declaring that the civil recovery provisions apply to unlawful conduct occurring before the commencement of the Act as well as after it.",
+        "elements": [
+            "Defines key statutory terms used throughout Part 5, including 'associated property', 'court', 'interest', and 'respondent'.",
+            "Explicitly provides under subsection (3) that Part 5 applies to conduct occurring before the commencement of the Part.",
+            "Ensures that property obtained through unlawful conduct prior to the enactment of POCA 2002 remains subject to civil recovery proceedings."
+        ],
+        "notes": "Section 316(3) is a cornerstone of civil recovery litigation, as it defeats limitation or timing arguments based on the pre-2003 origin of the unlawful conduct. This retrospective application has survived numerous challenges under the European Convention on Human Rights (specifically Article 1 of the First Protocol).",
+        "part_chapter": "Part 5, Chapter 4 \u2014 General",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly identifies section 316(3) as the retrospectivity section of POCA in the context of an Interim Receiving Order (which falls under Part 5). Section 316 is well-known as the general interpretation section of Part 5 of the Proceeds of Crime Act 2002."
+    },
+    "s10": {
+        "title": "Assumptions",
+        "full": "Section 10 of the Proceeds of Crime Act 2002 mandates that if the court decides a defendant has a criminal lifestyle, it must make four statutory assumptions to calculate their benefit from general criminal conduct. These assumptions cover property transferred to, held by, or spent by the defendant during the six years prior to the commencement of proceedings, and must be applied unless proven incorrect or if they would create a serious risk of injustice.",
+        "elements": [
+            "Triggered only when the court determines the defendant has a criminal lifestyle under section 6",
+            "Assumption 1: Property transferred to the defendant after the relevant day was obtained via general criminal conduct",
+            "Assumption 2: Property held by the defendant after conviction was obtained via general criminal conduct",
+            "Assumption 3: Expenditure incurred by the defendant after the relevant day was met from property obtained via general criminal conduct",
+            "Assumption 4: Property obtained (or assumed obtained) is valued as if obtained free of other interests",
+            "Disapplied if an assumption is shown to be incorrect or if there is a serious risk of injustice"
+        ],
+        "notes": "The 'relevant day' is defined as the day six years prior to the date on which proceedings were started. Note that the provided judgment snippet actually refers to Section 10 of the Partnership Act 1890 (vicarious liability of partners) rather than Section 10 of POCA 2002.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "I have precise recall of Section 10 of POCA 2002 (the statutory assumptions for criminal lifestyle confiscation in England and Wales). I have correctly identified that the provided judgment snippet is a false match, as it refers to the Partnership Act 1890."
+    },
+    "s345": {
+        "title": "Production orders",
+        "full": "Section 345 of the Proceeds of Crime Act 2002 allows an appropriate officer to apply to a judge for a production order in relation to a confiscation, civil recovery, detained cash, detained property, frozen funds, or money laundering investigation. The order requires a specified person who appears to be in possession or control of the material to produce it to an appropriate officer or give them access to it within a specified period, which is typically seven days.",
+        "elements": [
+            "Application made by an appropriate officer to a judge",
+            "Relates to a confiscation, civil recovery, detained cash, detained property, frozen funds, or money laundering investigation",
+            "Requires a person in possession or control of specified material to produce it or give access to it",
+            "Specifies a period (usually seven days) for compliance"
+        ],
+        "notes": "Production orders are a key investigative tool under Part 8 of POCA. Failure to comply with a production order without reasonable excuse may constitute contempt of court or a criminal offence under section 342 (prejudicing an investigation).",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations (England and Wales and Northern Ireland)",
+        "confidence": "high",
+        "confidence_reasoning": "The provision is well-established under Part 8 of POCA 2002, and the judgment snippet confirms its application to money laundering investigations and production orders in the Crown Court."
+    },
+    "s346": {
+        "title": "Requirements for making of production order",
+        "full": "Section 346 of the Proceeds of Crime Act 2002 specifies the statutory conditions that must be met before a judge can grant a production order under section 345. These conditions require reasonable grounds to suspect the target has benefited from conduct or committed an offence, reasonable grounds to believe the material is of substantial value to the investigation, and reasonable grounds to believe it is in the public interest to grant the order.",
+        "elements": [
+            "Reasonable grounds for suspecting the person under investigation has benefited from criminal conduct or committed a money laundering offence",
+            "Reasonable grounds for believing the material is likely to be of substantial value to the investigation",
+            "Reasonable grounds for believing it is in the public interest that the material be produced or access given, having regard to the benefit to the investigation and the circumstances of the person in possession"
+        ],
+        "notes": "This section acts as a safeguard, ensuring that production orders are not granted as 'fishing expeditions' and that there is a clear public interest justification for overriding confidentiality or privacy.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations (England and Wales and Northern Ireland)",
+        "confidence": "high",
+        "confidence_reasoning": "Section 346 directly complements section 345 by setting out the strict statutory requirements for making a production order, which is a standard and highly documented part of POCA 2002 Part 8."
+    },
+    "s353(5)": {
+        "title": "Requirements where production order not available: Second set of conditions",
+        "full": "Section 353(5) outlines the second set of conditions required to satisfy the requirements for issuing a search and seizure warrant under section 352. It typically applies where immediate access to the material is essential to prevent serious prejudice to the investigation, or where communication with those entitled to grant entry or access is impracticable.",
+        "elements": [
+            "Applies to the requirements for a search and seizure warrant",
+            "Requires that the investigation would be seriously prejudiced without immediate access",
+            "Requires that communication with persons entitled to grant entry or access is not practicable"
+        ],
+        "notes": "This subsection acts as an alternative gateway to the first set of conditions (which focus on non-compliance with a production order), allowing immediate search powers in urgent or uncommunicative scenarios.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations, England and Wales and Northern Ireland",
+        "confidence": "low",
+        "confidence_reasoning": "While the judgment snippet confirms that s353 contains the requirements for warrants (including a first and second set of conditions), the exact text and numbering of subsection (5) within the overall structure of s353 are reconstructed from general memory of Part 8 POCA rather than verbatim source text."
+    },
+    "s377": {
+        "title": "Codes of Practice",
+        "full": "Section 377 mandates the Secretary of State to prepare, consult upon, and issue a Code of Practice governing the exercise of investigative powers under Part 8 of POCA. Officers exercising search, seizure, or other information-gathering powers must have regard to this code, which ensures procedural propriety and proportionality.",
+        "elements": [
+            "Duty of the Secretary of State to prepare and publish a code of practice",
+            "Applies to the exercise of functions under Part 8 of POCA",
+            "Requirement for appropriate officers to have regard to the code during investigations"
+        ],
+        "notes": "The Code of Practice issued under s377 is a vital tool for criminal defense and judicial review, as demonstrated in the judgment where paragraph 94 of the Code was used to assess the propriety of large-scale material removal under section 50.",
+        "part_chapter": "Part 8, Chapter 4 \u2014 Investigations, Codes of Practice",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly references the Code of Practice issued under s377 of POCA 2002 and its application to the exercise of powers, confirming its role and statutory basis."
+    },
+    "s355(1)": {
+        "title": "Further provisions: Application of PACE safeguards",
+        "full": "Section 355(1) provides the Secretary of State with the power to make an order applying the search warrant safeguards of the Police and Criminal Evidence Act 1984 (specifically sections 15 and 16 of PACE) with necessary modifications to search and seizure warrants issued under POCA.",
+        "elements": [
+            "Power of the Secretary of State to make orders",
+            "Applies to search and seizure warrants issued under POCA",
+            "Applies and modifies sections 15 and 16 of PACE (safeguards for warrants)"
+        ],
+        "notes": "This section ensures that the rigorous procedural safeguards of PACE (such as identifying articles to be sought and conducting searches at reasonable hours) are adapted and applied to POCA's specialized financial investigation warrants.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations, England and Wales and Northern Ireland",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly discusses s355(1)-(3) of POCA providing the power to modify sections 15 and 16 of PACE by Order (specifically citing the 2003 SI No. 174), which confirms the exact function and statutory context."
+    },
+    "s353(8)": {
+        "title": "Requirements where production order not available: Unreasonable refusal of entry",
+        "full": "Section 353(8) provides one of the specific conditions under the second set of conditions for a search warrant, applying where a person entitled to grant entry to the premises has unreasonably refused to allow an appropriate officer entry to them.",
+        "elements": [
+            "Applies to the second set of conditions for a warrant",
+            "Relates to a person entitled to grant entry to the premises",
+            "Requires an unreasonable refusal to allow entry to an appropriate officer"
+        ],
+        "notes": "This subsection ensures that if entry is unreasonably refused, officers can obtain a warrant to secure entry rather than relying on a production order.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations, England and Wales and Northern Ireland",
+        "confidence": "low",
+        "confidence_reasoning": "No direct text is provided in the judgment snippet for s353(8). While it is known to be part of the 'second set of conditions' under s353, the exact assignment of subsection (8) to 'unreasonable refusal of entry' (as opposed to refusal of access to material or warrant production) is reconstructed from memory and may be transposed with subsections (7) or (9)."
+    },
+    "s352(6)(b)": {
+        "title": "Search and seizure warrants: Power to seize and retain material",
+        "full": "Section 352(6)(b) defines the scope of a search and seizure warrant, specifically authorising the appropriate person to seize and retain any material found on the premises which is likely to be of substantial value (whether by itself or together with other material) to the investigation for the purposes of which the warrant was issued.",
+        "elements": [
+            "Authority to seize and retain material",
+            "Material must be found on the specified premises",
+            "Material must be likely to be of substantial value to the investigation"
+        ],
+        "notes": "This subsection limits the seizure power to material relevant to the specific investigation, preventing general 'fishing expeditions', though it must be read alongside other seizure powers like PACE or Criminal Justice and Police Act 2001.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations, England and Wales and Northern Ireland",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly links s352(6)(b) to the warrant's execution and seizure powers, and the statutory wording is highly standard for POCA search warrants."
+    },
+    "s352(1)": {
+        "title": "Search and seizure warrants",
+        "full": "Section 352(1) enables an appropriate officer to apply to a judge for a search and seizure warrant for the purposes of a confiscation investigation, a civil recovery investigation, a detained cash investigation, or a money laundering investigation. The warrant authorises an appropriate person to enter and search the premises specified in the application.",
+        "elements": [
+            "Application by an appropriate officer",
+            "Application made to a Crown Court judge (or appropriate judicial authority)",
+            "Relates to a specified investigation type (e.g., money laundering)",
+            "Authorises entry and search of specified premises"
+        ],
+        "notes": "This is the primary statutory gateway for obtaining search warrants in POCA investigations, subject to the strict requirements set out in section 353.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations, England and Wales and Northern Ireland",
+        "confidence": "high",
+        "confidence_reasoning": "Well-known core provision of Part 8 POCA, supported by the judgment context which identifies it as the source of the search and seizure warrants."
+    },
+    "s340(11)": {
+        "title": "Interpretation of Part 7: Money laundering definition",
+        "full": "Section 340(11) defines 'money laundering' for the purposes of Part 7 of POCA. It encompasses acts constituting offences under sections 327 (concealing etc.), 328 (arrangements), or 329 (acquisition, use and possession), attempts, conspiracy, or incitement to commit those offences, aiding, abetting, counselling or procuring their commission, or acts done abroad that would constitute such offences if committed in the UK.",
+        "elements": [
+            "Offences under s327, s328, s329",
+            "Inchoate offences (attempt, conspiracy, incitement)",
+            "Accessory liability (aiding, abetting, counselling, procuring)",
+            "Extraterritorial acts that would be offences if committed in the UK"
+        ],
+        "notes": "This is a foundational definition that determines the scope of 'money laundering' throughout the money laundering offences and investigations under Part 7 and Part 8.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The definition is explicitly quoted in the judgment snippet and is a well-established statutory definition in Part 7 of POCA."
+    },
+    "s353(9)": {
+        "title": "Requirements where production order not available: Unreasonable refusal of access",
+        "full": "Section 353(9) provides one of the specific conditions under the second set of conditions for a search warrant, applying where a person entitled to grant access to the material has unreasonably refused to allow an appropriate officer access to it.",
+        "elements": [
+            "Applies to the second set of conditions for a warrant",
+            "Relates to a person entitled to grant access to the material",
+            "Requires an unreasonable refusal to allow an appropriate officer access"
+        ],
+        "notes": "This subsection allows a warrant to be issued when cooperation has been sought but unreasonably refused, bypassing the need for a production order.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations, England and Wales and Northern Ireland",
+        "confidence": "low",
+        "confidence_reasoning": "No direct text is provided in the judgment snippet for s353(9). While it is known to be part of the 'second set of conditions' under s353, the exact assignment of subsection (9) to 'unreasonable refusal of access to material' (as opposed to entry to premises or warrant production) is reconstructed from memory and may be transposed with subsections (7) or (8)."
+    },
+    "s16": {
+        "title": "Statement of information",
+        "full": "Section 16 of the Proceeds of Crime Act 2002 governs the provision of a statement of information in confiscation proceedings. Where the court is determining whether the defendant has a criminal lifestyle or has benefited from general or particular criminal conduct, the prosecutor or Director must, or the court may direct them to, submit a statement of information containing relevant details to assist the court in its determination.",
+        "elements": [
+            "Applies where the court is proceeding under section 6 of POCA 2002.",
+            "Requires the prosecutor or Director to provide a statement of information if they ask the court to proceed or if directed by the court.",
+            "The statement must set out matters relevant to determining if the defendant has a criminal lifestyle, has benefited from conduct, and the court's calculation of the recoverable amount.",
+            "The defendant can be ordered to respond to this statement under section 17."
+        ],
+        "notes": "The provided judgment snippet actually refers to section 16 of the Finance Act 1994 (concerning the jurisdiction of the tribunal in excise decisions), not POCA 2002. However, this entry provides the correct reference data for section 16 of the Proceeds of Crime Act 2002 as requested by the primary prompt.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "I have precise recall of Section 16 of POCA 2002 (Statement of information) within Part 2. I noted that the provided judgment snippet actually refers to FA 1994 s16, which is a different statute, and have clarified this discrepancy in the notes."
+    },
+    "s80": {
+        "title": "Value of property obtained from conduct",
+        "full": "Section 80 of the Proceeds of Crime Act 2002 provides the rules for determining the value of property obtained by a person from criminal conduct. It establishes that the value is the market value of the property at the time the person obtained it, adjusted for inflation (changes in the value of money), or the value of property that directly or indirectly represents it, whichever is greater.",
+        "elements": [
+            "Applies to valuing property obtained by a person from conduct.",
+            "Value is generally the value at the time of acquisition adjusted to the current value of money.",
+            "If another person holds property representing the original property, the value is the value of that representative property.",
+            "Ensures that the benefit figure reflects the real-term value or current representative value of the assets."
+        ],
+        "notes": "The provided judgment snippet for s80 does not explicitly mention POCA 2002 or VATA 1994 s80, but discusses BSEL employees and customers. This entry provides the correct reference data for section 80 of the Proceeds of Crime Act 2002.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "I have precise recall of Section 80 of POCA 2002 (Value of property obtained from conduct) within Part 2. The snippet provided does not contain the text of s80 of POCA, but the statutory definition is well-established."
+    },
+    "s82": {
+        "title": "Free property",
+        "full": "Section 82 of the Proceeds of Crime Act 2002 defines 'free property' for the purposes of confiscation proceedings under Part 2. Property is free if it is not subject to certain specified orders, such as deprivation orders, forfeiture orders under the Terrorism Act 2000, or civil recovery/cash forfeiture orders under Part 5 of POCA.",
+        "elements": [
+            "Defines 'free property' as any property not subject to excluded orders.",
+            "Excluded orders include deprivation orders under the Powers of Criminal Courts (Sentencing) Act 2000 or the Sentencing Code.",
+            "Excluded orders include forfeiture orders under the Terrorism Act 2000 or cash/property forfeiture under Part 5 of POCA.",
+            "Free property is a key component in determining what constitutes 'realisable property' under section 83."
+        ],
+        "notes": "The provided judgment snippet actually refers to section 82 of the Value Added Tax Act 1994 (defining 'tribunal'), not POCA 2002. This entry provides the correct reference data for section 82 of the Proceeds of Crime Act 2002.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "I have precise recall of Section 82 of POCA 2002 (Free property) within Part 2. I noted that the provided judgment snippet actually refers to VATA 1994 s82, which is a different statute, and have clarified this discrepancy in the notes."
+    },
+    "s83": {
+        "title": "Realisable property",
+        "full": "Section 83 of the Proceeds of Crime Act 2002 defines 'realisable property' for the purposes of Part 2 confiscation. Realisable property is any free property held by the defendant, and any free property held by the recipient of a tainted gift made by the defendant.",
+        "elements": [
+            "Defines 'realisable property' as free property held by the defendant.",
+            "Includes free property held by the recipient of a tainted gift.",
+            "Tainted gifts are defined elsewhere in Part 2 (sections 77 and 78).",
+            "Realisable property is used to calculate the 'available amount' under section 9."
+        ],
+        "notes": "The provided judgment snippet actually refers to section 83 of the Value Added Tax Act 1994 (appeals), not POCA 2002. This entry provides the correct reference data for section 83 of the Proceeds of Crime Act 2002.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "I have precise recall of Section 83 of POCA 2002 (Realisable property) within Part 2. I noted that the provided judgment snippet actually refers to VATA 1994 s83, which is a different statute, and have clarified this discrepancy in the notes."
+    },
+    "s304(1)": {
+        "title": "Property obtained through unlawful conduct",
+        "full": "Section 304(1) of the Proceeds of Crime Act 2002 establishes the foundational definition of recoverable property, stating that property obtained through unlawful conduct is recoverable property. This definition underpins the entire civil recovery regime under Part 5, allowing enforcement authorities to seek recovery of assets directly linked to criminal activity without requiring a prior criminal conviction.",
+        "elements": [
+            "Property must be obtained through unlawful conduct",
+            "Classifies such property as 'recoverable property' for the purposes of Part 5",
+            "Applies to conduct occurring within the UK or overseas (subject to double criminality requirements)"
+        ],
+        "notes": "This section is the starting point for civil recovery. It is supplemented by section 305 (which allows tracing into representing property) and section 307 (which covers profits accruing on recoverable property). Unlawful conduct is defined separately in section 241.",
+        "part_chapter": "Part 5, Chapter 4 \u2014 General",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly quotes s304(1) as defining recoverable property as 'property obtained through unlawful conduct', which aligns precisely with the statutory text of Part 5, Chapter 4 of POCA 2002."
+    },
+    "s243(1)": {
+        "title": "Proceedings for recovery orders in England and Wales or Northern Ireland",
+        "full": "Section 243(1) of the Proceeds of Crime Act 2002 enables an enforcement authority to initiate civil proceedings for a recovery order in the High Court. These proceedings may be brought against any person whom the authority believes holds recoverable property, serving as the primary procedural gateway for high court civil recovery actions.",
+        "elements": [
+            "Proceedings must be for a recovery order",
+            "Brought by an authorized enforcement authority (such as the National Crime Agency)",
+            "Brought in the High Court (for England, Wales, and Northern Ireland)",
+            "Targeted against any person who the authority thinks holds recoverable property"
+        ],
+        "notes": "This section provides the statutory standing and jurisdiction for civil recovery claims. Because these are civil proceedings, the standard of proof is the civil standard (balance of probabilities) rather than the criminal standard.",
+        "part_chapter": "Part 5, Chapter 2 \u2014 Civil Recovery in the High Court or Court of Session",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly outlines the operation of s243(1), identifying the enforcement authority, the High Court forum, and the threshold requirement of 'thinking' a person holds recoverable property, which matches the statutory text of Part 5, Chapter 2 of POCA."
+    },
+    "s170": {
+        "title": "Penalty for fraudulent evasion of duty",
+        "full": "Section 170 of the Customs and Excise Management Act 1979 provides for penalties and offences related to the fraudulent evasion of customs or excise duty. It covers the acquisition, possession, or handling of goods with intent to evade duty or any prohibition.",
+        "elements": [
+            "Acquisition or possession of goods subject to unpaid duty",
+            "Handling, carrying, removing, depositing, or concealing goods",
+            "Intent to defraud Her Majesty of duty or evade prohibitions"
+        ],
+        "notes": "The judgment snippet confirms this refers to the Customs and Excise Management Act 1979, not the Proceeds of Crime Act 2002.",
+        "part_chapter": "N/A (Customs and Excise Management Act 1979)",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly identifies the provision as section 170 of the Customs and Excise Management Act 1979 in the context of fuel laundering and duty evasion."
+    },
+    "s170(2)": {
+        "title": "Knowingly concerned in fraudulent evasion of duty",
+        "full": "Section 170(2) of the Customs and Excise Management Act 1979 makes it an offence to be knowingly concerned in any fraudulent evasion or attempt at evasion of any duty chargeable on goods, or of any prohibition or restriction with respect to them.",
+        "elements": [
+            "Being knowingly concerned in fraudulent evasion",
+            "Applies to any duty chargeable on goods",
+            "Applies to any prohibition or restriction on goods"
+        ],
+        "notes": "This is a specific subsection of s170 CEMA 1979, as confirmed by the judgment snippet, and is commonly prosecuted in fuel laundering conspiracies.",
+        "part_chapter": "N/A (Customs and Excise Management Act 1979)",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly references 'section 170(2) of the Customs and Excise Management Act 1979' as the basis for count 1 of the indictment."
+    },
+    "s6": {
+        "title": "Excise duty on hydrocarbon oil",
+        "full": "Section 6 of the Hydrocarbon Oil Duties Act 1979 imposes an excise duty on hydrocarbon oil imported into or produced in the United Kingdom. It establishes the statutory chargeability and rates of duty for various categories of oil.",
+        "elements": [
+            "Imposition of excise duty on hydrocarbon oil",
+            "Applies to imported or UK-produced oil",
+            "Sets the statutory rates of duty"
+        ],
+        "notes": "The judgment snippet confirms this refers to s6 of the Hydrocarbon Oil Duties Act 1979 (not POCA 2002 s6, which relates to confiscation orders).",
+        "part_chapter": "N/A (Hydrocarbon Oil Duties Act 1979)",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly mentions 'section 6 of the Hydrocarbon Duties Act 1979' as the provision imposing excise duty on hydrocarbon oils."
+    },
+    "s78": {
+        "title": "Exclusion of unfair evidence",
+        "full": "Section 78 of the Police and Criminal Evidence Act 1984 gives courts the discretion to exclude prosecution evidence if its admission would have such an adverse effect on the fairness of the proceedings that the court ought not to admit it.",
+        "elements": [
+            "Discretionary power to exclude prosecution evidence",
+            "Consideration of all circumstances, including how evidence was obtained",
+            "Test of whether admission would cause unfairness in the proceedings"
+        ],
+        "notes": "The judgment snippet refers to the exclusion of late-served evidence under 'section 78', which is a clear reference to s78 of PACE 1984, not POCA 2002 (where s78 relates to restraint orders).",
+        "part_chapter": "N/A (Police and Criminal Evidence Act 1984)",
+        "confidence": "high",
+        "confidence_reasoning": "The context of the judgment snippet (excluding late-served evidence/material on its merits to ensure fairness) clearly identifies this as Section 78 of the Police and Criminal Evidence Act 1984 (PACE)."
+    },
+    "s333A": {
+        "title": "Tipping off: regulated sector",
+        "full": "Section 333A of the Proceeds of Crime Act 2002 creates offences relating to 'tipping off' within the regulated sector. It prohibits disclosing that a protected or authorised disclosure has been made, or that a money laundering investigation is being contemplated or carried out, where such disclosure is likely to prejudice any resulting or ongoing investigation. This offence applies specifically to disclosures made in the course of business in the regulated sector.",
+        "elements": [
+            "The person makes a disclosure to another person.",
+            "The disclosure reveals that a protected or authorised disclosure has been made, or that a money laundering investigation is being contemplated or carried out.",
+            "The disclosure is likely to prejudice any investigation that might be conducted or is being conducted.",
+            "The disclosure is made in the course of a business in the regulated sector (as defined in Schedule 9)."
+        ],
+        "notes": "This section was introduced to replace the wider tipping-off offence under the original s333, narrowing the scope of the offence in the regulated sector to comply with EU Money Laundering Directives. There are statutory exceptions under sections 333B to 333D (e.g., disclosures within the same undertaking or group, or between institutions in certain circumstances). The maximum penalty on indictment is 5 years' imprisonment, a fine, or both.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "Section 333A is a well-established and critical provision of Part 7 of POCA 2002, introduced by the 2007 Regulations to govern tipping-off in the regulated sector. Its elements, relationship to the regulated sector, and the 5-year maximum penalty under s334 are highly stable and well-recalled."
+    },
+    "s295(2)": {
+        "title": "Detention of seized cash \u2014 Extension by court order",
+        "full": "Section 295(2) of POCA allows a magistrates' court or sheriff to make an order extending the period of detention of cash seized under section 294. The court may authorise further detention for a period of up to six months if satisfied that one of the statutory conditions in section 295(4) is met.",
+        "elements": [
+            "Application to a magistrates' court or sheriff",
+            "Authorises continued detention of seized cash",
+            "Maximum extension of up to six months per order",
+            "Requires satisfaction of statutory conditions regarding derivation or intended use"
+        ],
+        "notes": "The total period of detention cannot exceed two years from the date of the first order, as per section 295(2)(b).",
+        "part_chapter": "Part 5, Chapter 3 \u2014 Recovery of Cash in Summary Proceedings",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly mentions section 295(2) in the context of extending cash detention for up to six months, which aligns perfectly with my precise knowledge of POCA Part 5 Chapter 3."
+    },
+    "s341(3A)": {
+        "title": "Meaning of detained cash investigation",
+        "full": "Section 341(3A) defines a 'detained cash investigation' for the purposes of Part 8 of POCA. It is defined as an investigation for the purposes of Chapter 3 of Part 5 into the derivation of cash detained under that Chapter, or a part of such cash, or whether such cash is intended to be used in unlawful conduct.",
+        "elements": [
+            "Defines 'detained cash investigation'",
+            "Applies to investigations under Chapter 3 of Part 5",
+            "Focuses on the derivation or intended use of detained cash"
+        ],
+        "notes": "This definition is crucial for determining which investigative powers (such as production orders or disclosure orders) are available under Part 8.",
+        "part_chapter": "Part 8 \u2014 Investigations",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly quotes section 341(3A) defining a detained cash investigation, which matches my knowledge of Part 8."
+    },
+    "s298(2)": {
+        "title": "Forfeiture of detained cash \u2014 Court order",
+        "full": "Section 298(2) empowers a magistrates' court (or sheriff in Scotland) to order the forfeiture of detained cash, or any part of it, if satisfied that the cash is recoverable property or is intended by any person for use in unlawful conduct. This is a civil in rem procedure that does not require a prior criminal conviction.",
+        "elements": [
+            "Satisfaction that cash is recoverable property or intended for unlawful conduct",
+            "Order made by a magistrates' court or sheriff",
+            "Forfeiture of the cash or a part of it"
+        ],
+        "notes": "The standard of proof is the civil standard (balance of probabilities). Forfeiture can occur even if no criminal proceedings have been brought.",
+        "part_chapter": "Part 5, Chapter 3 \u2014 Recovery of Cash in Summary Proceedings",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet describes section 298 and the forfeiture of cash when the court is satisfied it is recoverable property or intended for use in unlawful conduct."
+    },
+    "s294": {
+        "title": "Seizure of cash",
+        "full": "Section 294 of POCA empowers an authorised officer (such as a customs officer, constable, or accredited financial investigator) to seize any cash found in the UK if they have reasonable grounds for suspecting that it is recoverable property or intended by any person for use in unlawful conduct. The amount seized must not be less than the minimum amount.",
+        "elements": [
+            "Power of an authorised officer to seize cash",
+            "Requires reasonable grounds of suspicion",
+            "Cash must be recoverable property or intended for unlawful conduct",
+            "Subject to the minimum amount threshold (currently \u00a31,000)"
+        ],
+        "notes": "Seized cash can initially be detained for up to 48 hours under section 295(1) before court approval is required.",
+        "part_chapter": "Part 5, Chapter 3 \u2014 Recovery of Cash in Summary Proceedings",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly references section 294 as creating the power to seize cash under reasonable suspicion, which is a core, well-known provision of POCA."
+    },
+    "s297": {
+        "title": "Release of detained cash",
+        "full": "Section 297 provides the mechanism for the release of cash detained under section 295. It directs that detained cash must be released if the conditions for its detention are no longer met, either by application to the court or by an authorised officer's decision.",
+        "elements": [
+            "Mechanism for releasing detained cash",
+            "Triggered when detention conditions are no longer met",
+            "Can be initiated by an authorised officer or via court application"
+        ],
+        "notes": "This section ensures that cash is not held indefinitely without justification and provides a route for affected parties to seek its return.",
+        "part_chapter": "Part 5, Chapter 3 \u2014 Recovery of Cash in Summary Proceedings",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet mentions applications under section 297 for funds to be released, confirming its role in the release of detained cash."
+    },
+    "s341(4)": {
+        "title": "Meaning of money laundering investigation",
+        "full": "Section 341(4) defines a 'money laundering investigation' for the purposes of Part 8 of POCA. It is defined as an investigation into whether a person has committed a money laundering offence.",
+        "elements": [
+            "Defines 'money laundering investigation'",
+            "Focuses on whether a person has committed a money laundering offence",
+            "Determines the scope of investigative powers under Part 8"
+        ],
+        "notes": "This definition is distinct from confiscation or civil recovery investigations and triggers specific powers in the Crown Court.",
+        "part_chapter": "Part 8 \u2014 Investigations",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly quotes section 341(4) defining a money laundering investigation, which matches my knowledge of Part 8."
+    },
+    "s245C": {
+        "title": "Property freezing orders: exclusions",
+        "full": "Section 245C allows the court to make exclusions from a property freezing order (PFO) to meet reasonable living expenses, reasonable legal expenses, or to enable a person to carry on any trade, business, profession or occupation. This provides a safeguard for individuals whose assets are frozen during civil recovery proceedings.",
+        "elements": [
+            "Power to exclude property from a property freezing order",
+            "Exclusions for reasonable living or legal expenses",
+            "Exclusions to allow trade or business to continue"
+        ],
+        "notes": "This section has no direct counterpart in the summary cash detention provisions of Chapter 3, making it a key distinction in asset freezing regimes.",
+        "part_chapter": "Part 5, Chapter 2 \u2014 Civil Recovery",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly mentions section 245C as the power to exclude property from a property freezing order, contrasting it with Chapter 3 provisions."
+    },
+    "s346(2)": {
+        "title": "Requirements for making of production order \u2014 Conditions",
+        "full": "Section 346(2) sets out the first set of requirements that must be satisfied for a judge to make a production order under section 345. It requires reasonable grounds for suspecting that the person specified in the application has benefited from criminal conduct (for confiscation/civil recovery) or that there is a detained cash/money laundering investigation.",
+        "elements": [
+            "Requirements for making a production order",
+            "Requires reasonable grounds for suspecting benefit or an active investigation",
+            "Applies to various types of Part 8 investigations"
+        ],
+        "notes": "The requirements in section 346 must be strictly met before a Crown Court judge can grant a production order.",
+        "part_chapter": "Part 8 \u2014 Investigations",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet mentions section 346 requirements in the context of production orders for detained cash and money laundering investigations."
+    },
+    "s295(1)": {
+        "title": "Detention of seized cash \u2014 Initial 48 hours",
+        "full": "Section 295(1) provides that cash seized under section 294 may be detained for an initial period of 48 hours. This period does not include Saturdays, Sundays, Christmas Day, Good Friday, or any bank holiday.",
+        "elements": [
+            "Initial detention period of 48 hours",
+            "Excludes weekends and public holidays",
+            "Applies immediately following seizure under section 294"
+        ],
+        "notes": "Any detention beyond this initial 48-hour period requires judicial authorisation under section 295(2).",
+        "part_chapter": "Part 5, Chapter 3 \u2014 Recovery of Cash in Summary Proceedings",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly mentions that cash seized under section 294 may be detained initially for 48 hours under section 295(1)."
+    },
+    "s295": {
+        "title": "Detention of seized cash",
+        "full": "Section 295 of POCA governs the detention of cash seized under section 294. It establishes the initial 48-hour detention limit and provides the framework for applying to a magistrates' court for orders authorising continued detention for up to six months at a time.",
+        "elements": [
+            "Governs the detention of cash seized under section 294",
+            "Establishes initial 48-hour limit",
+            "Provides for judicial extension of detention up to a maximum of two years"
+        ],
+        "notes": "This section is a critical procedural step in cash forfeiture, bridging the gap between initial seizure and final forfeiture.",
+        "part_chapter": "Part 5, Chapter 3 \u2014 Recovery of Cash in Summary Proceedings",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet extensively discusses section 295 applications for continued detention of cash, confirming its general purpose."
+    },
+    "s289(6)": {
+        "title": "Definition of cash",
+        "full": "Section 289(6) defines 'cash' for the purposes of Chapter 3 of Part 5 of POCA. It includes notes and coins, postal orders, cheques of any kind (including travellers' cheques), bankers' drafts, and bearer bonds and bearer shares found in the UK.",
+        "elements": [
+            "Defines 'cash' for Chapter 3 purposes",
+            "Includes notes, coins, postal orders, and cheques",
+            "Includes bankers' drafts, bearer bonds, and bearer shares"
+        ],
+        "notes": "This definition is broad and allows law enforcement to target monetary instruments beyond physical currency.",
+        "part_chapter": "Part 5, Chapter 3 \u2014 Recovery of Cash in Summary Proceedings",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly quotes the definition of cash from section 289(6), listing notes, coins, cheques, etc."
+    },
+    "s295(5)": {
+        "title": "Detention of seized cash \u2014 Application for release",
+        "full": "Section 295(5) allows an application to be made to a magistrates' court (or sheriff) for the release of detained cash by the person from whom it was seized or any other person. The court may order the release of the cash if satisfied that the conditions for its detention are no longer met.",
+        "elements": [
+            "Application for release of detained cash",
+            "Can be made by the person from whom cash was seized or others",
+            "Court must release if detention conditions are not met"
+        ],
+        "notes": "This provides an active judicial remedy for individuals seeking the return of their cash prior to any forfeiture hearing.",
+        "part_chapter": "Part 5, Chapter 3 \u2014 Recovery of Cash in Summary Proceedings",
+        "confidence": "high",
+        "confidence_reasoning": "I have precise recall of the structure of section 295, where subsection (5) provides the mechanism for applying to the court for release of the cash."
+    },
+    "s298": {
+        "title": "Forfeiture of cash",
+        "full": "Section 298 of POCA provides the statutory framework for the forfeiture of detained cash. It allows a magistrates' court (or sheriff) to order forfeiture if satisfied that the cash is recoverable property or is intended for use in unlawful conduct.",
+        "elements": [
+            "Statutory framework for cash forfeiture",
+            "Requires satisfaction of civil standard of proof",
+            "Applies to cash detained under section 295"
+        ],
+        "notes": "Forfeiture under this section is a civil proceeding, meaning a criminal conviction is not a prerequisite.",
+        "part_chapter": "Part 5, Chapter 3 \u2014 Recovery of Cash in Summary Proceedings",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet describes section 298 as the provision under which a magistrates' court may make an order for forfeiture of cash."
+    },
+    "s346(4)": {
+        "title": "Requirements for making of production order \u2014 Value and public interest",
+        "full": "Section 346(4) sets out the requirement that there must be reasonable grounds for believing that the material to which the production order application relates is likely to be of substantial value to the investigation, and that it is in the public interest for the material to be produced.",
+        "elements": [
+            "Material must be of substantial value to the investigation",
+            "Must be in the public interest to order production",
+            "Requires reasonable grounds for belief"
+        ],
+        "notes": "This is a key safeguard protecting third parties from overly broad or fishing-expedition production orders.",
+        "part_chapter": "Part 8 \u2014 Investigations",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet mentions section 346 requirements in the context of production orders, and I have precise recall of subsection (4) containing the 'substantial value' and 'public interest' tests."
+    },
+    "s40(2)": {
+        "title": "Conditions for exercise of powers \u2014 Restraint orders",
+        "full": "Section 40(2) sets out the conditions under which the Crown Court may exercise its power to make a restraint order when a criminal investigation has been started. It requires that there are reasonable grounds to suspect that the alleged offender has benefited from their criminal conduct.",
+        "elements": [
+            "Condition for making a restraint order",
+            "Requires an active criminal investigation",
+            "Requires reasonable grounds to suspect the offender benefited from criminal conduct"
+        ],
+        "notes": "This is the pre-charge threshold for obtaining a restraint order to prevent the dissipation of assets.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly outlines the conditions in section 40(2) for making a restraint order during a criminal investigation."
+    },
+    "s41": {
+        "title": "Restraint orders",
+        "full": "Section 41 of POCA empowers the Crown Court to make a restraint order prohibiting any specified person from dealing with any realisable property held by them. This power is designed to preserve assets that may later be subject to a confiscation order.",
+        "elements": [
+            "Power of the Crown Court to make restraint orders",
+            "Prohibits dealing with realisable property",
+            "Applies to any specified person holding such property"
+        ],
+        "notes": "Restraint orders can be made subject to exceptions, such as reasonable living expenses or legal costs, similar to civil freezing injunctions.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly describes section 41 as the power to make a restraint order prohibiting dealing with realisable property."
+    },
+    "s329(2)": {
+        "title": "Acquisition, use and possession \u2014 Exemptions",
+        "full": "Section 329(2) provides exemptions to the offence of acquiring, using, or possessing criminal property under section 329(1). A person does not commit an offence if they make an authorised disclosure under section 338 and obtain the appropriate consent, or if they intended to make such a disclosure but had a reasonable excuse for not doing so.",
+        "elements": [
+            "Exemptions to the section 329(1) offence",
+            "Includes obtaining appropriate consent",
+            "Includes having a reasonable excuse for not disclosing"
+        ],
+        "notes": "This subsection is vital for financial institutions and professionals who handle funds that may be of suspicious origin but obtain consent to proceed.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly mentions section 329(2) as providing that no offence is committed if the person obtains the 'appropriate consent'."
+    },
+    "s329(1)": {
+        "title": "Acquisition, use and possession of criminal property",
+        "full": "Section 329(1) of POCA creates the offence of acquiring, using, or having possession of criminal property. It is one of the three principal money laundering offences in Part 7 of the Act.",
+        "elements": [
+            "Offence of acquiring criminal property",
+            "Offence of using criminal property",
+            "Offence of having possession of criminal property"
+        ],
+        "notes": "The prosecution must prove that the property was criminal property and that the defendant knew or suspected it represented the proceeds of crime.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet quotes section 329(1) verbatim, listing the elements of acquiring, using, and possessing criminal property."
+    },
+    "s415": {
+        "title": "Money laundering offences \u2014 Interpretation",
+        "full": "Section 415 defines 'money laundering offence' for the purposes of Part 8 of POCA. It specifies that money laundering offences include offences under sections 327, 328, and 329, as well as attempts, conspiracy, incitement, or aiding and abetting those offences.",
+        "elements": [
+            "Defines 'money laundering offence' for Part 8",
+            "Includes principal money laundering offences (ss 327-329)",
+            "Includes secondary liability and inchoate offences"
+        ],
+        "notes": "This definition ensures that the investigative powers under Part 8 can be deployed for all forms of money laundering activity.",
+        "part_chapter": "Part 8 \u2014 Investigations",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly mentions section 415 as defining money laundering offences as a particular category of criminal offence."
+    },
+    "s295(8)": {
+        "title": "Detention of seized cash \u2014 Interest on detained cash",
+        "full": "Section 295(8) requires that cash detained under section 295 must be held in an interest-bearing account, and the interest accrued must be added to the cash on its forfeiture or release.",
+        "elements": [
+            "Requirement to hold detained cash in an interest-bearing account",
+            "Accrued interest must be added to the cash",
+            "Applies upon forfeiture or release of the cash"
+        ],
+        "notes": "This ensures that the owner of the cash is not financially disadvantaged by the loss of interest if the cash is ultimately released.",
+        "part_chapter": "Part 5, Chapter 3 \u2014 Recovery of Cash in Summary Proceedings",
+        "confidence": "high",
+        "confidence_reasoning": "I have precise recall of the structure of section 295, where subsection (8) mandates that detained cash be placed in an interest-bearing account and interest added to the principal."
+    },
+    "s245A": {
+        "title": "Property freezing orders",
+        "full": "Section 245A of POCA enables an enforcement authority to apply to the High Court for a property freezing order (PFO). A PFO prevents any person from dealing with the property specified in the order, provided there is a good arguable case that the property is or includes recoverable property.",
+        "elements": [
+            "Application by an enforcement authority to the High Court",
+            "Prohibits dealing with specified property",
+            "Requires a good arguable case that property is recoverable"
+        ],
+        "notes": "This is a powerful interim remedy in civil recovery proceedings, analogous to a freezing injunction in standard civil litigation.",
+        "part_chapter": "Part 5, Chapter 2 \u2014 Civil Recovery",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly describes section 245A and the requirement of a 'good arguable case' under section 245A(5) for a property freezing order."
+    },
+    "s272": {
+        "title": "Associated property: default of agreement",
+        "full": "Section 272 of the Proceeds of Crime Act 2002 applies in civil recovery proceedings when there is associated property but the enforcement authority and the person holding that property have failed to reach an agreement under section 271. It empowers the court to make a recovery order that either transfers the associated property to the trustee for civil recovery or requires the holder of the associated property to pay its value to the trustee. This section ensures that the recoverable portion of mixed or co-owned assets can be realized even in the absence of consent from innocent third-party owners.",
+        "elements": [
+            "Triggered when associated property exists and an application for a recovery order is made",
+            "Applies only in the default of an agreement under section 271 between the enforcement authority and the associated property holder",
+            "Authorizes the court to order the transfer of the associated property to the trustee for civil recovery",
+            "Authorizes the court to alternatively require the holder to pay the value of the associated property to the trustee",
+            "Enables the court to determine the appropriate compensation or valuation to protect the innocent party's interest"
+        ],
+        "notes": "This section is vital for resolving cases involving co-owned assets, such as a family home where only one co-owner's share represents the proceeds of crime. It operates alongside section 270 and section 271 to balance the state's interest in recovering unlawful proceeds with the property rights of innocent third parties.",
+        "part_chapter": "Part 5, Chapter 2 \u2014 Civil Recovery in the High Court or Court of Session",
+        "confidence": "high",
+        "confidence_reasoning": "The section title, its placement in Part 5 Chapter 2 of POCA 2002, and its operational mechanics regarding associated property in the absence of agreement are highly consistent with statutory text and the context of the provided judgment snippet."
+    },
+    "s337": {
+        "title": "Protected disclosures",
+        "full": "Section 337 of the Proceeds of Crime Act 2002 provides that a voluntary disclosure of information is protected from breaching any restriction on disclosure (such as professional or contractual confidentiality) if certain conditions are met. The disclosure must be made to an authorized officer, constable, or officer of Revenue and Customs, must be made in good faith, and must be based on a suspicion or belief that property is criminal property or that money laundering has occurred, is occurring, or is intended.",
+        "elements": [
+            "A disclosure of information is made to an authorized officer, constable, or officer of Revenue and Customs",
+            "The disclosure is made in good faith",
+            "The disclosure is of a suspicion or belief that property is criminal property or has been used/is intended to be used in connection with money laundering, or of any matter on which such a suspicion or belief is based"
+        ],
+        "notes": "This section provides vital statutory immunity from civil liability (such as breach of confidence or breach of contract) for financial institutions and individuals who voluntarily submit Suspicious Activity Reports (SARs) in good faith. It is distinct from section 338, which governs 'authorised disclosures' that act as a defense against committing a principal money laundering offence.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The section is a well-established provision of Part 7 of POCA 2002, and its application to voluntary disclosures and civil immunity is clearly outlined in the provided judgment snippet and standard legal texts."
+    },
+    "s340(3)": {
+        "title": "Interpretation: Definition of criminal property",
+        "full": "Section 340(3) defines 'criminal property' for the purposes of the money laundering provisions in Part 7. Property is criminal property if it constitutes a person's benefit from criminal conduct, or represents such a benefit (in whole or in part, and whether directly or indirectly), and the alleged offender knows or suspects that it constitutes or represents such a benefit.",
+        "elements": [
+            "The property constitutes or represents a person's benefit from criminal conduct (in whole or in part, directly or indirectly)",
+            "The alleged offender knows or suspects that the property constitutes or represents such a benefit (the subjective mens rea element)"
+        ],
+        "notes": "This definition is foundational to the principal money laundering offences under sections 327, 328, and 329, which all require the subject matter to be 'criminal property'. It combines an objective requirement (that the property is actually derived from criminal conduct) with a subjective requirement (that the defendant knows or suspects this to be the case).",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The definition is explicitly quoted and explained in the provided judgment snippet, which perfectly aligns with the statutory text of section 340(3) of POCA 2002."
+    },
+    "s308": {
+        "title": "General exceptions",
+        "full": "Section 308 of the Proceeds of Crime Act 2002 provides that property is not recoverable if it is vested in a person as a result of an exempt transfer. An exempt transfer includes transfers made in accordance with a court order, payments made under a recovery order, or other specified statutory exceptions. This section ensures that legitimate, legally mandated transfers of property are protected from civil recovery actions.",
+        "elements": [
+            "Vesting of property in a person as a result of an exempt transfer",
+            "Definition of exempt transfer (e.g., transfers under court orders, recovery orders, or other statutory exceptions)",
+            "Exclusion of such property from being classified as recoverable property"
+        ],
+        "notes": "This section is crucial for protecting third parties who receive property under legitimate legal processes, such as divorce settlements or other court-ordered transfers, from having that property seized under civil recovery. The judgment snippet confirms that s.308 was not engaged because there was no 'exempt transfer' within the meaning of the Act.",
+        "part_chapter": "Part 5, Chapter 4 \u2014 Civil Recovery: General",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly references s.308 in the context of Chapter 4 of Part 5 of the Act and discusses 'exempt transfer', which aligns perfectly with the statutory title and function of s308 ('General exceptions' dealing with exempt transfers)."
+    },
+    "s314": {
+        "title": "Rules of court",
+        "full": "Section 314 of the Proceeds of Crime Act 2002 provides that rules of court may make provision for the practice and procedure to be followed in proceedings under Part 5 of the Act. This includes rules regarding the notification of proceedings to persons who may be affected, and the joinder of such persons as parties. It ensures that civil recovery proceedings are conducted with appropriate procedural safeguards and clarity.",
+        "elements": [
+            "Power to make rules of court for Part 5 proceedings",
+            "Provisions for notifying affected persons of the proceedings",
+            "Provisions for joining affected persons as parties to the proceedings"
+        ],
+        "notes": "This is a procedural section enabling the court system to establish specific rules for civil recovery cases, ensuring due process for third parties whose property rights might be impacted by a recovery order.",
+        "part_chapter": "Part 5, Chapter 4 \u2014 Civil Recovery: General",
+        "confidence": "high",
+        "confidence_reasoning": "Section 314 is a well-established procedural provision within Part 5, Chapter 4 of POCA 2002, specifically designated for 'Rules of court' to govern civil recovery proceedings."
+    },
+    "s7": {
+        "title": "Recoverable amount",
+        "full": "Section 7 defines the recoverable amount for the purposes of a confiscation order under Section 6. It mandates that the recoverable amount is equal to the defendant's benefit from the conduct concerned, unless the defendant can prove that the available amount is less than that benefit. In such cases, the recoverable amount is either the available amount or a nominal amount if the available amount is nil.",
+        "elements": [
+            "The starting point for the recoverable amount is the defendant's benefit from the conduct.",
+            "The burden of proof is on the defendant to show that the available amount is less than the benefit.",
+            "If proven, the recoverable amount is limited to the available amount (or a nominal amount if the available amount is nil)."
+        ],
+        "notes": "This section is central to confiscation proceedings in England and Wales. The 'available amount' is calculated in accordance with Section 9. If the defendant fails to discharge the burden of showing the available amount is less than the benefit, the court must make an order for the full benefit amount.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment text explicitly quotes Section 7(1) and 7(2), which aligns perfectly with my precise knowledge of Part 2 of the Proceeds of Crime Act 2002."
+    },
+    "s17": {
+        "title": "Defendant's response to statement of information",
+        "full": "Section 17 governs the procedure where the prosecutor or Director has served a statement of information under Section 16, and the court orders the defendant to respond. The defendant must indicate the extent to which they accept each allegation in the statement and, so far as they do not accept an allegation, give particulars of any matters they propose to rely on. Failure to comply with the court's order can lead to the court drawing adverse inferences or treating allegations as accepted.",
+        "elements": [
+            "Applies when the court orders the defendant to respond to a Section 16 statement of information.",
+            "The defendant must state whether they accept any allegation in the statement.",
+            "If an allegation is not accepted, the defendant must provide particulars of any matters they rely on.",
+            "Failure to comply allows the court to treat allegations as accepted (subject to certain conditions)."
+        ],
+        "notes": "Commonly referred to as a 'Section 17 statement' or 'Section 17 response'. It is a key procedural tool in confiscation hearings to narrow the issues in dispute. If the defendant accepts an allegation, it is deemed conclusive for the purposes of the confiscation proceedings.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet mentions the 'Section 17 statement' in the context of a confiscation hearing, which matches Section 17 of POCA 2002 (Defendant's response to statement of information) in Part 2. I have precise recall of this procedural section."
+    },
+    "s340(2)": {
+        "title": "Definition of Criminal Conduct",
+        "full": "Section 340(2) of the Proceeds of Crime Act 2002 defines 'criminal conduct' for the purposes of Part 7. It constitutes conduct which constitutes an offence in any part of the United Kingdom, or would constitute an offence in any part of the United Kingdom if it occurred there.",
+        "elements": [
+            "Conduct constituting an offence in any part of the United Kingdom",
+            "Conduct occurring abroad that would constitute an offence if it had occurred in the United Kingdom"
+        ],
+        "notes": "This subsection establishes the dual criminality principle for money laundering offences under Part 7, ensuring that extraterritorial conduct can generate 'criminal property' if it would be illegal in the UK.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "This is a well-established statutory definition in POCA 2002 Section 340, which serves as the interpretation section for all Part 7 money laundering offences."
+    },
+    "s340(5)": {
+        "title": "Definition of Benefiting from Conduct",
+        "full": "Section 340(5) of the Proceeds of Crime Act 2002 provides that a person benefits from conduct if he obtains property as a result of or in connection with the conduct. This is a key component in determining whether property constitutes a benefit from criminal conduct.",
+        "elements": [
+            "A person obtaining property",
+            "The property is obtained as a result of or in connection with the conduct"
+        ],
+        "notes": "This subsection defines the act of 'benefiting' which is a prerequisite for property to be classified as 'criminal property' under section 340(3).",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly references section 340(5) in relation to whether the proceeds of cheating the Revenue can amount to 'criminal property', and the statutory text of s340(5) is precisely recalled."
+    },
+    "s340(6)": {
+        "title": "Definition of Benefit",
+        "full": "Section 340(6) of the Proceeds of Crime Act 2002 states that if a person benefits from conduct, his benefit is the property obtained as a result of or in connection with the conduct. This subsection quantifies and identifies the 'benefit' itself as the specific property obtained.",
+        "elements": [
+            "A person benefiting from conduct",
+            "The benefit is identified as the property obtained as a result of or in connection with that conduct"
+        ],
+        "notes": "This works in tandem with section 340(5) to define the exact property that constitutes the 'benefit' for the purposes of identifying criminal property.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "This is the exact statutory definition of 'benefit' under the interpretation provisions of Section 340 of POCA 2002."
+    },
+    "s328(1)": {
+        "title": "Arrangements Offence",
+        "full": "Section 328(1) of the Proceeds of Crime Act 2002 makes it an offence to enter into or become concerned in an arrangement which a person knows or suspects facilitates (by whatever means) the acquisition, retention, use or control of criminal property by or on behalf of another person.",
+        "elements": [
+            "Entering into or becoming concerned in an arrangement",
+            "The arrangement facilitates the acquisition, retention, use, or control of criminal property",
+            "The facilitation is by or on behalf of another person",
+            "The defendant knows or suspects that the property is criminal property"
+        ],
+        "notes": "This is one of the three principal money laundering offences in the UK. It carries a maximum penalty of 14 years' imprisonment on indictment. The mental element requires subjective knowledge or suspicion.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly references counts under section 328(1) of POCA and details the particulars of the offence, which matches the precise statutory wording of the arrangements offence."
+    },
+    "s64": {
+        "title": "Appeal to the Supreme Court",
+        "full": "Section 64 of the Proceeds of Crime Act 2002 provides the statutory framework for appeals to the Supreme Court from decisions of the Court of Appeal under sections 62 or 63. It defines the parties who have standing to appeal, including the defendant, the prosecutor, and the Director of Public Prosecutions, and sets out the strict leave requirements, including the certification of a point of law of general public importance.",
+        "elements": [
+            "Appeals lie to the Supreme Court from Court of Appeal decisions under section 62 or 63.",
+            "Standing is granted to the defendant, the prosecutor, or the Director (if a party to the Court of Appeal proceedings).",
+            "An appeal requires leave from either the Court of Appeal or the Supreme Court.",
+            "Leave is conditional on the Court of Appeal certifying that a point of law of general public importance is involved."
+        ],
+        "notes": "Note that the provided judgment snippet actually references Section 64 of the Magistrates' Courts Act 1980, which governs costs in civil proceedings in the Magistrates' Court (such as POCA cash forfeiture proceedings under Part 5, Chapter 3), rather than Section 64 of POCA 2002 itself. Under s64 of the Magistrates' Courts Act 1980, as interpreted in R (Perinpanathan) v City of Westminster Magistrates' Court [2010] EWCA Civ 40, a public authority acting reasonably in the public interest should not normally be ordered to pay costs unless there is a good reason.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "I have clearly distinguished between Section 64 of POCA 2002 (which governs Supreme Court appeals in Part 2 confiscation proceedings) and Section 64 of the Magistrates' Courts Act 1980 (which is the provision actually referred to in the provided judgment snippet regarding costs in magistrates' court cash forfeiture proceedings)."
+    },
+    "s6(5)": {
+        "title": "Making of confiscation order: duty to make order",
+        "full": "Section 6(5) of POCA 2002 mandates that if the court decides under section 6(4) that the defendant has benefited from the conduct concerned, it must decide the recoverable amount and make a confiscation order requiring the payment of that amount. This duty is subject to certain exceptions, such as where the victim has started civil proceedings.",
+        "elements": [
+            "Court decides defendant has benefited from general or particular criminal conduct",
+            "Court must decide the recoverable amount",
+            "Court must make a confiscation order for that amount"
+        ],
+        "notes": "This is a mandatory duty ('must') once benefit is established, unless specific statutory exceptions apply.",
+        "part_chapter": "Part 2, Chapter 1 \u2014 Confiscation orders: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "Well-established provision in Part 2 of POCA 2002 regarding the mandatory nature of confiscation orders once benefit is determined."
+    },
+    "s76(4)": {
+        "title": "Conduct and benefit: definition of benefit",
+        "full": "Section 76(4) of POCA 2002 provides that a person benefits from conduct if they obtain property as a result of or in connection with that conduct. This is a foundational definition used to calculate the benefit figure in confiscation proceedings.",
+        "elements": [
+            "Obtaining property",
+            "As a result of or in connection with conduct"
+        ],
+        "notes": "The concept of 'obtaining' property is key and has been heavily litigated (e.g., in cases like R v Jennings regarding whether a person must personally acquire the property).",
+        "part_chapter": "Part 2, Chapter 1 \u2014 Confiscation orders: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "The exact text is quoted in the provided judgment snippet ('A person benefits from conduct if he obtains property as a result of or in connection with the conduct')."
+    },
+    "s84": {
+        "title": "Property: general interpretation provisions",
+        "full": "Section 84 of POCA 2002 defines 'property' for the purposes of Part 2, specifying that it includes all property wherever situated, whether real, personal, intangible, or incorporeal, including money and things in action. It also sets out rules for when property is 'held' or 'obtained' by a person.",
+        "elements": [
+            "Definition of property (money, real/personal, things in action, intangible/incorporeal)",
+            "Rules on when property is held (holding an interest)",
+            "Rules on when property is obtained (obtaining an interest)"
+        ],
+        "notes": "This section ensures that the confiscation regime has the widest possible reach over assets globally and in any legal form.",
+        "part_chapter": "Part 2, Chapter 1 \u2014 Confiscation orders: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "The snippet provides the exact text of s84(1) and outlines s84(2), which is a standard, well-known definition in POCA."
+    },
+    "s340(4)": {
+        "title": "Interpretation of Part 7: immateriality of conduct details",
+        "full": "Section 340(4) of POCA 2002 states that for the purposes of defining 'criminal property', it is immaterial who carried out the criminal conduct, who benefited from it, or whether the conduct occurred before or after the passing of the Act. This ensures that money laundering offences can be prosecuted regardless of who committed the predicate offence.",
+        "elements": [
+            "Immaterial who carried out the conduct",
+            "Immaterial who benefited from the conduct",
+            "Immaterial whether conduct occurred before or after the passing of the Act"
+        ],
+        "notes": "This is a crucial provision for money laundering prosecutions, as the prosecution does not need to prove the identity of the person who committed the predicate offence.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "Well-established interpretation provision in Part 7 of POCA 2002, which is standard in UK money laundering law."
+    },
+    "s71(4)": {
+        "title": "Restraint orders: discharge and variation (or historical benefit definition)",
+        "full": "In POCA 2002, Section 71 deals with the discharge and variation of restraint orders, with subsection (4) specifying who may appeal or apply for variation. However, in the context of the provided judgment snippet, 'section 71(4)' is cited as a historical provision of the Drug Trafficking Act 1994 (or Drug Trafficking Offences Act 1986) which was 'to the same effect as section 76(4) POCA 2002' regarding benefit.",
+        "elements": [
+            "POCA s71(4): Restraint order discharge/variation procedures",
+            "Historical context: Drug Trafficking Act s71(4) defined benefit similarly to POCA s76(4)"
+        ],
+        "notes": "Care must be taken not to confuse POCA 2002 s71(4) (which relates to restraint orders) with the historical Drug Trafficking Act 1994 s71(4) (which defined benefit from drug trafficking). The judgment snippet uses the latter to draw an analogy to POCA s76(4).",
+        "part_chapter": "Part 2, Chapter 1 \u2014 Confiscation orders: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly notes that 'section 71(4) (of the Drugs Trafficking Offences Act [to the same effect as section 76(4)] POCA 2002]' is being discussed, allowing us to clarify the distinction between POCA's actual s71(4) and the historical drug trafficking provision."
+    },
+    "s340(1)": {
+        "title": "Interpretation of Part 7: scope of application",
+        "full": "Section 340(1) of POCA 2002 states that the interpretation provisions set out in Section 340 apply for the purposes of Part 7 of the Act (which covers money laundering offences). This establishes the statutory scope for definitions like 'criminal conduct' and 'criminal property'.",
+        "elements": [
+            "Applies for the purposes of Part 7"
+        ],
+        "notes": "This subsection limits the definitions in section 340 to Part 7, although similar definitions may appear elsewhere in the Act for other parts.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The snippet explicitly states: 'The interpretation section at the end of Part 7 is section 340, which \"applies for the purposes of this Part\" (section 340(1)).'"
+    },
+    "s6(4)": {
+        "title": "Making of confiscation order: court's duty to decide lifestyle and benefit",
+        "full": "Section 6(4) of POCA 2002 requires the court to decide whether the defendant has a criminal lifestyle. If it decides the defendant has a criminal lifestyle, it must decide whether they have benefited from their general criminal conduct; if not, it must decide whether they have benefited from their particular criminal conduct.",
+        "elements": [
+            "Decide whether defendant has a criminal lifestyle",
+            "If yes, decide if they benefited from general criminal conduct",
+            "If no, decide if they benefited from particular criminal conduct"
+        ],
+        "notes": "This is the gateway provision for determining which confiscation regime (general criminal conduct with assumptions, or particular criminal conduct without assumptions) applies.",
+        "part_chapter": "Part 2, Chapter 1 \u2014 Confiscation orders: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "This is a fundamental and well-known procedural step in UK confiscation law under Part 2 of POCA 2002."
+    },
+    "s76": {
+        "title": "Conduct and benefit: general definitions",
+        "full": "Section 76 of POCA 2002 provides the definitions of 'criminal conduct', 'general criminal conduct', 'particular criminal conduct', and 'benefit' for the purposes of Part 2 confiscation proceedings. It establishes the statutory framework for determining what conduct can be considered when calculating a defendant's benefit.",
+        "elements": [
+            "Definition of criminal conduct (all offences)",
+            "Definition of general criminal conduct (lifestyle cases)",
+            "Definition of particular criminal conduct (non-lifestyle cases)",
+            "Definition of benefit (obtaining property)"
+        ],
+        "notes": "Section 76 is a cornerstone of Part 2, linking the criminal conduct of the defendant to the financial benefit they obtained.",
+        "part_chapter": "Part 2, Chapter 1 \u2014 Confiscation orders: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "Well-established core provision of POCA 2002, referenced in the judgment snippet and standard legal texts."
+    },
+    "s7(1)": {
+        "title": "Recoverable amount: general rule",
+        "full": "Section 7(1) of POCA 2002 defines the 'recoverable amount' for a confiscation order as an amount equal to the defendant's benefit from the conduct concerned. This general rule is subject to subsection (2), which limits the recoverable amount to the 'available amount' if that amount is shown to be less than the benefit.",
+        "elements": [
+            "Recoverable amount is equal to the defendant's benefit from the conduct concerned",
+            "Subject to subsection (2) (available amount limit)"
+        ],
+        "notes": "This section sets the ceiling for confiscation orders, ensuring they reflect either the total benefit or the maximum available assets of the defendant.",
+        "part_chapter": "Part 2, Chapter 1 \u2014 Confiscation orders: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "Standard, fundamental provision of POCA Part 2, referenced in the judgment snippet ('the recoverable amount is the available amount unless... see section 7')."
+    },
+    "s76(5)": {
+        "title": "Conduct and benefit: value of benefit",
+        "full": "Section 76(5) of POCA 2002 states that if a person benefits from conduct, their benefit is the value of the property obtained. This subsection establishes that the measure of benefit is the value of the property at the time it was obtained, subject to subsequent valuation rules in section 79.",
+        "elements": [
+            "Benefit is the value of the property obtained"
+        ],
+        "notes": "This provision is critical for distinguishing between the physical property obtained and its monetary valuation for the purposes of the confiscation order. Note that in some versions of POCA, this definition is numbered as s76(7).",
+        "part_chapter": "Part 2, Chapter 1 \u2014 Confiscation orders: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "Well-established subsection of s76, directly following s76(4) which is quoted in the judgment snippet, and standard in POCA Part 2 jurisprudence."
+    },
+    "s10(3)": {
+        "title": "Initial stage of extradition hearing (Identity)",
+        "full": "Under section 10(3) of the Extradition Act 2003, if the appropriate judge at the initial stage of an extradition hearing decides that the person brought before the court is not the person in respect of whom the Part 1 warrant was issued, the judge must order the person's discharge. This serves as a critical safeguard against mistaken identity in fast-track extradition proceedings.",
+        "elements": [
+            "Applies during the initial stage of an extradition hearing under a Part 1 warrant.",
+            "Requires the judge to decide whether the person brought before them is the person named in the warrant.",
+            "Mandates the immediate discharge of the person if the judge decides they are not the correct individual."
+        ],
+        "notes": "Although the prompt's persona is a POCA 2002 data engineer, the provided judgment snippet explicitly identifies this section as belonging to the Extradition Act 2003 (dealing with the initial stage of an extradition hearing and identity challenges).",
+        "part_chapter": "Extradition Act 2003, Part 1 \u2014 Category 1 Territories",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly references 'sections 10 and 64 of the 2003 Act' in the context of an extradition appeal (Mr Klar), confirming that the provision in question is section 10 of the Extradition Act 2003 rather than POCA 2002."
+    },
+    "s64(3)": {
+        "title": "Extradition offences: person not sentenced for offence (Dual Criminality)",
+        "full": "Section 64(3) of the Extradition Act 2003 defines the dual criminality requirement for cases where the person has not yet been sentenced. It requires that the conduct would constitute an offence under the law of the relevant part of the United Kingdom if it occurred there, and that it is punishable under the law of the category 1 territory with imprisonment or another form of detention for a term of 12 months or a greater punishment.",
+        "elements": [
+            "Applies to persons who have not been sentenced for the offence in the requesting territory.",
+            "Requires that the conduct would constitute an offence under UK law if it occurred in the UK (dual criminality).",
+            "Requires the offence to be punishable by a maximum period of at least 12 months' imprisonment in the requesting category 1 territory."
+        ],
+        "notes": "The judgment snippet explicitly quotes s.64(3)(b) of the 2003 Act: 'the conduct would constitute an offence under the law of the relevant part of the United Kingdom if it occurred in that part of the United Kingdom'. This confirms the section is from the Extradition Act 2003.",
+        "part_chapter": "Extradition Act 2003, Part 1 \u2014 Category 1 Territories",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly quotes the dual criminality test from s.64(3)(b) of the Extradition Act 2003, allowing for precise identification and high confidence."
+    },
+    "s17(1)": {
+        "title": "Specialty",
+        "full": "Section 17(1) of the Extradition Act 2003 provides that a person's extradition to a category 1 territory is barred by reason of specialty if (and only if) the specialty arrangements with the category 1 territory do not make provision in relation to the person. Specialty is a fundamental protection preventing a requested person from being prosecuted or punished in the receiving state for offences committed before their extradition other than those for which they were extradited.",
+        "elements": [
+            "Bars extradition if specialty arrangements with the category 1 territory are not in place or do not make adequate provision.",
+            "Protects the extradited individual from being prosecuted for pre-extradition offences not specified in the warrant.",
+            "Requires the judge to decide whether extradition is barred by reason of specialty under this section."
+        ],
+        "notes": "The judgment snippet links s.17 of the 2003 Act to Article 27 of the Framework Decision, explaining that specialty prohibits a prosecution that travels beyond the scope of the allegations in the warrant.",
+        "part_chapter": "Extradition Act 2003, Part 1 \u2014 Category 1 Territories",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly references 's.17 of the 2003 Act' and links it to specialty rights and Article 27 of the Framework Decision, confirming it is Section 17 of the Extradition Act 2003."
+    },
+    "s334": {
+        "title": "Penalties",
+        "full": "Section 334 of the Proceeds of Crime Act 2002 prescribes the criminal penalties for offences committed under Part 7 of the Act. It establishes a maximum penalty of 14 years' imprisonment on indictment for the principal money laundering offences under sections 327, 328, and 329. For the failure to disclose offences under sections 330 to 332 and the tipping-off offences under section 333A, it sets a maximum penalty of 5 years' imprisonment on indictment.",
+        "elements": [
+            "Applies to offences under sections 327, 328, and 329 (principal money laundering)",
+            "Applies to offences under sections 330, 331, 332, and 333A (disclosure and tipping-off)",
+            "Sets maximum penalty for principal offences at 14 years' imprisonment and/or an unlimited fine on indictment",
+            "Sets maximum penalty for disclosure/tipping-off offences at 5 years' imprisonment and/or an unlimited fine on indictment",
+            "Provides for summary conviction penalties including imprisonment (up to 6 months, or 12 months in certain jurisdictions subject to commencement) and/or statutory maximum fines"
+        ],
+        "notes": "This section provides the statutory sentencing limits for all key money laundering offences in the UK. The lower maximum penalty for disclosure offences reflects their regulatory nature compared to the active facilitation or concealment of criminal property.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "Section 334 is the standard penalty provision for Part 7 of POCA 2002, and its structure and maximum penalties (14 years for principal offences, 5 years for disclosure offences) are highly stable and well-recalled."
+    },
+    "s357": {
+        "title": "Disclosure orders",
+        "full": "Section 357 of the Proceeds of Crime Act 2002 provides for the making of disclosure orders in the course of certain investigations, including civil recovery, confiscation, and money laundering investigations. Once granted by a judge, a disclosure order authorizes an appropriate officer to give written notice to any person requiring them to answer questions, provide information, or produce documents relevant to the investigation. This is a powerful investigative tool used to trace assets and uncover financial records, as seen in civil recovery cases.",
+        "elements": [
+            "Application by an appropriate officer (such as an NCA officer or prosecutor) to a judge.",
+            "The existence of a qualifying investigation (confiscation, civil recovery, exploitation proceeds, or money laundering).",
+            "Authorization of the officer to give written notice to any person.",
+            "Requirement for the recipient to answer questions, provide information, or produce documents.",
+            "Statutory safeguards, including restrictions on the use of compelled statements in criminal proceedings against the maker."
+        ],
+        "notes": "Failure to comply with a requirement imposed under a disclosure order without reasonable excuse is a criminal offence. Statements made under compulsion are generally inadmissible in criminal prosecutions against the maker, except in limited circumstances such as prosecution for making false or misleading statements. The Criminal Finances Act 2017 extended the availability of disclosure orders to money laundering investigations.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations (England and Wales and Northern Ireland)",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly references a disclosure order under section 357 of POCA in the context of a civil recovery investigation, which matches the statutory purpose of Part 8 of POCA 2002. The details of section 357, its requirements, and its operation are well-established in UK asset recovery law."
+    },
+    "s87": {
+        "title": "Value of tainted gifts",
+        "full": "Section 87 of the Proceeds of Crime Act 2002 defines how the value of a tainted gift is to be calculated for the purposes of confiscation proceedings in England and Wales. It provides that the value of a tainted gift is the greater of its value at the time of the gift (adjusted for inflation) or the value of the property in the hands of the recipient representing the gift at the material time.",
+        "elements": [
+            "Applies for the purpose of deciding the value of a tainted gift under Part 2 of the Act.",
+            "The value is the value of the gift at the time it was made, adjusted to take account of subsequent changes in the value of money.",
+            "Alternatively, if greater, the value is the value of the property in the hands of the recipient at the material time, representing the property received."
+        ],
+        "notes": "This section is crucial for preventing defendants from dissipating assets to family members or associates prior to confiscation. The 'greater of' rule ensures that if a gifted asset (such as property or shares) increases in value, the higher current value is used, whereas if it depreciates, the original value (adjusted for inflation) is preserved. Note that the provided judgment snippet refers to paragraph 87 of a banking law judgment (concerning the Quincecare duty) rather than Section 87 of POCA.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "Section 87 is a well-established provision in Part 2 of POCA 2002 governing the valuation of tainted gifts, and its statutory formula is a standard component of confiscation law. The provided judgment snippet is a paragraph from a banking case and does not refer to POCA."
+    },
+    "s103": {
+        "title": "Section 102: supplementary",
+        "full": "Section 103 of the Proceeds of Crime Act 2002 provides supplementary provisions for applications made under Section 102, where the court did not make a lifestyle decision during the initial confiscation proceedings in Scotland. It establishes the procedural rules, including the six-year limitation period from the date of conviction within which the prosecutor may apply for a lifestyle determination.",
+        "elements": [
+            "Applies to applications made under Section 102 of POCA 2002 (where no lifestyle decision was previously made).",
+            "Imposes a strict limitation period of six years from the date of the accused's conviction for the prosecutor to make an application.",
+            "Specifies the procedural requirements and the court's powers to obtain information and make determinations based on new or previously unconsidered evidence."
+        ],
+        "notes": "This section mirrors Section 20 of POCA (which applies to England and Wales). It ensures that the Crown Office and Procurator Fiscal Service (COPFS) in Scotland have a mechanism to revisit cases where a lifestyle determination was not initially made, subject to a strict six-year longstop to ensure legal certainty for the accused. Note that the provided judgment snippet refers to paragraph 103 of a banking law judgment (concerning APP fraud) rather than Section 103 of POCA.",
+        "part_chapter": "Part 3 \u2014 Confiscation: Scotland",
+        "confidence": "high",
+        "confidence_reasoning": "Section 103 is the Scottish equivalent of Section 20, providing the supplementary framework for Section 102 (no decision on lifestyle) under Part 3 of POCA 2002. The six-year limitation period and procedural alignment with Part 2 are well-established statutory features. The provided judgment snippet is a paragraph from a banking case and does not refer to POCA."
+    },
+    "s69": {
+        "title": "Powers of court and receiver",
+        "full": "Section 69 of the Proceeds of Crime Act 2002 sets out the general principles governing how the Crown Court, High Court, or an appointed receiver must exercise their powers under Part 2. It mandates that these powers must be exercised with a view to making the value of realisable property available to satisfy any confiscation order, while also protecting the interests of third parties and ensuring that the value of tainted gifts is appropriately accounted for.",
+        "elements": [
+            "Powers must be exercised to make realisable property available for satisfying a confiscation order",
+            "Powers must be exercised with a view to realising no more than the value of a gift if held by a recipient of a tainted gift",
+            "Powers must be exercised to allow third parties (other than the defendant or gift recipient) to retain or recover the value of their interest",
+            "No account is to be taken of any obligations of the defendant or gift recipient that conflict with the obligation to satisfy the confiscation order"
+        ],
+        "notes": "Section 69(2) is a critical provision that guides the court's discretion when granting or varying restraint orders, balancing the state's interest in asset recovery against the rights of third parties.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly references Section 69(2) and its role in guiding the exercise of restraint and variation powers under sections 41 and 42. This aligns perfectly with well-established statutory knowledge of Part 2 of POCA 2002."
+    },
+    "s40": {
+        "title": "Conditions for exercise of powers",
+        "full": "Section 40 of the Proceeds of Crime Act 2002 specifies the five statutory conditions under which the Crown Court may exercise its powers to make a restraint order. These conditions cover stages from the initiation of a criminal investigation through to the post-conviction phase, requiring reasonable cause to believe that an offence has been committed and that the suspect or defendant has benefited from their criminal conduct.",
+        "elements": [
+            "First condition: Criminal investigation started in England and Wales and reasonable cause to believe the suspect has benefited from conduct",
+            "Second condition: Proceedings started in England and Wales but not concluded, and reasonable cause to believe the defendant has benefited",
+            "Third, fourth, and fifth conditions: Applications made or to be made under sections 19, 20, 21, 27, or 28, with reasonable cause to believe the defendant benefited"
+        ],
+        "notes": "This section serves as the jurisdictional gateway for obtaining a restraint order. The first two conditions (investigation and ongoing proceedings) are the most commonly invoked in practice.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet directly confirms that Section 40 enables restraint orders to be made under five conditions, specifically highlighting the first condition involving a criminal investigation and reasonable cause to believe the suspect has benefited."
+    },
+    "s362B": {
+        "title": "Requirements for making of unexplained wealth order",
+        "full": "Section 362B of the Proceeds of Crime Act 2002 sets out the statutory requirements that must be satisfied for the High Court to make an unexplained wealth order (UWO). The court must be satisfied that there is reasonable cause to believe the respondent holds the specified property and its value is greater than \u00a350,000, and there are reasonable grounds to suspect their lawful income is insufficient to acquire it. Additionally, the respondent must be a politically exposed person (PEP) or there must be reasonable grounds to suspect involvement in serious crime.",
+        "elements": [
+            "High Court must be satisfied that the respondent holds the property.",
+            "The value of the property must be greater than \u00a350,000.",
+            "Reasonable grounds to suspect that the respondent's known sources of lawfully obtained income would have been insufficient to enable them to obtain the property.",
+            "The respondent must be a politically exposed person (PEP), or there are reasonable grounds to suspect involvement in serious crime (by the respondent or a connected person)."
+        ],
+        "notes": "Introduced by the Criminal Finances Act 2017 to target illicit finance and facilitate civil recovery investigations. The \u00a350,000 threshold was reduced from \u00a3100,000 by the Economic Crime (Transparency and Enforcement) Act 2022.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations (England and Wales and Northern Ireland)",
+        "confidence": "high",
+        "confidence_reasoning": "Well-established statutory provision introduced by the Criminal Finances Act 2017 with clear, specific requirements (the PEP/serious crime test, the income sufficiency test, and the property value threshold) which are highly distinct in Part 8 of POCA."
+    },
+    "s245B": {
+        "title": "Receivers in connection with property freezing orders",
+        "full": "Section 245B of the Proceeds of Crime Act 2002 empowers the High Court to appoint a receiver in connection with a property freezing order upon the application of an enforcement authority. The court may make such an appointment if it has made a property freezing order or is applying for one, and considers it necessary to manage or safeguard the property. The section outlines the application process and the basic role of the receiver in securing the assets pending further civil recovery proceedings.",
+        "elements": [
+            "Application by an enforcement authority (such as the NCA, CPS, etc.).",
+            "The court must have made, or be in the process of applying for, a property freezing order under section 245A.",
+            "Appointment of a receiver to manage or otherwise deal with the frozen property.",
+            "The court may make such order as it considers appropriate for the purpose of managing or safeguarding the property."
+        ],
+        "notes": "Inserted by the Serious Organised Crime and Police Act 2005 (SOCPA 2005) to provide interim management powers alongside property freezing orders, similar to interim receiving orders but less intrusive.",
+        "part_chapter": "Part 5, Chapter 2 \u2014 Civil Recovery of the Proceeds of etc. of Crime (Civil Recovery in the High Court or Court of Session)",
+        "confidence": "high",
+        "confidence_reasoning": "This section is a well-known part of the civil recovery regime introduced by SOCPA 2005 to bridge the gap between property freezing orders and full interim receivership, and its statutory function is clearly defined under Part 5, Chapter 2."
+    },
+    "s8": {
+        "title": "Defendant's benefit",
+        "full": "Section 8 of the Proceeds of Crime Act 2002 directs the court on how to determine whether a defendant has benefited from criminal conduct for the purposes of a confiscation order. If the court decides the defendant has a criminal lifestyle, it must determine whether they benefited from their general criminal conduct; if not, it must determine whether they benefited from their particular criminal conduct.",
+        "elements": [
+            "Applies when the court is making decisions under section 6 of the Act.",
+            "Requires determination of benefit from general criminal conduct if the defendant has a criminal lifestyle under section 6(4)(b).",
+            "Requires determination of benefit from particular criminal conduct if the defendant does not have a criminal lifestyle under section 6(4)(c)."
+        ],
+        "notes": "The provided text snippet is from a commercial contract dispute involving RBS and RBS Sempra and does not relate to the Proceeds of Crime Act 2002. Under POCA 2002, Section 8 is a key procedural step in Part 2 confiscation proceedings, linking the lifestyle decision to the assessment of the benefit figure.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "The provided snippet is an unrelated commercial contract text, but Section 8 of POCA 2002 is a well-established statutory provision within Part 2 (Confiscation: England and Wales) regarding the determination of the defendant's benefit, which is accurately detailed here."
+    },
+    "s444": {
+        "title": "External requests and orders",
+        "full": "Section 444 of the Proceeds of Crime Act 2002 empowers Her Majesty, by Order in Council, to make provision for the purpose of giving effect in the United Kingdom to external requests and external orders. This section provides the statutory basis for international asset recovery co-operation, enabling the domestication and enforcement of foreign forfeiture and confiscation orders through specific secondary legislation, such as the Proceeds of Crime Act 2002 (External Requests and Orders) Order 2005.",
+        "elements": [
+            "Empowers the creation of Orders in Council to give effect to external requests and external orders.",
+            "Defines the scope to include external requests (foreign requests to prohibit dealing with property) and external orders (foreign court orders for the recovery of property or a sum of money).",
+            "Allows the Order in Council to apply, with or without modifications, any provision of POCA (such as confiscation, civil recovery, or investigation powers) to these external matters.",
+            "Provides the mechanism for domesticating foreign penal and forfeiture orders which would otherwise be unenforceable under English private international law."
+        ],
+        "notes": "This section is the cornerstone of international asset recovery in the UK. Under this section, the Proceeds of Crime Act 2002 (External Requests and Orders) Order 2005 (SI 2005/3181) was made, which exhaustively governs how foreign orders are domesticated. As noted in the judgment, foreign authorities cannot apply directly to the High Court; instead, the process must go through designated UK authorities like the NCA.",
+        "part_chapter": "Part 11 \u2014 Co-operation",
+        "confidence": "high",
+        "confidence_reasoning": "The section is clearly identified in the judgment snippet as the statutory basis for the 2005 Order (Proceeds of Crime Act 2002 (External Requests and Orders) Order 2005) which governs the domestication of foreign penal/forfeiture orders. This matches well-established knowledge of Part 11 of POCA 2002 (Co-operation) and section 444 specifically."
+    },
+    "s335(5)": {
+        "title": "Appropriate Consent - Moratorium Period Definition",
+        "full": "Section 335(5) defines the moratorium period as the period of 31 days starting with the day on which the person receives notice that consent to the doing of the act is refused. During this period, the person must not carry out the prohibited act unless consent is subsequently granted or the period expires.",
+        "elements": [
+            "Defines the moratorium period",
+            "Duration of 31 days",
+            "Starts on the day notice of refusal is received",
+            "Prevents the prohibited act during this timeframe"
+        ],
+        "notes": "The moratorium period allows law enforcement to take action (such as obtaining a restraint order) before the transaction can proceed. If the period expires without a restraint order or further intervention, the person is deemed to have appropriate consent.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The section is a well-established part of the consent regime under Part 7 of POCA 2002, and the judgment snippet references the appropriate consent mechanism under section 335."
+    },
+    "s342(5)": {
+        "title": "Offences of Prejudicing Investigation - Criminal Purpose Exception",
+        "full": "Section 342(5) provides that a disclosure does not fall within the professional legal adviser exception (under subsection (4)) if it is made with the intention of furthering a criminal purpose. This ensures that legal professional privilege cannot be used to shield disclosures made to advance criminal activity.",
+        "elements": [
+            "Applies to disclosures by professional legal advisers",
+            "Excludes disclosures made with intent to further a criminal purpose",
+            "Negates the protection of subsection (4)"
+        ],
+        "notes": "This is the statutory expression of the common law 'crime-fraud exception' to legal professional privilege. If a lawyer advises a client with the intention of helping them commit a crime, the privilege is lost and an offence under section 342 may be committed.",
+        "part_chapter": "Part 8 \u2014 Investigations",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly quotes this provision (though mislabeled as (4) in the snippet's text, the actual statute has this as subsection (5) or equivalent depending on the version, but it clearly refers to the criminal purpose exception to the legal adviser defence under s342)."
+    },
+    "s342(1)": {
+        "title": "Offences of Prejudicing Investigation - Application",
+        "full": "Section 342(1) establishes the scope of the offence of prejudicing an investigation. It applies if a person knows or suspects that an appropriate officer (or, in Scotland, a proper person) is acting or proposing to act in connection with a confiscation, civil recovery, detained cash, or money laundering investigation.",
+        "elements": [
+            "Requires knowledge or suspicion",
+            "Applies to actions by an appropriate officer or proper person",
+            "Covers confiscation, civil recovery, detained cash, or money laundering investigations"
+        ],
+        "notes": "This subsection sets the threshold of knowledge or suspicion required before the offence of prejudicing an investigation under subsection (2) can be committed.",
+        "part_chapter": "Part 8 \u2014 Investigations",
+        "confidence": "high",
+        "confidence_reasoning": "This is a core provision of Part 8 of POCA 2002, explicitly quoted and referenced in the judgment snippet."
+    },
+    "s335(3)": {
+        "title": "Appropriate Consent - Expiry of Moratorium Period",
+        "full": "Section 335(3) provides that if a person makes an authorised disclosure and receives notice that consent is refused before the end of the notice period, they obtain appropriate consent if the moratorium period expires without further restriction. This allows transactions to proceed if law enforcement fails to obtain a restraint order within the 31-day window.",
+        "elements": [
+            "Applies when consent is refused during the notice period",
+            "Grants appropriate consent upon expiry of the moratorium period",
+            "Requires no other legal barriers to have been put in place"
+        ],
+        "notes": "This creates a strict timetable for law enforcement to act. If they refuse consent, they have 31 days to obtain a restraint order; otherwise, the reporter can proceed without committing a money laundering offence.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "This is a fundamental part of the consent regime under Part 7 of POCA 2002, referenced in the judgment context."
+    },
+    "s328(2)": {
+        "title": "Arrangements - Exceptions and Defences",
+        "full": "Section 328(2) provides exceptions to the offence of entering into or becoming concerned in an arrangement that facilitates the acquisition, retention, use, or control of criminal property. A person does not commit the offence if they make an authorised disclosure and have appropriate consent, intend to make such a disclosure but have a reasonable excuse, or act in carrying out law enforcement functions.",
+        "elements": [
+            "Exempts those who make an authorised disclosure with appropriate consent",
+            "Exempts those with a reasonable excuse for not disclosing",
+            "Exempts law enforcement officers carrying out their duties"
+        ],
+        "notes": "This subsection is crucial for legal professionals and financial institutions, as it provides the legal mechanism (authorised disclosure/consent) to avoid liability when dealing with suspected criminal property.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly discusses the concern of the wife's legal team regarding committing an offence under section 328 and the need for appropriate consent."
+    },
+    "s342(2)": {
+        "title": "Offences of Prejudicing Investigation - Prohibited Acts",
+        "full": "Section 342(2) defines the prohibited acts that constitute the offence of prejudicing an investigation. It is an offence to make a disclosure likely to prejudice the investigation, or to falsify, conceal, destroy, or otherwise dispose of documents relevant to the investigation.",
+        "elements": [
+            "Making a disclosure likely to prejudice the investigation",
+            "Falsifying, concealing, destroying, or disposing of relevant documents",
+            "Causing or permitting such actions on documents"
+        ],
+        "notes": "This is a serious criminal offence with penalties including imprisonment. It acts as a safeguard to protect the integrity of law enforcement investigations under Part 8.",
+        "part_chapter": "Part 8 \u2014 Investigations",
+        "confidence": "high",
+        "confidence_reasoning": "This is a core offence provision in Part 8 of POCA 2002, referenced in the judgment snippet."
+    },
+    "s339": {
+        "title": "Form and Manner of Disclosures",
+        "full": "Section 339 governs the form and manner in which authorised or protected disclosures must be made. It empowers the Secretary of State to prescribe specific forms and procedures that must be followed for a disclosure to be valid under Part 7.",
+        "elements": [
+            "Empowers the Secretary of State to prescribe form and manner",
+            "Applies to disclosures under sections 337 and 338",
+            "Enables standardized reporting procedures"
+        ],
+        "notes": "The judgment notes that at the time of the decision, the Secretary of State had not yet provided regulations under this section, though standard forms (such as those used by NCIS/NCA) are now standard practice.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The section is explicitly mentioned in the judgment snippet in relation to the requirements of Part 7 and the role of the Secretary of State."
+    },
+    "s335(4)": {
+        "title": "Appropriate Consent - Notice Period Definition",
+        "full": "Section 335(4) defines the notice period as the period of 7 working days starting with the first working day after the person makes the disclosure. During this period, the person must not proceed with the transaction unless they receive consent.",
+        "elements": [
+            "Defines the notice period",
+            "Duration of 7 working days",
+            "Starts on the first working day after disclosure is made",
+            "Prohibits the transaction during this period unless consent is given"
+        ],
+        "notes": "If no response is received from the authorities within these 7 working days, the reporter is deemed to have appropriate consent and can proceed with the transaction.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "This is a well-known statutory definition within the POCA consent regime, referenced in the judgment context."
+    },
+    "s333(3)": {
+        "title": "Tipping Off - Exceptions",
+        "full": "Section 333(3) provides exceptions to the tipping off offence. A person does not commit an offence if they did not know or suspect that the disclosure was likely to be prejudicial, if the disclosure is made in carrying out law enforcement functions, or if they are a professional legal adviser and the disclosure falls within the legal advice exception.",
+        "elements": [
+            "Exempts lack of knowledge/suspicion of prejudice",
+            "Exempts law enforcement functions",
+            "Exempts professional legal advisers under specific conditions"
+        ],
+        "notes": "This subsection protects innocent disclosures and legitimate legal advice from being criminalized under the tipping off provisions.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "This is a key defence provision of the original tipping off offence in POCA 2002, referenced in the judgment snippet."
+    },
+    "s333(1)": {
+        "title": "Tipping Off - Offence of Disclosing SAR",
+        "full": "Section 333(1) makes it an offence to disclose that an authorised or protected disclosure (under section 337 or 338) has been made, if that disclosure is likely to prejudice any investigation that might be conducted as a result. This is commonly known as the 'tipping off' offence.",
+        "elements": [
+            "Knowledge or suspicion that a disclosure has been made",
+            "Making a disclosure to another person",
+            "The disclosure is likely to prejudice an ensuing investigation"
+        ],
+        "notes": "This offence is designed to prevent suspects from being alerted that they are under investigation. It is particularly relevant to banks, solicitors, and other regulated professionals.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly quotes section 333(1) and discusses its application to informing a client about a disclosure to NCIS."
+    },
+    "s342(3)": {
+        "title": "Offences of Prejudicing Investigation - Exceptions",
+        "full": "Section 342(3) provides exceptions to the offence of making a prejudicial disclosure. A person does not commit an offence if they did not know or suspect the disclosure would prejudice the investigation, if the disclosure is made in the exercise of statutory functions, or if they are a professional legal adviser making a disclosure that falls within subsection (4).",
+        "elements": [
+            "Exempts lack of knowledge/suspicion of prejudice",
+            "Exempts disclosures made in the exercise of statutory functions",
+            "Exempts professional legal advisers under subsection (4)"
+        ],
+        "notes": "This subsection balances the need to protect investigations with the protection of legitimate legal advice and public duties.",
+        "part_chapter": "Part 8 \u2014 Investigations",
+        "confidence": "high",
+        "confidence_reasoning": "This is a core exception provision in Part 8 of POCA 2002, referenced in the judgment snippet."
+    },
+    "s333(2)": {
+        "title": "Tipping Off - Offence of Disclosing Investigation",
+        "full": "Section 333(2) makes it an offence to disclose that an investigation into whether a money laundering offence has been committed is being contemplated or carried out, if that disclosure is likely to prejudice the investigation.",
+        "elements": [
+            "Knowledge or suspicion of a contemplated or ongoing money laundering investigation",
+            "Making a disclosure to another person",
+            "The disclosure is likely to prejudice that investigation"
+        ],
+        "notes": "While subsection (1) deals with disclosing that a SAR has been made, subsection (2) deals with disclosing the existence of the money laundering investigation itself.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "This is a core part of the tipping off offence structure under Part 7 of POCA 2002, referenced in the judgment context."
+    },
+    "s333(4)": {
+        "title": "Tipping Off - Legal Adviser Exception",
+        "full": "Section 333(4) defines the scope of the professional legal adviser exception for tipping off. A disclosure falls within this exception if it is made to a client (or their representative) in connection with giving legal advice, or to any person in connection with legal proceedings or contemplated legal proceedings.",
+        "elements": [
+            "Applies to professional legal advisers",
+            "Covers disclosures to clients for the purpose of giving legal advice",
+            "Covers disclosures in connection with legal proceedings"
+        ],
+        "notes": "This exception is vital for enabling lawyers to advise clients and conduct litigation without committing a tipping off offence, provided they do not intend to further a criminal purpose.",
+        "part_chapter": "Part 7 \u2014 Money Laundering",
+        "confidence": "high",
+        "confidence_reasoning": "This is a key exception provision of the original tipping off offence in POCA 2002, referenced in the judgment snippet."
+    },
+    "Part 5": {
+        "title": "Civil Recovery of the Proceeds of Unlawful Conduct",
+        "full": "Part 5 of the Proceeds of Crime Act 2002 enables the enforcement authorities to recover, in civil proceedings before the High Court or Court of Session, property which is obtained through unlawful conduct. These proceedings are civil in nature, decided on the civil standard of proof, and do not require a criminal conviction. The Part also contains provisions for the summary forfeiture of cash, assets in bank accounts, and certain listed assets held in connection with unlawful conduct.",
+        "elements": [
+            "Civil recovery of property obtained through unlawful conduct (Chapter 2)",
+            "Forfeiture of cash held in summary proceedings (Chapter 3)",
+            "Forfeiture of certain personal property (Chapter 3A)",
+            "Forfeiture of money held in bank and building society accounts (Chapter 3B)",
+            "Property freezing orders, interim receiving orders, and administrative forfeiture mechanisms"
+        ],
+        "notes": "Proceedings under Part 5 are brought against the property itself (in rem) rather than the person (in personam). The standard of proof is the balance of probabilities, as established in s241 and s242. It represents a powerful non-conviction-based asset recovery tool.",
+        "part_chapter": "Part 5 \u2014 Civil Recovery of the Proceeds of Unlawful Conduct",
+        "confidence": "high",
+        "confidence_reasoning": "Part 5 is one of the core pillars of POCA 2002, widely cited in case law and statutory guidance, and its structure (including Chapters 2, 3, 3A, and 3B) is highly standardized and well-recalled."
+    },
+    "s104": {
+        "title": "Winding up",
+        "full": "Section 104 of the Proceeds of Crime Act 2002 governs the relationship between confiscation or restraint proceedings and corporate insolvency. It provides that where an order for winding up is made or a voluntary winding-up resolution is passed, property subject to a restraint order or realisable property is excluded from the company's assets for winding-up purposes, preventing conflict between liquidators and enforcement authorities.",
+        "elements": [
+            "Triggered by a winding-up order or a resolution for voluntary winding up",
+            "Excludes certain realisable or restrained property from the company's assets available for distribution",
+            "Restricts the powers of liquidators over property subject to restraint or confiscation",
+            "Ensures priority of confiscation enforcement over general corporate liquidation procedures"
+        ],
+        "notes": "This section is crucial for insolvency practitioners and prosecutors, as it prevents companies from using voluntary or compulsory liquidation to defeat restraint or confiscation orders. No surrounding text was provided in the judgment, but this is a standard provision of POCA 2002 Part 2.",
+        "part_chapter": "Proceeds of Crime Act 2002, Part 2, Chapter 4 \u2014 Insolvency etc.",
+        "confidence": "high",
+        "confidence_reasoning": "Although no snippet was provided, s104 of POCA 2002 is a well-established provision in Chapter 4 of Part 2 dealing with the interaction of confiscation and winding up."
+    },
+    "s790C": {
+        "title": "Key terms: 'registrable person' and 'registrable relevant legal entity'",
+        "full": "Section 790C of the Companies Act 2006 defines the core concepts of the People with Significant Control (PSC) regime. It sets out the definitions for an 'individual with significant control', a 'relevant legal entity' (RLE), and determines when such persons or entities are 'registrable' in relation to a company.",
+        "elements": [
+            "Defines 'individual with significant control' (PSC) based on shareholding, voting rights, or control",
+            "Defines 'relevant legal entity' (RLE) as a legal entity that would be a PSC if it were an individual",
+            "Establishes the criteria for when a PSC or RLE is 'registrable' on the company's register",
+            "Provides the statutory foundation for identifying beneficial ownership chains"
+        ],
+        "notes": "The judgment snippet confirms that s790C defines 'registrable person' and 'registrable relevant legal entity' for the purposes of service of process under section 1140 of the Companies Act 2006.",
+        "part_chapter": "Companies Act 2006, Part 21A, Chapter 2 \u2014 Register of People with Significant Control",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly references s790C in the context of defining a registrable person or RLE under the Companies Act 2006, which matches our precise knowledge of Part 21A."
+    },
+    "s790K(1)": {
+        "title": "Duty to notify registrar of individual's particulars",
+        "full": "Section 790K(1) of the Companies Act 2006 requires a company to give notice to the registrar of the particulars of an individual who is a registrable person (PSC) once those particulars have been confirmed. This includes providing a service address for the individual as part of the required statutory information.",
+        "elements": [
+            "Imposes a duty on the company to notify the registrar of PSC particulars",
+            "Requires the provision of a service address under subsection (1)(b)",
+            "Applies once the required particulars of the registrable person have been confirmed",
+            "Ensures the public register contains up-to-date contact information for PSCs"
+        ],
+        "notes": "The judgment snippet highlights that s790K(1)(b) requires a PSC to provide a service address, which can be used in conjunction with section 1142 to satisfy service obligations under the Companies Act.",
+        "part_chapter": "Companies Act 2006, Part 21A, Chapter 3 \u2014 Register of People with Significant Control",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly references s790K(1)(b) as requiring a PSC to provide a service address, which aligns perfectly with the Companies Act 2006 PSC notification requirements."
+    },
+    "s41(6)": {
+        "title": "Domicile of individuals (Presumption of substantial connection)",
+        "full": "Section 41(6) of the Civil Jurisdiction and Judgments Act 1982 creates a rebuttable presumption that an individual has a 'substantial connection' to the UK (or a specific part of it) if they have been resident there for the last three months or more. This presumption is used to satisfy the second limb of the domicile test under section 41.",
+        "elements": [
+            "Applies to individuals resident in the UK or a specific part of the UK",
+            "Requires residence for a period of three months or more",
+            "Presumes the 'substantial connection' requirement of subsection (2)(b) or (3)(b) is met",
+            "Allows the presumption to be rebutted if the contrary is proved"
+        ],
+        "notes": "Although the prompt mentions POCA 2002, the judgment snippet explicitly identifies this section as Section 41 of the Civil Jurisdiction and Judgments Act 1982, which defines domicile for jurisdictional purposes (e.g., CPR PD6B). Note that POCA 2002 also has a section 41(6) which deals with exceptions to restraint orders (e.g., reasonable living/legal expenses), but the snippet clearly points to the CJJA 1982 provision.",
+        "part_chapter": "Civil Jurisdiction and Judgments Act 1982, Part V \u2014 Miscellaneous and General",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly references Section 41 of the Civil Jurisdiction and Judgments Act 1982 in the context of determining domicile and substantial connection, and s41(6) is the well-known subsection establishing the 3-month residency presumption for substantial connection."
+    },
+    "s71": {
+        "title": "Sentencing by Crown Court",
+        "full": "Section 71 of the Proceeds of Crime Act 2002 applies when a defendant is committed by a magistrates' court to the Crown Court under section 70 with a view to a confiscation order being considered. It empowers the Crown Court to enquire into the circumstances of the case and deal with the defendant (including sentencing) as if they had just been convicted of the offence before the Crown Court. If the Crown Court decides not to make a confiscation order in such a case, it must state its reasons for not doing so.",
+        "elements": [
+            "Applies to defendants committed to the Crown Court under section 70 of POCA 2002.",
+            "Grants the Crown Court the power to enquire into the circumstances of the case.",
+            "Empowers the Crown Court to sentence or otherwise deal with the defendant as if convicted before the Crown Court.",
+            "Requires the Crown Court to state its reasons if it decides not to make a confiscation order."
+        ],
+        "notes": "This section ensures that when a magistrates' court commits an offender to the Crown Court because confiscation is being considered, the Crown Court has full sentencing powers alongside its confiscation powers. The requirement to state reasons for not making an order ensures judicial accountability in asset recovery proceedings.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "Section 71 of POCA 2002 is well-established as 'Sentencing by Crown Court' within Part 2 (Confiscation: England and Wales), following Section 70 (Committal by magistrates' court). Although the provided judgment snippet actually refers to paragraph 71 of a judgment rather than the statute, the statutory provision itself is clearly identified and recalled with high precision."
+    },
+    "s341": {
+        "title": "Investigations",
+        "full": "Section 341 defines the various types of investigations for the purposes of Part 8 of the Act, including confiscation, civil recovery, detained cash, detained property, frozen funds, and money laundering investigations. It sets out the statutory criteria for when each type of investigation is active, establishing the legal gateway for using the investigative powers in Part 8.",
+        "elements": [
+            "Defines confiscation investigation",
+            "Defines civil recovery investigation",
+            "Defines money laundering investigation",
+            "Establishes the scope of Part 8 investigative powers"
+        ],
+        "notes": "This is a crucial gateway section that determines which investigative powers (such as disclosure orders, search warrants, or unexplained wealth orders) can be lawfully applied to a given case.",
+        "part_chapter": "Part 8, Chapter 1 \u2014 Investigations: Introduction",
+        "confidence": "high",
+        "confidence_reasoning": "Well-established gateway provision of Part 8 POCA, clearly referenced in the judgment snippet as supporting a civil recovery investigation."
+    },
+    "s358": {
+        "title": "Requirements for making of disclosure order",
+        "full": "Section 358 sets out the substantive requirements that must be satisfied before a judge can make a disclosure order in respect of a civil recovery, detained cash, detained property, frozen funds, or exploitation proceeds investigation. These include reasonable grounds for suspecting that the person holds recoverable property or has benefited from criminal conduct, and that the information sought is of substantial value and in the public interest.",
+        "elements": [
+            "Reasonable grounds for suspecting target holds recoverable property or has benefited from conduct",
+            "Information likely to be of substantial value to the investigation",
+            "Public interest requirement"
+        ],
+        "notes": "High threshold of proof required; must satisfy both the 'substantial value' and 'public interest' tests.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations: England and Wales and Northern Ireland",
+        "confidence": "high",
+        "confidence_reasoning": "Confirmed by the judgment snippet and standard POCA Part 8 statutory text."
+    },
+    "s358(4)": {
+        "title": "Requirements for making of disclosure order (Public Interest)",
+        "full": "Section 358(4) specifies the public interest requirement for making a disclosure order. It mandates that there must be reasonable grounds for believing that it is in the public interest for the information to be provided, having regard to the benefit likely to accrue to the investigation and the circumstances under which the person holds the information.",
+        "elements": [
+            "Reasonable grounds for believing disclosure is in the public interest",
+            "Consideration of benefit to the investigation",
+            "Consideration of the circumstances of the information holder"
+        ],
+        "notes": "This is a critical safeguard ensuring that disclosure orders, which are highly intrusive, are proportionate and justified in the public interest.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations: England and Wales and Northern Ireland",
+        "confidence": "high",
+        "confidence_reasoning": "Standard statutory text of POCA s358(4) is well-known and fits perfectly with the context of the substantive requirements for a disclosure order."
+    },
+    "s362(1)": {
+        "title": "Discharge or variation of disclosure order (Application)",
+        "full": "Section 362(1) provides the procedural mechanism for applying to discharge or vary a disclosure order. It specifies that an application to discharge or vary a disclosure order may be made to the court by the person who applied for the order or any person affected by the order.",
+        "elements": [
+            "Application to discharge or vary",
+            "Can be made by the applicant (e.g., NCA)",
+            "Can be made by any person affected by the order"
+        ],
+        "notes": "This provides the statutory standing for third parties or respondents to challenge a disclosure order, often on grounds of material non-disclosure or lack of jurisdiction.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations: England and Wales and Northern Ireland",
+        "confidence": "high",
+        "confidence_reasoning": "Standard procedural provision for variation/discharge of Part 8 orders, consistent with the surrounding statutory framework and the judgment context."
+    },
+    "s362(4)": {
+        "title": "Discharge or variation of disclosure order (Court's Power)",
+        "full": "Section 362(4) confers discretion on the court to either discharge or vary a disclosure order upon an application made under the section. This allows the court to set aside an order entirely or modify its terms if the statutory requirements are no longer met or if there has been a procedural failure.",
+        "elements": [
+            "Court's discretionary power",
+            "Power to discharge the order",
+            "Power to vary the order"
+        ],
+        "notes": "The judgment snippet explicitly mentions the respondents arguing that the court should use the discretion conferred by section 362(4)(a) to discharge the order.",
+        "part_chapter": "Part 8, Chapter 2 \u2014 Investigations: England and Wales and Northern Ireland",
+        "confidence": "high",
+        "confidence_reasoning": "Directly supported by the judgment snippet which references s362(4)(a) as the source of the court's discretion to discharge a disclosure order."
+    },
+    "s89": {
+        "title": "Compensation",
+        "full": "Section 89 of the Proceeds of Crime Act 2002 provides a statutory mechanism for individuals to seek compensation if a criminal investigation is started but no proceedings are brought, or if proceedings are brought but do not result in a conviction (or are quashed or pardoned). Compensation is only payable if there has been a serious default by the relevant investigating or prosecuting authority and the applicant has suffered loss as a consequence of an action taken in relation to the proceedings or an associated restraint order.",
+        "elements": [
+            "An investigation is started but no proceedings are brought, or proceedings are brought but do not result in conviction (or the conviction is quashed or pardoned).",
+            "There has been a serious default on the part of a person concerned in the investigation or prosecution.",
+            "The applicant has suffered loss in consequence of anything done in relation to the investigation, proceedings, or a restraint order.",
+            "The High Court (or Crown Court) may order the payment of such compensation as it thinks just."
+        ],
+        "notes": "The threshold for proving 'serious default' under section 89 is exceptionally high and requires showing more than mere negligence or a mistaken exercise of discretion. The judgment snippet illustrates that challenges to restraint orders and associated compensation claims under s89 are typically routed through the High Court / Administrative Court.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "Section 89 of POCA 2002 is the well-established provision for compensation following a serious default in confiscation or restraint proceedings in England and Wales, which aligns with the context of the judgment snippet discussing a claim in the Administrative Court under section 89 in relation to a restraint order."
+    },
+    "s77": {
+        "title": "Tainted gifts",
+        "full": "Section 77 of the Proceeds of Crime Act 2002 defines 'tainted gifts' for the purposes of confiscation proceedings in England and Wales. A gift is tainted if it was made by the defendant to any person within the relevant statutory period, which depends on whether the defendant is determined to have a criminal lifestyle or if the confiscation is based on particular criminal conduct.",
+        "elements": [
+            "Applies to gifts made by the defendant to any person.",
+            "If the court decides the defendant has a criminal lifestyle, any gift made by the defendant in the period of 6 years ending with the day proceedings were started is tainted.",
+            "If the court decides the defendant does not have a criminal lifestyle, a gift is tainted if it was made after the commission of the offence (or the earliest of the offences if more than one).",
+            "Includes transfers of property for a consideration significantly less than its value (undervalue transactions)."
+        ],
+        "notes": "Crucial distinction: The provided judgment snippet actually refers to 'section 77 of the Criminal Justice Act 1988' (which concerned the making of restraint orders under the older pre-POCA regime). Under POCA 2002, Section 77 instead defines 'Tainted gifts' for confiscation purposes, while restraint orders are dealt with under Section 41 of POCA 2002. This is a common point of confusion when reading older cases or transitional cases.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "I have high confidence in the statutory content of POCA 2002 s77 (Tainted gifts) and have successfully identified that the provided judgment snippet refers to a completely different statute (Criminal Justice Act 1988 s77, which dealt with restraint orders), preventing a false conflation."
+    },
+    "s61B(2)": {
+        "title": "Meaning of 'managed service company provider'",
+        "full": "Section 61B(2) of the Income Tax (Earnings and Pensions) Act 2003 defines a 'managed service company provider' as a person who carries on a business of promoting or facilitating the use of companies to provide the services of individuals. This definition is central to identifying Managed Service Companies (MSCs) and applying the relevant tax and national insurance rules to workers' earnings.",
+        "elements": [
+            "Person carrying on a business",
+            "Business involves promoting or facilitating the use of companies",
+            "Companies are used to provide the services of individuals"
+        ],
+        "notes": "This section belongs to the Income Tax (Earnings and Pensions) Act 2003 (ITEPA) rather than the Proceeds of Crime Act 2002 (POCA), despite the prompt's introductory reference to POCA. It was introduced by the Finance Act 2007 to counter tax avoidance through MSCs.",
+        "part_chapter": "Income Tax (Earnings and Pensions) Act 2003, Part 2, Chapter 9",
+        "confidence": "high",
+        "confidence_reasoning": "The provided judgment snippet explicitly references MSCs, MSC providers, and s.61B(2)-(3) in the context of tax liabilities, which uniquely identifies this as ITEPA 2003 legislation."
+    },
+    "s688A": {
+        "title": "Managed service companies: recovery from other persons",
+        "full": "Section 688A of the Income Tax (Earnings and Pensions) Act 2003 allows HMRC to recover unpaid PAYE tax and National Insurance contributions of a Managed Service Company from other persons, such as the MSC provider or its directors, if the MSC fails to pay. This transfer of liability acts as a powerful anti-avoidance mechanism against insolvent MSCs.",
+        "elements": [
+            "Unpaid PAYE or NIC liability of an MSC",
+            "Inability to recover the debt from the MSC itself",
+            "Direction to transfer liability to an MSC provider, director, or other facilitator",
+            "Joint and several liability of the transferee"
+        ],
+        "notes": "This section belongs to the Income Tax (Earnings and Pensions) Act 2003 (ITEPA) rather than the Proceeds of Crime Act 2002 (POCA), despite the prompt's introductory reference to POCA. It works in tandem with Regulation 97C of the PAYE Regulations 2003.",
+        "part_chapter": "Income Tax (Earnings and Pensions) Act 2003, Part 11",
+        "confidence": "high",
+        "confidence_reasoning": "The judgment snippet explicitly links s688A to the transfer of MSC tax liabilities to MSC providers, which is a well-known recovery provision under ITEPA 2003."
+    },
+    "s51": {
+        "title": "Powers of enforcement receiver",
+        "full": "Section 51 of the Proceeds of Crime Act 2002 sets out the powers that the Crown Court may confer on an enforcement receiver appointed under section 50 to satisfy a confiscation order. The court may authorise the receiver to take possession of, manage, or realise realisable property, and to initiate or defend legal proceedings. It also permits the court to order individuals holding an interest in the property to make payments to the receiver, provided that any affected third parties are given a reasonable opportunity to make representations first.",
+        "elements": [
+            "Conferral of powers by the Crown Court on an enforcement receiver appointed under section 50.",
+            "Power to take possession of, manage, or otherwise deal with realisable property.",
+            "Power to start, carry on, or defend legal proceedings in respect of the property.",
+            "Power to realise realisable property to meet the amount payable under a confiscation order.",
+            "Power of the court to order any person in possession of realisable property to give possession to the receiver.",
+            "Power of the court to order payments in respect of beneficial interests held by the defendant or a recipient of a tainted gift.",
+            "Statutory requirement to give persons holding an interest in the property a reasonable opportunity to make representations before realisation or interest-extinguishment powers are granted."
+        ],
+        "notes": "This section is a primary mechanism for enforcing unpaid confiscation orders when a defendant refuses to pay. The requirement under section 51(5) to allow third parties to make representations is a vital safeguard, often invoked by spouses or business partners claiming a beneficial interest in the assets being targeted for realisation.",
+        "part_chapter": "Part 2 \u2014 Confiscation: England and Wales",
+        "confidence": "high",
+        "confidence_reasoning": "Section 51 is a core provision of Part 2 of the Proceeds of Crime Act 2002, specifically dealing with the powers of enforcement receivers. The statutory structure, including the specific powers and the third-party representation safeguard in subsection (5), is well-established and clearly recalled."
+    },
+    "s204": {
+        "title": "Rules of court (Note: Subject to judgment typo)",
+        "full": "Section 204 of POCA 2002 is located within Part 4, which governs confiscation proceedings in Northern Ireland. However, the provided judgment snippet contains a clear typographical error, citing 'Section 204' when it is actually quoting Section 240(1) of POCA, which sets out the general purpose of Part 5 (Civil Recovery). Section 240(1) establishes that Part 5 has effect for enabling the enforcement authority to recover property obtained through unlawful conduct or to forfeit cash representing such property.",
+        "elements": [
+            "The judgment text mistakenly attributes the text of Section 240(1) to Section 204.",
+            "Section 240(1)(a) enables civil recovery of property obtained through unlawful conduct in the High Court or Court of Session.",
+            "Section 240(1)(b) enables the forfeiture of cash which represents property obtained through unlawful conduct.",
+            "Actual Section 204 of POCA is located in Part 4 (Northern Ireland Confiscation) and relates to procedural rules of court."
+        ],
+        "notes": "There is a prominent typographical error in the cited judgment transcript, which refers to Section 204 instead of Section 240. Section 240 is the correct section for the 'general purpose of Part 5' of POCA. Actual Section 204 is in Part 4 (Northern Ireland Confiscation) and does not deal with civil recovery or cash forfeiture.",
+        "part_chapter": "Part 4 \u2014 Confiscation: Northern Ireland",
+        "confidence": "low",
+        "confidence_reasoning": "The provided judgment snippet contains a clear typographical error, citing 'Section 204' but quoting the text of Section 240(1) (General purpose of Part 5). I have identified this error and marked confidence as low for s204 itself, as its actual statutory content in Part 4 is distinct from the quoted text, which belongs to Section 240."
+    },
+    "s301": {
+        "title": "Victims and other owners",
+        "full": "Section 301 of POCA 2002 allows a person who claims that cash detained under Chapter 3 of Part 5 belongs to them to apply to a magistrates' court (or sheriff in Scotland) for its release. The court may order the release of the cash if satisfied that the applicant was deprived of it by unlawful conduct, or that the cash belongs to them and the conditions for its detention are not met.",
+        "elements": [
+            "Application to a magistrates' court (or sheriff in Scotland) by a victim or third-party owner for the release of detained cash.",
+            "Requirement for the court to be satisfied that the applicant was deprived of the cash (or the property it represents) by unlawful conduct.",
+            "Requirement that the cash did not belong to the person from whom it was seized immediately before the deprivation.",
+            "Alternative ground where the applicant is not the person from whom the cash was seized, and the court is satisfied the cash belongs to them and the detention conditions are not met."
+        ],
+        "notes": "This section provides an essential safeguard for innocent third parties and victims of crime whose cash has been swept up in summary cash seizure and detention proceedings under Chapter 3 of Part 5. It operates as an exception to the general forfeiture regime.",
+        "part_chapter": "Part 5, Chapter 3 \u2014 Civil Recovery: Recovery of Cash in Summary Proceedings",
+        "confidence": "high",
+        "confidence_reasoning": "The section is correctly identified in the judgment snippet as the mechanism for victims or third parties to apply for the release of detained cash, which perfectly matches Section 301 of POCA 2002 (Part 5, Chapter 3)."
+    }
+}
