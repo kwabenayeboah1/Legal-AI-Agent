@@ -1,4 +1,5 @@
 # Legal AML Intelligence Pipeline: A Technical Write-Up
+<img width="909" height="360" alt="360_F_483867498_t6tSA4UQx2VspTFAIn4mA8NF8I00Uyce" src="https://github.com/user-attachments/assets/22a82161-bbf1-4146-a6af-036b9142b030" />
 
 **Author:** Kwabena Yeboah (Bena)  
 **Stack:** Python · Gemini API · AkomaNtoso XML · Streamlit  
@@ -609,6 +610,12 @@ Each processed case produces a structured JSON object. Schema consistency across
 
 The viewer is not the primary output of the pipeline. It is the review interface for cases requiring human inspection.
 
+<img width="1902" height="984" alt="Screenshot 2026-06-24 at 12 29 07 pm" src="https://github.com/user-attachments/assets/ca44cdd2-1997-45ca-a679-ce9030343060" />
+
+<img width="1902" height="984" alt="Screenshot 2026-06-24 at 12 29 19 pm" src="https://github.com/user-attachments/assets/baa54adc-a7c8-482a-a967-9ffbeac0b509" />
+
+<img width="1902" height="984" alt="Screenshot 2026-06-24 at 12 31 35 pm" src="https://github.com/user-attachments/assets/3cd5e914-3dc9-476c-8a0c-576407c9e504" />
+
 ---
 
 ## 11. Findings
@@ -653,7 +660,7 @@ Mean confidence across all verdicts: **90%**.
 
 This section exists because it has direct implications for anyone building LLM-based legal reasoning tools — and because the architectural response to it shaped several design decisions in this pipeline.
 
-My mentor and I both ran the case **D v Law** through our respective setups and arrived at **different verdicts**.
+My mentor and I both ran the case **D v Law Society** through our respective setups and arrived at **different verdicts**.
 
 ### The Root Cause
 
@@ -784,7 +791,7 @@ Not all BAILII documents conform identically to the AkomaNtoso standard. Older j
 
 ## 16. Appendix
 
-### A. POCA 2002 — Relevant Sections
+### A. POCA 2002 — Relevant Sections[Sample]
 
 | Section | Title | Offence Summary |
 |---|---|---|
@@ -797,7 +804,7 @@ Not all BAILII documents conform identically to the AkomaNtoso standard. Older j
 | Component | Technology |
 |---|---|
 | Language | Python |
-| LLM | Gemini API (gemini-2.5-flash) |
+| LLM | Gemini API (gemini-3.5-flash) | 
 | Orchestration | `main.py` — custom agentic loop |
 | XML Ingestion | `extractor.py` — AkomaNtoso parser |
 | POCA Reference | `poca_loader.py` — shared in-memory dict |
