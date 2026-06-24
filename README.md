@@ -36,12 +36,12 @@ The informal hypothesis was:
 
 > *"Is there a statistically meaningful link between certain business classifications and money laundering convictions in the UK legal system?"*
 
-The challenge: build a pipeline that could ingest real UK court case documents at scale, apply structured LLM reasoning against a defined legal framework, classify the businesses involved, and surface patterns across a corpus — without requiring a legal professional to manually review each case.
+The challenge: Build a pipeline that could ingest real UK court case documents at scale, apply structured LLM reasoning against a defined legal framework, classify the businesses involved, and surface patterns across a corpus. The system prompt was vetted continuously and trial runs were committed to get the right level of analysis before committing to an initial triage of 100 separate case files.
 
 Two workstreams emerged:
 
-1. **The App** — an interactive, single-case analysis tool built in Google AI Studio. This served as the proof of concept and is the origin of the methodology described in this document.
-2. **The AI Agent** — an automated agentic pipeline (this document) replicating and extending the App's workflow: automated ingestion, reasoning, classification, and structured output, with no human-in-the-loop required at the case level.
+1. **The App** — an interactive, single-case analysis tool built in Google AI Studio. This served as the proof of concept and is the origin of the methodology described in this [document](https://github.com/kwabenayeboah1/AML-Analyser).
+2. **The AI Agent** — an automated agentic pipeline (this repo) replicating and extending the App's workflow: automated ingestion, reasoning, classification, and structured output, with no human-in-the-loop required at the case level.
 
 This document covers the Agent pipeline in full technical detail. The App is discussed in Section 3 as context for the architectural decisions made here.
 
@@ -53,7 +53,7 @@ The pipeline is deterministic in structure and agentic in reasoning. Each module
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    BAILII Case Source                           │
+│                  National Archives Case Source                  │
 │              (AkomaNtoso XML — UK Court Judgments)              │
 └───────────────────────────┬─────────────────────────────────────┘
                             │
@@ -110,12 +110,12 @@ The pipeline is deterministic in structure and agentic in reasoning. Each module
 
 ## 3. From App to Agent — Why the Pipeline Evolved
 
-The App — built in Google AI Studio — proved the hypothesis was worth pursuing. It could ingest a PDF, reason over it, and return a structured verdict. But it had a fundamental constraint: it required a human at every step. Upload a PDF. Review the output. Decide the next case. That workflow is fine for exploration. It does not scale to the corpus size required to evidence the hypothesis.
+The App — built in Google AI Studio — proved the hypothesis was worth pursuing. It could ingest a PDF, reason over it, and return a structured verdict. I decided to build an Agent not only to flex my technical muscles, but because I understood a productionised environment would benefit more from autonomous agents. The App served its purpose as a POC of a UI being built, but this Agentic workflow works better in ensuring cases could be ingested in huge batches and left to run. 
 
 Three specific limitations drove the move to an agentic pipeline:
 
 **1. PDF ingestion is fragile at scale.**  
-Legal PDFs vary enormously in structure — clean digital exports, scanned documents, multi-column layouts, inconsistent section headers. `pdfplumber` handled most of this, but extraction noise was a recurring problem with older judgments. BAILII publishes UK case law in AkomaNtoso XML — a structured, machine-readable format with clearly delimited sections and embedded metadata. Switching to XML eliminated the extraction noise problem at source.
+Legal PDFs vary enormously in structure — clean digital exports, scanned documents, multi-column layouts, inconsistent section headers. `pdfplumber` handled most of this, but extraction noise was a recurring problem with older judgments. [National Archives](https://caselaw.nationalarchives.gov.uk/) publishes case law in AkomaNtoso XML — a structured, machine-readable format with clearly delimited sections and embedded metadata. Switching to XML eliminated the extraction noise problem at source. It was also considered that for token efficiency, using XML files would be more efficient than using an LLM call to parse through a PDF file. 
 
 **2. Single-case interactivity doesn't compound.**  
 The App produced one JSON output per session. There was no persistent state, no accumulation across cases, no way to query patterns without manually aggregating outputs. An agentic pipeline that writes structured JSON per case and exports to a consistent schema makes the corpus queryable from day one.
@@ -129,7 +129,7 @@ The App is not deprecated — it remains the fastest way to run a single case in
 
 ## 4. Data Ingestion — XML via AkomaNtoso
 
-UK court judgments are published by BAILII (British and Irish Legal Information Institute) in AkomaNtoso XML format — an open standard for legal documents used across multiple jurisdictions.
+UK court judgments are published by [National Archives](https://caselaw.nationalarchives.gov.uk/) in AkomaNtoso XML format — an open standard for legal documents used across multiple jurisdictions.
 
 ### Why AkomaNtoso over PDF
 
@@ -161,10 +161,10 @@ The XML structure gives `extractor.py` direct access to case metadata (reference
 
 The entry point and orchestration layer. Responsibilities:
 
-- Accepts a case file path, loads and passes it through `extractor.py`
+- Accepts a case file path, loads and passes it through `extractor.py`. Can also pass through a web link to the particular case and it will extract the .XML
 - Constructs the Gemini API request with the system instruction, extracted case text, and tool definitions from `tools.py`
 - Runs the **agentic loop**: sends the request, processes tool calls returned by the model, feeds tool results back into the conversation, and iterates until the model signals completion
-- Implements `_send_with_retry()` — exponential backoff with jitter for transient API errors (rate limits, timeouts, 5xx responses)
+- Implements `_send_with_retry()` — exponential backoff with jitter for transient API errors (rate limits, timeouts, 4xx/5xx responses)
 - Implements **self-healing POCA fetch** — if the model invokes a POCA section reference not currently in context, `main.py` fetches it from `poca_loader.py` and injects it into the next turn rather than failing
 - Passes the completed output to `executor.py` for assembly
 
@@ -261,7 +261,7 @@ The system instruction is not a loose prompt. It is a tightly scoped legal brief
 
 **Role definition** — the model is told it is a legal analysis assistant with a specific and narrow remit: reason over UK court cases and determine whether a POCA 2002 money laundering offence was committed, proven, and convicted.
 
-**Legal framework anchoring** — POCA 2002 is cited directly. Sections s.327, s.328, and s.329 are referenced explicitly to constrain reasoning to the correct statutory framework rather than a general conception of "money laundering."
+**Legal framework anchoring** — POCA 2002 is cited directly. Sections s.327, s.328, and s.329 are referenced explicitly to constrain reasoning to the correct statutory framework rather than a general conception of "money laundering." Other relevant sections were added to tighten the logic after initial triage developed my understanding of what was required to streamline results.
 
 **Mandatory reasoning requirement** — the model must explain its reasoning *before* invoking `record_verdict`. This is chain-of-thought by architectural design, not by hope. It also gives the analyst a mechanism to identify reasoning failures without re-reading the full case.
 
@@ -270,25 +270,192 @@ The system instruction is not a loose prompt. It is a tightly scoped legal brief
 **Illustrative system instruction structure:**
 
 ```
-You are a legal analysis assistant. Your task is to analyse UK court case 
-documents and determine whether a money laundering conviction under the 
-Proceeds of Crime Act 2002 (POCA 2002) was recorded.
+You are a senior financial crime specialist with 20 years of experience across:
+- UK criminal prosecution (CPS, SFO, NCA)
+- Regulatory enforcement (FCA, HMRC)
+- Defence and compliance advisory in tier-1 financial institutions
 
-Relevant statutory provisions are available via the lookup_poca_section tool.
-Primary sections: s.327 (concealing), s.328 (arrangements), s.329 (acquisition,
-use and possession).
+Your expertise spans Anti-Money Laundering (AML), fraud, asset recovery, sanctions evasion,
+tax evasion, bribery and corruption, and market abuse. You are deeply familiar with:
 
-Before invoking record_verdict, you must:
-1. Summarise the facts of the case as presented
-2. Identify any references to POCA 2002 or related financial crime — noting 
-   explicitly whether these are the primary charge or referenced in another 
-   context (precedent, dropped charge, regulatory background)
-3. Apply the relevant statutory test and document your reasoning
-4. Determine whether a POCA 2002 conviction was the outcome
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PRIMARY LEGISLATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Critical distinction: a case that references AML as precedent or background 
-is NOT an AML conviction. These are categorically different. 
-Set aml_referenced_as_precedent = true where relevant and reason accordingly.
+POCA 2002 — Proceeds of Crime Act 2002
+  s327  Concealing, disguising, converting, transferring or removing criminal property
+  s328  Entering or becoming concerned in an arrangement facilitating another's money laundering
+  s329  Acquiring, using or possessing criminal property
+  s330  Failure to disclose (regulated sector)
+  s331  Failure to disclose (nominated officers / MLROs)
+  s333  Tipping off
+  s333A Tipping off — regulated sector specifically
+  s335  Appropriate consent — the DAML (Defence Against Money Laundering) moratorium regime
+  s336  Nominated officer — appropriate consent
+  s337  Authorised disclosures — protected from breach of confidence
+  s338  Authorised disclosures — the SAR gateway to the consent regime
+  s340  Definition of criminal property — objective + subjective elements both required
+  s342  Offences of prejudicing an investigation
+
+Fraud Act 2006
+  s1    Fraud by false representation
+  s2    Fraud by failing to disclose information
+  s3    Fraud by abuse of position
+  s4    Obtaining services dishonestly
+
+Bribery Act 2010
+  s1    Bribing another person
+  s2    Being bribed
+  s6    Bribery of foreign public officials
+  s7    Corporate failure to prevent bribery (strict liability)
+
+Theft Act 1968
+  s17   False accounting
+  s19   False statements by company directors
+
+Financial Services and Markets Act 2000 (FSMA)
+  s19   General prohibition on carrying on regulated activities without authorisation
+  s397  Market manipulation and misleading statements (now MAR / CJA 1993)
+
+Criminal Justice Act 1993
+  s52-s53 Insider dealing offences
+
+Sanctions and Anti-Money Laundering Act 2018 (SAMLA)
+  Relevant to sanctions evasion typologies
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REGULATORY FRAMEWORK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Money Laundering Regulations 2017 (MLR 2017, as amended 2019)
+  - Customer Due Diligence (CDD) and Enhanced Due Diligence (EDD) obligations
+  - Politically Exposed Persons (PEP) requirements
+  - Beneficial ownership identification and verification
+  - Risk-based approach to AML compliance
+  - Suspicious Activity Reports (SARs) to the National Crime Agency (NCA)
+  - Defence Against Money Laundering (DAML) consent regime
+
+FATF Recommendations
+  - 40 Recommendations forming the international AML/CFT standard
+  - Mutual Evaluation Reports and grey/black listing implications
+  - Correspondent banking and de-risking context
+
+FCA Handbook — SYSC, JMLSG Guidance
+  - Senior Manager accountability under SMCR
+  - Financial Crime Guide (FCG)
+  - Systems and controls expectations for regulated firms
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MONEY LAUNDERING TYPOLOGIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+You recognise the three classic stages and their indicators:
+
+PLACEMENT — Introducing criminal proceeds into the financial system
+  Red flags: structured cash deposits just below reporting thresholds (smurfing),
+  currency exchange transactions, cash-intensive business revenues inflated,
+  gambling winnings, use of money service businesses
+
+LAYERING — Obscuring the audit trail
+  Red flags: rapid movement between accounts or jurisdictions, back-to-back loans,
+  trade-based money laundering (over/under invoicing), shell company chains,
+  professional enablers (lawyers, accountants), real estate transactions,
+  cryptocurrency mixing, invoice fraud, round-tripping
+
+INTEGRATION — Re-entering the legitimate economy
+  Red flags: luxury asset purchases (property, vehicles, art, jewellery),
+  investment in legitimate businesses, apparent rental income from acquired property,
+  repayment of fictitious loans
+
+SECTOR-SPECIFIC TYPOLOGIES you can identify:
+  - Real estate: nominee purchasers, offshore ownership chains, all-cash transactions
+  - Legal profession: misuse of client accounts, sham litigation settlements
+  - Accountancy: false accounting, off-balance sheet arrangements
+  - Financial services: layering through investment accounts, fictitious trading
+  - Crypto: mixing, chain-hopping, P2P exchanges, DeFi layering
+  - Trade-based ML: over/under invoicing, phantom shipments, multiple invoicing
+  - Hawala and informal value transfer systems
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FRAUD TYPOLOGIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  - Ponzi and pyramid schemes
+  - Advance fee fraud (419 fraud)
+  - Mandate / CEO fraud / business email compromise
+  - Mortgage fraud and property fraud
+  - Invoice redirect fraud
+  - Boiler room investment fraud
+  - Identity fraud and impersonation
+  - Carousel / MTIC VAT fraud
+  - Payroll fraud and false accounting
+  - Procurement fraud
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+KEY ENFORCEMENT BODIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  NCA   — National Crime Agency: leads on SAR regime, DAML consents, UWOs
+  SFO   — Serious Fraud Office: investigates and prosecutes top-tier fraud, bribery, corruption
+  FCA   — Financial Conduct Authority: civil/criminal enforcement against regulated firms
+  CPS   — Crown Prosecution Service: prosecutes criminal cases including POCA offences
+  HMRC  — Tax evasion, VAT fraud, civil recovery
+  PRA   — Prudential Regulation Authority: systemic risk and financial stability angle
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ASSET RECOVERY MECHANISMS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Confiscation Order     — post-conviction, POCA Part 2, recovers benefit from crime
+  Civil Recovery Order   — POCA Part 5, no conviction required, balance of probabilities
+  Account Freezing Order — magistrates court, freeze accounts pending investigation
+  Unexplained Wealth Order (UWO) — reverses burden, respondent must explain wealth
+  Interim Freezing Order — preserves assets during civil recovery proceedings
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ANALYTICAL APPROACH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+When analysing a case you:
+1. First identify the PRIMARY legal mechanism at work — criminal conviction, civil recovery,
+   regulatory enforcement, judicial review, or appellate precedent
+2. Map the conduct to the correct typology and legislative provision
+3. Distinguish clearly between what was PROVEN, what was ALLEGED, and what is PRECEDENT
+4. Identify the predicate offence (the underlying crime generating the proceeds)
+5. Consider the professional enablers involved and their potential liability
+6. Assess the asset recovery angle — what orders were sought and granted
+7. Note any compliance failures by regulated entities that may have facilitated the conduct
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OPERATIONAL RULES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1.  DEFENDANT DEDUPLICATION: List each defendant EXACTLY ONCE across all tool calls.
+2.  ENTITY ROLE CLASSIFICATION (CRITICAL): You must evaluate each entity's role from scratch based strictly on the text and the pre-extracted XML roles. 
+    Do not automatically apply the same role to every entity. 
+    You MUST choose exactly one of the following: 
+    ['Claimant', 'Defendant', 'Witness/Employee', 'Regulator/Authority', 'Associated Corporate Vehicle', 'Financial Institution', 'Unrelated Third Party'].
+    - Example: A retail bank blocking a transfer is a 'Financial Institution', NOT a customer.
+    - Example: A central bank initiating a freeze is a 'Regulator/Authority', NOT a customer.
+3.  AML STATUS — classify as exactly one of:
+    'Confirmed Verdict'  — actual conviction in this case
+    'Alleged/Charged'    — charges brought, no final verdict described
+    'Precedent Only'     — AML law cited but this case is not itself an AML conviction
+    'Not AML'            — AML mentioned only incidentally
+4.  REASONING: Every classification must cite specific facts from the case text.
+5.  SIC CODES: Assign ALL applicable codes. A defendant operating across sectors
+    may legitimately hold multiple codes. Only use codes from the provided list.
+    Each code MUST include a 'reasoning' field explaining why it applies to this entity.
+6.  PREDICATE OFFENCE: Always identify the underlying criminal conduct that
+    generated the proceeds being laundered, where this can be determined.
+7.  KEY FINDINGS: Produce 4–8 discrete, citable legal propositions — not headings.
+    Each finding must stand alone as a complete statement of law or fact.
+8.  KEY FACTS PER DEFENDANT: Provide 3–6 specific, evidential facts per individual.
+    Reference actual figures, company names, dates, transaction amounts, jurisdictions.
+9.  POCA ANALYSIS: Map every cited section to the specific facts that engaged it.
+    Explain the court's ruling on each provision and any precedent established.
+10. PRECEDENT VALUE: State the specific proposition of law this case establishes
+    and in what future contexts it would be cited.
 ```
 
 ### Function Calling vs. Prompted Output
@@ -435,7 +602,7 @@ Each processed case produces a structured JSON object. Schema consistency across
 `streamlit_app.py` provides a front-end for inspecting processed cases without reading raw JSON. Key design decisions:
 
 - **Reasoning chain is always visible** — not collapsed or hidden. The point of forcing reasoning in the system instruction is to make it inspectable; hiding it in the UI defeats that.
-- **Confidence score is prominently surfaced** — outputs below a defined threshold (currently [X]%) are flagged visually for review.
+- **Confidence score is prominently surfaced** — outputs below a defined threshold (currently 50%) are flagged visually for review.
 - **`aml_referenced_as_precedent` flag is highlighted** — cases where this is `true` get a distinct visual treatment to immediately draw attention during review.
 - **SIC codes rendered as a list with individual confidence scores** — not as a single value.
 - **Flags rendered separately** — anomalies raised by the model during processing are surfaced distinctly from the main reasoning chain.
@@ -446,24 +613,34 @@ The viewer is not the primary output of the pipeline. It is the review interface
 
 ## 11. Findings
 
-> ⚠️ **Important caveat:** The sample size is **[X] cases**, of which **[Y]** returned a verdict of `CONVICTED`. This is not sufficient to draw statistically reliable conclusions. Everything in this section is directional and exploratory — signals worth investigating, not findings worth publishing.
+> ⚠️ **Important caveat:** The sample size is **100 cases**, of which **19** returned a verdict of `CONVICTED` for AML offences, which saw **100 Defendants** charged and convicted for crimes under the POCA 2002. The initial run of 100 cases saw **1171 Total Defendants**. One finding that I found very interesting within my batch of randomly selected cases, 'R v Herbert Charles Austin' saw a confirmed conviction - but no application of statutory law as per the instructions. Further analysis reveals the agent had recognised the crimes had taken place prior to the introduction of POCA 2002, having been committed in 2000, meaning our system prompts worked very well in making the agent strict in its judgement. It's analysis still picked up on the 'CONVICTED' status.
+>
+> Our initial hypothesis of looking in the legal sector, before branching out to other SIC Codes saw Solicitors account for a small number of the defendants seen in the case filings. 48 Defendants in total, with only **2** that were convicted of AML offences,  with a further **2** awaiting appropriate charges and **12** defendants that had not finished proceedings for their cases. Our initial 'Better Call Saul' hypothesis holds some weight considering it was the 6th most common SIC Code found in our outputs. The full table tells a story of the most common SIC Codes found in AML Cases, though a few of them can be explained as institutions that are often used or report AML offences, hence their frequent appearance in findings.
+> 
+> Overall, the number of cases we processed in 4 batches does not provide a conclusive judgement, though it does reveal an interest trend in the frequency of certain businesses in AML proceedings.
+>
+> Due to the sheer volume of outputs, I have a sample of cases that cross all three categories that can be used in the Streamlit app/JSON Reader, as well as the full Excel output of all cases for explaratory analysis.
 
-### Verdict Distribution
+### Verdict Distribution (Defendants)
 
 | Verdict | Count | % of Sample |
 |---|---|---|
-| CONVICTED | [Y] | [Y/X]% |
-| NOT_CONVICTED | [Z] | [Z/X]% |
-| UNCLEAR | [W] | [W/X]% |
+| CONVICTED | 165 | 14% |
+| ACQUITTED | 62 | 5% |
+| CHARGED/PENDING | 72 | 6% |
+| MENTIONED ONLY | 570 | 48% |
+| NOT FINALISED | 302 | 25% |
 
 ### SIC Code Patterns
 
 Early patterns are emerging around certain SIC code clusters appearing disproportionately in convicted cases:
 
+- **[96090]** — [Other service activities n.e.c.] ([**23**] occurrences out of )
+- 96090	Other service activities n.e.c.
 - **[SIC code]** — [Description] ([N] occurrences)
+- 49410	Freight transport by road
 - **[SIC code]** — [Description] ([N] occurrences)
-- **[SIC code]** — [Description] ([N] occurrences)
-
+64999	Financial intermediation not elsewhere classified
 These are directionally consistent with existing AML typology literature — but cannot be treated as confirmatory at this sample size.
 
 ### Confidence Score Distribution
