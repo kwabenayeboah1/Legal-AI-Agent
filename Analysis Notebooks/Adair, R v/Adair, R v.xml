@@ -1,0 +1,522 @@
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:uk="https://caselaw.nationalarchives.gov.uk/akn">
+  <judgment name="judgment">
+    <meta>
+      <identification source="#tna">
+	<FRBRWork>
+	  <FRBRthis value="https://caselaw.nationalarchives.gov.uk/id/ewca/crim/2018/1170"/>
+	  <FRBRuri value="https://caselaw.nationalarchives.gov.uk/id/ewca/crim/2018/1170"/>
+	  <FRBRdate date="2018-03-16" name="judgment"/>
+	  <FRBRauthor href="#ewca-criminal"/>
+	  <FRBRcountry value="GB-UKM"/>
+	  <FRBRnumber value="1170"/>
+	  <FRBRname value="Adair, R v"/>
+	</FRBRWork>
+	<FRBRExpression>
+	  <FRBRthis value="https://caselaw.nationalarchives.gov.uk/ewca/crim/2018/1170"/>
+	  <FRBRuri value="https://caselaw.nationalarchives.gov.uk/ewca/crim/2018/1170"/>
+	  <FRBRdate date="2018-03-16" name="judgment"/>
+	  <FRBRauthor href="#ewca-criminal"/>
+	  <FRBRlanguage language="eng"/>
+	</FRBRExpression>
+	<FRBRManifestation>
+	  <FRBRthis value="https://caselaw.nationalarchives.gov.uk/ewca/crim/2018/1170/data.xml"/>
+	  <FRBRuri value="https://caselaw.nationalarchives.gov.uk/ewca/crim/2018/1170/data.xml"/>
+	  <FRBRdate date="2024-11-07T01:00:54" name="transform"/>
+	  <FRBRdate date="2024-12-15T06:20:23" name="tna-enriched"/>
+	  <FRBRauthor href="#tna"/>
+	  <FRBRformat value="application/xml"/>
+	</FRBRManifestation>
+      </identification>
+      <lifecycle source="#">
+	<eventRef date="2018-03-16" refersTo="#judgment" source="#"/>
+      </lifecycle>
+      <references source="#tna">
+	<TLCOrganization eId="ewca-criminal" href="https://www.gov.uk/courts-tribunals/court-of-appeal-criminal-division" shortForm="Court of Appeal Criminal Division" showAs="The Court of Appeal of England and Wales (Criminal Division)"/>
+	<TLCOrganization eId="tna" href="https://www.nationalarchives.gov.uk/" showAs="The National Archives"/>
+	<TLCEvent eId="judgment" href="#" showAs="judgment"/>
+	<TLCPerson eId="regina" href="" showAs="REGINA"/>
+	<TLCPerson eId="nicholas-richard-adair" href="" showAs="NICHOLAS RICHARD ADAIR"/>
+	<TLCRole eId="before-the-v" href="" showAs="Before The V"/>
+	<TLCRole eId="after-the-v" href="" showAs="After The V"/>
+	<TLCPerson eId="judge-lord-justice-simon" href="/judge-lord-justice-simon" showAs="LORD JUSTICE SIMON"/>
+	<TLCPerson eId="judge-mr-justice-goose" href="/judge-mr-justice-goose" showAs="MR JUSTICE GOOSE"/>
+	<TLCPerson eId="judge-her-honour-judge-tayton-qc" href="/judge-her-honour-judge-tayton-qc" showAs="HER HONOUR JUDGE TAYTON QC"/>
+      </references>
+      <proprietary source="#">
+	<uk:court>EWCA-Criminal</uk:court>
+	<uk:year>2018</uk:year>
+	<uk:number>1170</uk:number>
+	<uk:cite>[2018] EWCA Crim 1170</uk:cite>
+	<uk:parser>0.26.10</uk:parser>
+	<uk:hash>d362bc2a28512c6f93d2b098ec125db5b3f330fcafc98525dfc5debdea69f7a8</uk:hash>
+	<uk:tna-enrichment-engine>6.0.2</uk:tna-enrichment-engine>
+      </proprietary>
+      <presentation source="#">
+	<html:style>
+#judgment { font-family: 'Calibri, sans-serif'; font-size: 11pt; }
+#judgment .Normal { font-size: 11pt; }
+#judgment .Fixed { margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Question { margin-left: 0.4in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Answer { margin-left: 0.4in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Colloquy { margin-left: 0.4in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .ContinQ { margin-left: 0.4in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .ContinA { margin-left: 0.4in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .ContinCol { margin-left: 0.4in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Parenthetical { margin-left: 0.8in; margin-right: 0.51in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Centered { text-align: center; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Rightflush { text-align: right; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .BylineSQ { margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .BylineQS { margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .0Style { margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Normal1 { margin-left: 0.8in; margin-right: 0.81in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Normal2 { margin-left: 1.2in; margin-right: 0.81in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Normal3 { margin-left: 1.6in; margin-right: 0.81in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Normal4 { margin-left: 0.8in; margin-right: 0.51in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Normal5 { margin-left: 1.2in; margin-right: 1.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Normal6 { text-align: right; margin-left: 1.6in; margin-right: 0.91in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Normal7 { text-align: right; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Normal8 { text-align: center; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .9Style { margin-right: 1.31in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Header { text-align: center; margin-right: 1.31in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Footer { text-align: center; margin-right: 1.31in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Questionquoted { margin-left: 1.2in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Answerquoted { margin-left: 1.2in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Speakerquoted { margin-left: 1.2in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .questionPghquoted { margin-left: 1.2in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .answerPghquoted { margin-left: 1.2in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .speakerPghquoted { margin-left: 1.2in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Marginsecondary { margin-left: 0.8in; margin-right: 0.81in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Extramargin { margin-left: 1.2in; margin-right: 0.81in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Ordinaryextramargin { margin-left: 1.6in; margin-right: 0.81in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .LeftFlush { margin-left: 0.4in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .certifiedQuestion { margin-right: 1.31in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Index1 { margin-left: 1in; margin-right: 2.51in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .IndexBlank { margin-left: 1in; margin-right: 2.51in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .captionbox { margin-right: 3.51in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Index2 { margin-left: 0.4in; margin-right: 1.51in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .Index3 { margin-left: 1.5in; margin-right: 1.51in; font-family: 'Times New Roman'; font-size: 12pt; }
+#judgment .Index4 { margin-left: 4in; margin-right: 1.51in; font-family: 'Times New Roman'; font-size: 12pt; }
+#judgment .RCJquotes { margin-left: 0.8in; margin-right: 0.51in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .RCJquote { margin-left: 0.8in; margin-right: 0.51in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .HEADINGNUMBERED { margin-left: 0.4in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .RESTRICTEDACCESS { text-align: center; margin-right: 1.21in; font-family: Arial; font-size: 12pt; }
+#judgment .SPEAKER2 { margin-left: 0.4in; margin-right: 0.01in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .spkquoted { margin-left: 0.8in; margin-right: 0.51in; font-family: 'Courier New'; font-size: 12pt; }
+#judgment .BalloonText { font-family: Tahoma; font-size: 8pt; }
+#judgment .HeaderChar { }
+#judgment .FooterChar { }
+#judgment .BalloonTextChar { font-family: 'Segoe UI'; font-size: 9pt; }
+</html:style>
+      </presentation>
+    </meta>
+    <header>
+      <p class="0Style" style="text-align:right;margin-right:0.01in"><span style="text-decoration-line:underline;text-decoration-style:solid;font-family:'Times New Roman'">No: </span><docketNumber style="text-decoration-line:underline;text-decoration-style:solid;font-family:'Times New Roman'">201800470 A3</docketNumber></p>
+      <p><span style="text-decoration-line:underline;text-decoration-style:solid;font-family:'Times New Roman';font-size:12pt">Neutral Citation Number: </span><neutralCitation style="text-decoration-line:underline;text-decoration-style:solid;font-family:'Times New Roman';font-size:12pt">[2018] EWCA Crim 1170</neutralCitation></p>
+      <p class="0Style" style="margin-right:0.01in"><courtType refersTo="#ewca-criminal" style="font-weight:bold;text-decoration-line:underline;text-decoration-style:solid;font-family:'Times New Roman'">IN THE COURT OF APPEAL</courtType></p>
+      <p class="0Style" style="margin-right:0.01in"><courtType refersTo="#ewca-criminal" style="font-weight:bold;text-decoration-line:underline;text-decoration-style:solid;font-family:'Times New Roman'">CRIMINAL DIVISION</courtType></p>
+      <p class="Rightflush" style="margin-right:0.01in"><span style="font-family:'Times New Roman'">   Royal Courts of Justice</span></p>
+      <p class="Rightflush" style="margin-right:0.01in"><span style="font-family:'Times New Roman'">Strand</span></p>
+      <p class="Rightflush" style="margin-right:0.01in"><span style="font-family:'Times New Roman'">London, WC2A 2LL</span></p>
+      <p class="Rightflush" style="margin-right:0.01in"><docDate date="2018-03-16" refersTo="#judgment" style="font-family:'Times New Roman'">Friday, 16 March 2018</docDate></p>
+      <p class="Normal8" style="margin-right:0.01in"><span style="font-weight:bold;font-family:'Times New Roman'">B e f o r e</span><span style="font-family:'Times New Roman'">:</span></p>
+      <p class="Normal8" style="margin-right:0.01in"><judge refersTo="#judge-lord-justice-simon" style="font-weight:bold;text-decoration-line:underline;text-decoration-style:solid;font-family:'Times New Roman'">LORD JUSTICE SIMON</judge></p>
+      <p class="Normal8" style="margin-right:0.01in"><judge refersTo="#judge-mr-justice-goose" style="font-weight:bold;text-decoration-line:underline;text-decoration-style:solid;font-family:'Times New Roman'">MR JUSTICE GOOSE</judge></p>
+      <p class="Normal8" style="margin-right:0.01in"><judge refersTo="#judge-her-honour-judge-tayton-qc" style="font-weight:bold;text-decoration-line:underline;text-decoration-style:solid;font-family:'Times New Roman'">HER HONOUR JUDGE TAYTON QC</judge></p>
+      <p class="Normal8" style="margin-right:0.01in"><span style="font-weight:bold;text-decoration-line:underline;text-decoration-style:solid;font-family:'Times New Roman'">(Sitting as a Judge of the CACD)</span></p>
+      <p class="Normal8" style="margin-right:0.01in"><span style="font-weight:bold;text-decoration-line:underline;text-decoration-style:solid;font-family:'Times New Roman'">REFERENCE BY THE ATTORNEY GENERAL UNDER</span></p>
+      <p class="Normal8" style="margin-right:0.01in"><span style="font-weight:bold;text-decoration-line:underline;text-decoration-style:solid;font-family:'Times New Roman'">S.36 OF THE CRIMINAL JUSTICE ACT 1988 </span></p>
+      <p class="Normal8" style="margin-right:0.01in"><span style="font-weight:bold;font-family:'Times New Roman'">- - - - - - - - - - - - - - - - - -</span></p>
+      <p class="Normal8" style="margin-right:0.01in"><party as="#before-the-v" refersTo="#regina" style="font-weight:bold;font-family:'Times New Roman'">R E G I N A</party></p>
+      <p class="Normal8" style="margin-right:0.01in"><span style="font-family:'Times New Roman'">v </span></p>
+      <p class="Normal8" style="margin-right:0.01in"><party as="#after-the-v" refersTo="#nicholas-richard-adair" style="font-weight:bold;font-family:'Times New Roman'">NICHOLAS RICHARD ADAIR</party></p>
+      <p class="Normal8" style="margin-right:0.01in"><span style="font-weight:bold;font-family:'Times New Roman'">- - - - - - - - - - - - - - - - - -</span></p>
+      <p class="0Style" style="text-align:center;margin-right:0.01in"><span style="font-weight:bold;font-family:'Times New Roman'">Mr P Jarvis</span><span style="font-family:'Times New Roman'"> appeared on behalf of the </span><span style="font-weight:bold;font-family:'Times New Roman'">Attorney General</span></p>
+      <p class="0Style" style="text-align:center;margin-right:0.01in"><span style="font-weight:bold;font-family:'Times New Roman'">Mr T Jacobs (Solicitor Advocate)</span><span style="font-family:'Times New Roman'"> appeared on behalf of the </span><span style="font-weight:bold;font-family:'Times New Roman'">Offender</span></p>
+      <p class="Normal8" style="margin-right:0.01in"><span style="font-weight:bold;font-family:'Times New Roman'">- - - - - - - - - - - - - - - - - -</span></p>
+      <p class="Fixed" style="text-align:center;margin-right:0.01in"><span style="font-family:'Times New Roman'">Computer Aided Transcript of the Stenograph Notes of WordWave International Ltd trading as DTI, 165 Fleet Street London EC4A 2DY, Tel No: 020 7404 1400 Fax No: 020 7831 8838 (Official Shorthand Writers to the Court)</span></p>
+      <p class="Normal8" style="margin-right:0.01in"><span style="font-weight:bold;font-family:'Times New Roman'">- - - - - - - - - - - - - - - - - -</span></p>
+      <p class="Normal8" style="margin-right:0.01in"><span style="font-weight:bold;text-decoration-line:underline;text-decoration-style:solid;font-family:'Times New Roman'">J U D G M E N T</span></p>
+      <p class="Fixed" style="margin-right:0.01in"><span style="font-family:'Times New Roman';font-size:8pt">This transcript is Crown Copyright.  It may not be reproduced in whole or in part other than in accordance with relevant licence or with the express consent of the Authority.  All rights are reserved.</span></p>
+      <p class="Fixed" style="margin-right:0.01in"><span style="font-family:'Times New Roman';font-size:8pt">If this transcript is to be reported or published, there is a requirement to ensure that no reporting restriction will be breached.  This is particularly important in relation to any case involving a sexual offence, where the victim is guaranteed lifetime anonymity (Sexual Offences (Amendment) Act 1992), or where an order has been made in relation to a young person.</span></p>
+    </header>
+    <judgmentBody>
+      <decision>
+	<level eId="lvl_1">
+	  <content>
+	    <p class="Colloquy" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-weight:bold;font-family:'Times New Roman'">LORD JUSTICE SIMON:</span></p>
+	  </content>
+	</level>
+	<paragraph eId="para_1">
+	  <num style="font-family:'Times New Roman';font-size:12pt">1.</num>
+	  <content>
+	    <p class="Colloquy" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">This is the Solicitor General's application to refer sentences to this court under <ref href="http://www.legislation.gov.uk/id/ukpga/1988/33/section/36" uk:canonical="" uk:origin="TNA" uk:type="legislation">section&#160;36</ref> of the <ref href="http://www.legislation.gov.uk/id/ukpga/1988/33" uk:canonical="1988 c. 33" uk:origin="TNA" uk:type="legislation">Criminal Justice Act 1988</ref> as being unduly lenient.  We grant leave.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_2">
+	  <num style="font-family:'Times New Roman';font-size:12pt">2.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">The sentences were passed in respect of a large number of offences in the Crown Court at Leeds by Miss&#160;Recorder Kidd on 4&#160;January&#160;2018.  The overall sentence was a&#160;term of 12 years' imprisonment in respect of three charges of money laundering, three charges of possessing cannabis with intent, a&#160;single charge of possession of cocaine, and two charges of section&#160;18 wounding.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_3">
+	  <num style="font-family:'Times New Roman';font-size:12pt">3.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Before turning in more detail to the charges, the dates on which the pleas of guilty were entered and the individual sentences, it is convenient to summarise the offending.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_4">
+	  <num style="font-family:'Times New Roman';font-size:12pt">4.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">The offender is now aged 28.  He was a&#160;dealer in cannabis and skunk cannabis between 2015 and 2016.  He made enough profit from his dealing to be able to purchase a&#160;house with &#163;90,000 in cash.  He also used his profits to buy his partner a BMW car for around &#163;5,000.  He moved into the house with his partner and his daughter, and set about turning in into a&#160;secure compound by erecting a&#160;large fence, a gate and an&#160;exterior CCTV system.  When the police raided the house they found cannabis in the loft with a&#160;value of around &#163;80,000.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_5">
+	  <num style="font-family:'Times New Roman';font-size:12pt">5.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">He was arrested and interviewed before being released on bail.  While on bail he&#160;was stopped in a&#160;car which contained more cannabis and some cocaine for personal use.  He was arrested again and once more released on bail after interview, following which he was stopped again in another car that was found to contain cannabis.  As before, he was arrested, interviewed and bailed.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_6">
+	  <num style="font-family:'Times New Roman';font-size:12pt">6.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">On 25&#160;February&#160;2017, in the early hours of the morning, he was driving a&#160;car in company with a&#160;man named Gentles.  Outside a garage shop they got into a fight with two other men.  When a&#160;man called McDonagh tried to intervene, they set on him.  He was struck with a bottle and taken to the ground, where Gentles tried to stamp on him.  Mr&#160;McDonagh sustained a&#160;wound to his head in the scuffle.  He ran off but the two men pursued him in the car, with the offender driving.  Eventually they caught up with him.  The offender drove the car into and over Mr&#160;McDonagh, causing him to lose part of his ear and to sustain fractures to various parts of his body, including his ribs and spine.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_7">
+	  <num style="font-family:'Times New Roman';font-size:12pt">7.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">The offences were grouped together in four indictments that we will refer to as 209, 382, 383 and 520.  On 23&#160;April&#160;2017, at a PTPH, the offender pleaded guilty before His Honour Judge Marson QC to three charges in indictment 209.  On 17&#160;May, at a second PTPH, he pleaded guilty before His Honour Judge Bayliss QC to the three charges on indictments 382 and 383.  On 27 July, at a third PTPH, he pleaded guilty before His Honour Judge Mairs to the three charges on indictment 520.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_8">
+	  <num style="font-family:'Times New Roman';font-size:12pt">8.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Gentles, the co-defendant on the charge of wounding with intent, count&#160;1 on indictment 520, pleaded not guilty at the first PTPH and his trial was set for 3&#160;January&#160;2018.  On the first day of the trial, he pleaded guilty, and so it was that the offender came to be sentenced with a&#160;number of co-defendants on 4&#160;January&#160;2018 as follows.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_9">
+	  <num style="font-family:'Times New Roman';font-size:12pt">9.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Indictment 209, count&#160;1, wounding with intent to cause grievous bodily harm, 4 years' imprisonment concurrent.  Count&#160;2, causing grievous bodily harm with intent to cause grievous bodily harm, 9 years' imprisonment.  Indictment 382, count&#160;1, possessing a&#160;controlled drug of class B with intent to supply, contrary to <ref href="http://www.legislation.gov.uk/id/ukpga/1971/38/section/5/3" uk:canonical="" uk:origin="TNA" uk:type="legislation">section&#160;5(3)</ref> of the <ref href="http://www.legislation.gov.uk/id/ukpga/1971/38" uk:canonical="1971 c. 38" uk:origin="TNA" uk:type="legislation">Misuse of Drugs Act 1971</ref>, the particulars being that on 9&#160;July&#160;2016 the offender had in his possession 23.3&#160;grams of cannabis with the intention of supplying it to another, 12 months concurrent.  Count&#160;2, possessing a&#160;controlled drug of class A, contrary to <ref href="http://www.legislation.gov.uk/id/ukpga/1971/38/section/5/3" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 5(3)</ref> of <ref href="http://www.legislation.gov.uk/id/ukpga/1971/38" uk:canonical="1971 c. 38" uk:origin="TNA" uk:type="legislation">the 1971 Act</ref>, the particulars being that on 9&#160;July&#160;2016 the offender had in his possession 90.9 milligrams of cocaine, 1 month concurrent.  Count&#160;3, possessing criminal properly, contrary to section&#160;329(1) of the 2002 Act, the particulars being that on 9&#160;July&#160;2016 the offender was in possession of &#163;845 in cash which he knew or suspected represented the proceeds of crime, 6 months' imprisonment concurrent.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_10">
+	  <num style="font-family:'Times New Roman';font-size:12pt">10.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Indictment 383, possessing a&#160;controlled drug of class B with intent, contrary to <ref href="http://www.legislation.gov.uk/id/ukpga/1971/38/section/5/3" uk:canonical="" uk:origin="TNA" uk:type="legislation">section&#160;5(3)</ref> of the <ref href="http://www.legislation.gov.uk/id/ukpga/1971/38" uk:canonical="1971 c. 38" uk:origin="TNA" uk:type="legislation">Misuse of Drugs Act 1971</ref>, the particulars being that on 22&#160;November&#160;2015 the offender had in his possession 15.63&#160;grams of cannabis skunk with the intention of supplying it to another, 12 months' imprisonment concurrent.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_11">
+	  <num style="font-family:'Times New Roman';font-size:12pt">11.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Indictment 520, count&#160;1, entering or becoming involved in a money laundering arrangement, contrary to <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/328/1" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 328(1)</ref> of the <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29" uk:canonical="2002 c. 29" uk:origin="TNA" uk:type="legislation">Proceeds of Crime Act 2002</ref>, the particulars being that between 1&#160;November&#160;2015 and 30&#160;January&#160;2016 the offender and three others entered into or became involved in a money laundering arrangement by pretending that the money used to buy 37 Poole Crescent, Leeds came from a&#160;legitimate source when they knew or suspected that in reality the money represented someone's benefit from crime, 18 months' imprisonment concurrent.  Count&#160;2, converting criminal property, contrary to <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/327/1" uk:canonical="" uk:origin="TNA" uk:type="legislation">section&#160;327(1)</ref>(c) of <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29" uk:canonical="2002 c. 29" uk:origin="TNA" uk:type="legislation">the 2002 Act</ref>, the particulars being that on 23&#160;March&#160;2016 the offender and another converted criminal property, namely &#163;5,860 in cash, by purchasing a&#160;BMW vehicle, 3 months' imprisonment concurrent.  Count&#160;3, possessing a&#160;controlled drug of class B with intent, contrary to <ref href="http://www.legislation.gov.uk/id/ukpga/1971/38/section/5/3" uk:canonical="" uk:origin="TNA" uk:type="legislation">section&#160;5(3)</ref> of the <ref href="http://www.legislation.gov.uk/id/ukpga/1971/38" uk:canonical="1971 c. 38" uk:origin="TNA" uk:type="legislation">Misuse of Drugs Act 1971</ref>, the particulars being that on 28&#160;January&#160;2016 the offender and another had in their possession a&#160;quantity of cannabis with the intention of to supplying it to another, 3&#160;years' imprisonment consecutive.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_12">
+	  <num style="font-family:'Times New Roman';font-size:12pt">12.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">As we have noted, the overall sentence was therefore a&#160;term of 12 years' imprisonment.  Gentles was sentenced to a term 4 years and 6 months for the wounding offence charged as count 1 on indictment 209.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_13">
+	  <num style="font-family:'Times New Roman';font-size:12pt">13.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">The facts, in greater detail and in logical chronology, where these.  Indictment 520.  The offender was in a&#160;relationship with Casey Nay in&#160;January&#160;2016.  That month, Ms&#160;Nay purchased 37 Poole Crescent in Leeds from her aunt for &#163;90,000.  That money came from the profits made by the offender from his involvement in drug dealing.  On 5&#160;January, Ms&#160;Nay paid &#163;69,590 in cash into her bank account with a&#160;further cash deposit of &#163;9,800 on 12&#160;January&#160;2016.  On 26&#160;January, she transferred &#163;82,485 into the account of a&#160;firm of solicitors in Leeds in order to purchase the house, having previously paid a&#160;deposit of about &#163;10,000.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_14">
+	  <num style="font-family:'Times New Roman';font-size:12pt">14.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">When Ms&#160;Nay made the initial payment into her account of &#163;69,590, the bank queried where that money had come from.  Ms&#160;Nay said she had received the money from the Criminal Injuries Compensation Board because of an&#160;offence committed against her.  In fact, when the police spoke to the CICB it emerged she had received a&#160;payout of &#163;7,500 in March 2003 but that was the extent of the money given to her by way of compensation.  Both Ms&#160;Nay and her mother, Christine Raisbeck, told the same story to the solicitors in Leeds.  They were in due course charged with money laundering offences.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_15">
+	  <num style="font-family:'Times New Roman';font-size:12pt">15.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">On 28 April 2016, the police went to 37 Poole Crescent.  Ms Nay, the offender and their child were living at that address at the time.  The police arrested Ms&#160;Nay on suspicion of money laundering.  The offender was allowed to leave the address with the child.  During the course of a search the police found over 9 kilograms of skunk cannabis in the loft with a street value of nearly &#163;80,000.  Most of the cannabis was packaged in 1 ounce deals but there were some 1&#160;gram deals as well.  The police also seized some money from a&#160;rucksack.  The fingerprints of Ms Nay and the offender were found on some of the drugs and cash.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_16">
+	  <num style="font-family:'Times New Roman';font-size:12pt">16.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">There were two cars parked on the driveway of the house.  One of the cars was a&#160;BMW X5 that was registered to Ms Nay and the other a&#160;BMW X3 that was registered to the offender.  The police contacted the previous owner of Ms&#160;Nay's car, who informed them that the offender had arranged the sale and that he had paid &#163;5,700 in cash for the car.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_17">
+	  <num style="font-family:'Times New Roman';font-size:12pt">17.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">It was plain to the police when they first arrived at the house that, since the purchase from Ms Nay's aunt, the offender and Ms Nay had installed a large fence around the property effectively turning it into a&#160;compound.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_18">
+	  <num style="font-family:'Times New Roman';font-size:12pt">18.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">There were also CCTV cameras in operation at the address.  The police retrieved some of the footage.  That showed the offender and Ms&#160;Nay walking into the house with a red bag that had "selling like hotcakes" written on the side.  Some of the drugs in the loft were found inside a&#160;red bag of the same design.  On one occasion, the CCTV footage captured a&#160;BMW pulling up outside the house.  Ms&#160;Nay walked from the house to the car and returned with a black bin liner that had something inside it.  Some of the drugs in the loft were found inside blank bin liners.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_19">
+	  <num style="font-family:'Times New Roman';font-size:12pt">19.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">When the police examined the offender's bank account, they saw that no wages or benefits had been paid into the account since 2003.  Whenever a bill was due to be paid, a&#160;cash deposit was made into the account in order to pay it.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_20">
+	  <num style="font-family:'Times New Roman';font-size:12pt">20.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">The offender was arrested on suspicion of money laundering and drug dealing.  In his police interview he gave a&#160;prepared statement in which he said that he had no financial connection to the house, and he was unaware of the presence of drugs and money either in the house or in his car.  He stated he made a living from selling cars and gardening.  He answered no comment during the interview itself, following which he was released on bail.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_21">
+	  <num style="font-family:'Times New Roman';font-size:12pt">21.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Indictment 382.  On 9&#160;July&#160;2016, at a time when he was on police bail, police officers on mobile patrol saw a&#160;Range Rover drive past them near York Road in Leeds.  There were two people in the car.  The police turned their car around and drove after the Range Rover.  By the time the police had caught up with the car, it had stopped by the side of the road.  The front passenger door was open and there were bags of cannabis on the pavement.  The offender was sitting in the driver's seat.  He drove off but when the police gave chase he pulled over.  He got out of the car and tried to run off but the officers managed to catch him.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_22">
+	  <num style="font-family:'Times New Roman';font-size:12pt">22.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">He was arrested and on being searched the police found &#163;845 in cash on him.  He said he was going to use the money to buy a&#160;motorbike.  When the officers searched the car they found a mobile telephone and some cocaine.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_23">
+	  <num style="font-family:'Times New Roman';font-size:12pt">23.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">An examination of the mobile phone revealed nine messages or conversations from 6 to 8&#160;July&#160;2016 between the offender and others concerned with the supply of drugs.  One text message showed that the offender was in the habit of using someone else to deliver drugs for him.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_24">
+	  <num style="font-family:'Times New Roman';font-size:12pt">24.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">The cannabis on the pavement was seized and examined.  In total there were 26 packages weighing 23.3&#160;grams with a&#160;street value of &#163;200.  The cocaine in the car weighed less than a&#160;gram with a&#160;street value of &#163;40.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_25">
+	  <num style="font-family:'Times New Roman';font-size:12pt">25.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">During the course of his police interview the offender said he&#160;was not guilty but thereafter declined to answer questions.  Once again he was released on bail.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_26">
+	  <num style="font-family:'Times New Roman';font-size:12pt">26.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Indictment 383.  On 22&#160;November&#160;2016, when the offender was subject to two sets of police bail, the police stopped him in Beeston while he was driving a&#160;VW Golf.  The offender smelt of cannabis and looked agitated, so the police decided to search his car.  They found cannabis on the front seat.  The offender said it did not belong to him.  He claimed to have just bought the car.  In total, the police seized 17&#160;bags of cannabis from the car with a combined weight of about 15 grams and a street value of &#163;170.  The police also seized &#163;210 in cash from the offender along with a&#160;mobile telephone which when examined contained further evidence of the offender's involvement in the supply of cannabis to a&#160;number of customers.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_27">
+	  <num style="font-family:'Times New Roman';font-size:12pt">27.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">During the course of his police interview on this occasion the offender made no comment.  He was released on bail and reinterviewed in&#160;March&#160;2017, when again he answered no comment.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_28">
+	  <num style="font-family:'Times New Roman';font-size:12pt">28.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Indictment 209.  On 25&#160;February&#160;2017, the offender was now on police bail for three separate matters.  At 4.00&#160;am, he drove a&#160;Mitsubishi Shogun to the Misha Food and Wine shop on Foundry Approach in Leeds.  His passengers were Gentles and another man who did not become involved in the events that followed.  The shop was located in a&#160;garage.  At that time in the morning customers could purchase items from the shop only through a hatch from the garage forecourt, from where a&#160;member of staff would fetch what they wanted from inside the store.  The offender pulled up near the forecourt.  He and his passengers went to the hatch.  At the same time Martin McDonagh approached the shop on foot and stood in the queue for the hatch.  CCTV footage from the shop on the forecourt captured what happened next.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_29">
+	  <num style="font-family:'Times New Roman';font-size:12pt">29.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Two other men arrived at the shop and a fight started between those men and the offender and Gentles.  The latter were getting the upper hand when Mr&#160;McDonagh went to intervene.  The offender and Gentles then turned on him.  Mr&#160;McDonagh threw a&#160;can of beer towards Gentles but it missed.  Gentles had been drinking from a&#160;bottle of spirits.  He took that bottle by its neck and struck Mr&#160;McDonagh on the upper body and his shoulder.  The offender then grabbed Mr&#160;McDonagh and they both fell to the floor.  While on the ground Gentles continued to strike Mr&#160;McDonagh to his upper body and head with the bottle.  When the bottle fell from Gentles' hand both men dragged Mr&#160;McDonagh to the middle of the road.  The offender picked up the spirit bottle and threw it at Mr&#160;McDonagh's head while Gentles tried to stamp on him.  The stamps missed and Mr&#160;McDonagh was able to get to his&#160;feet and run off.  He had sustained a wound to his head that was visible on the CCTV footage.  The attack lasted about 20&#160;seconds.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_30">
+	  <num style="font-family:'Times New Roman';font-size:12pt">30.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">The offender and Gentles, with their friend, got back into the Mitsubishi and drove down Foundry Approach in pursuit of Mr&#160;McDonagh, who by now had hidden behind a wall.  The offender drove around for a&#160;time looking for Mr&#160;McDonagh before he drove back to the shop.  CCTV footage shows the Mitsubishi pull up on the forecourt.  Gentles got out to look for a tooth he had lost in the fight and the offender can be seen laughing at him.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_31">
+	  <num style="font-family:'Times New Roman';font-size:12pt">31.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">They then got back into the car to continue their hunt for Mr&#160;McDonagh.  By then, he had&#160;emerged from his hiding place and was making his way back to the shop to collect the beer he had bought.  The offender saw him and deliberately drove the Mitsubishi into him, knocking him over.  The car then drove over the top of Mr&#160;McDonagh and away from the scene.  Mr&#160;McDonagh lay prone on the ground for a&#160;few minutes before he was able to get to his&#160;feet and stagger off.  Members of the public came to his assistance and the police were called.  Paramedics treated Mr McDonagh outside the shop were the fight had&#160;started.  It was clear that he was seriously injured.  Part of his ear was missing.  The police found it at the scene where the car had struck him.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_32">
+	  <num style="font-family:'Times New Roman';font-size:12pt">32.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">He was admitted to Leeds General Infirmary on 25&#160;February&#160;2017 and remained there for 5 weeks.  The hospital records show that upon admission he was bleeding from the left side of his head and part of his ear was missing.  CT scans reveled multiple rib fractures on both sides of his chest and a collapsed lung.  A chest drain was inserted and intervenous fluids administered.  Further examinations showed that he had fractures to the bilateral temporal bone and to the base of his skull, contusions to the bilateral frontal lobe, a mandibular fracture and multiple lacerations to his face, a&#160;fracture to his cervical vertebra, fractures to the first to fourth ribs on the right and to the first to eighth ribs on the left, a fracture to his left scapula and a mediastinal haematoma.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_33">
+	  <num style="font-family:'Times New Roman';font-size:12pt">33.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">The offender was arrested on 15&#160;March.  He answered no comment to questions in interview.  When he was arrested, Gentles too chose not to answer questions.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_34">
+	  <num style="font-family:'Times New Roman';font-size:12pt">34.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">The offender has 11 previous convictions from nine court appearances: convictions for attempted robbery in 2003, battery and assault occasioning actual bodily harm in 2005, non-dwelling burglary in 2008, possession of cannabis with intent to supply in 2001, driving a&#160;motor vehicle with excess alcohol in 2012, resisting a&#160;police officer in the exercise of his duty in 2015, and failing to surrender to custody in 2017.  Prior to the index offences, he had never been made the subject of a&#160;sentence of immediate imprisonment.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_35">
+	  <num style="font-family:'Times New Roman';font-size:12pt">35.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">There was a pre-sentence report dated 20&#160;December&#160;2017.  The focus of the report was on the offences of violence committed against Mr&#160;McDonagh.  During the author's interview with the offender, he said he could not explain why he attacked Mr&#160;McDonagh in the way he did.  He said he had drunk approximately two litres of spirits (brandy and sambuca) throughout the day and night prior to the offence and as such was heavily intoxicated.  He said he had little memory of what happened.  He described the offences as a&#160;mistake.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_36">
+	  <num style="font-family:'Times New Roman';font-size:12pt">36.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">In a&#160;second interview with the author of the report, the offender said he had been a&#160;cocaine and cannabis addict in 2006 and that he owed a&#160;lot of money to Mr&#160;McDonagh.  The violence used against him was not premeditated.  Mr&#160;McDonagh started the fight and then ran at the offender's car.  The offender said he did not make a&#160;conscious decision to ram his car into Mr McDonagh.  He said he deeply regretted what he had done.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_37">
+	  <num style="font-family:'Times New Roman';font-size:12pt">37.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">In the opinion of the author of the report, the offender "has the ability to use excessive violence when aggrieved and this is heightened by heavy alcohol use".  The offender took limited responsibility for his offending in interview, although by the second interview he seemed to have reflected more on his poor decision-making ability.  In the first interview the offender had said that prior to his remand in custody he was supporting himself and his family financially through his work as a&#160;self-employed car trader.  By the time of the second interview it was clear that he and his family had been living off the profits of drug dealing.  The offender said he only became involved in dealing drugs because of pressure placed upon him by others.  He said that since the police seized the drugs from his home he was indebted to drug dealers in the amount of about &#163;70,000.  The author assessed the offender as posing a medium risk of serious harm to members of the public but this risk would reduce if he undertook work in prison to address his pro-criminal attitudes.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_38">
+	  <num style="font-family:'Times New Roman';font-size:12pt">38.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Mr&#160;McDonagh produced a&#160;victim personal statement on 14&#160;October.  In it, he described himself as a&#160;broken man.  During his early days in hospital he was in a drug-induced coma and his family was told to prepare for the worst.  Following his discharge after 5 weeks, he attended outpatient appointments to help with his physical recovery.  He still suffered from constant pain, headaches and flashbacks.  He feels paranoid being around people because he worries that they might attack him.  The injury to his throat makes it difficult for him to talk and eat.  He is afraid to leave his house.  He becomes anxious and tearful at the slightest things.  Something when he lies down he can feel the sensation of the car going over his head.  He does not know what the future holds for him or his family. </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_39">
+	  <num style="font-family:'Times New Roman';font-size:12pt">39.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">The sentencing hearing took place over the course of 3&#160;and 4&#160;January&#160;2018 and involved a&#160;number of defendants and charges.  In the case of the offender, the Recorder focused first on his drug dealing activities, which was represented by count&#160;3 on indictment 520, count&#160;1 on indictment 382 and count 1 on indictment 383.  She observed that his offending spanned a period between&#160;December&#160;2014 and&#160;January&#160;2016, by which time he had amassed enough cash to be able to afford a&#160;house.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_40">
+	  <num style="font-family:'Times New Roman';font-size:12pt">40.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">In the Recorder's view, all of the evidence pointed to the offender occupying a&#160;leading role by reference to the Sentencing Council's definitive guidelines on drug offences.  As these offences involved street dealing, the harm was category 3.  That meant the starting point for possession of cannabis with intent to supply was 4 years' imprisonment with a&#160;range of two and a&#160;half years to 5 years.  Affording the offender credit for his pleas of guilty reduced that sentence to one of 3 years' imprisonment.  That was the sentence imposed in respect of count&#160;3 on indictment 520 with lesser concurrent terms on the remaining counts on that indictment and the counts on indictment 382 and 383.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_41">
+	  <num style="font-family:'Times New Roman';font-size:12pt">41.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">As to indictment 209, the section&#160;18 offences against Mr&#160;McDonagh, the Recorder decided that count&#160;2 fell into category 1 with a starting point of 12 years' imprisonment and a range of 9 to 16 years.  Affording the offender credit of 25&#160;per&#160;cent for his plea of guilty reduced that sentence to 9 years' imprisonment to be served consecutively to the global sentence of 3 years imposed in respect of the drug and money laundering convictions.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_42">
+	  <num style="font-family:'Times New Roman';font-size:12pt">42.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Mr&#160;Jarvis, who appears on behalf of the Solicitor General, submitted that the sentences in this case were unduly lenient.  Count&#160;2 on indictment 209, wounding with intent, was clearly a&#160;category 1 case.  There was greater harm because the injury caused to Mr&#160;McDonagh was serious in the context of the offence and because the assault was sustained and repeated, as shown by the offence charged as count 1.  There was higher culpability because of the use of the car as a&#160;weapon.  That meant that the starting point was 12 years' imprisonment.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_43">
+	  <num style="font-family:'Times New Roman';font-size:12pt">43.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">However, he argued that the offence was also aggravated by a&#160;number of features: the offender's previous convictions for violence, the commission of offences while on police bail, the ongoing effect on the victim, the commission of the offence while under the influence of alcohol, and previous violence to the same victim: the facts of count&#160;1.  There was, he submitted, very little by way of mitigation.  These aggravating features, incorporating as they did the facts of count 1, should have moved the sentence up towards the top of the range for a&#160;category 1 offence, 9 to 16 years, and possibly even beyond it before the offender was entitled to a&#160;reduction of 25 per cent credit for his pleas of guilty.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_44">
+	  <num style="font-family:'Times New Roman';font-size:12pt">44.</num>
+	  <intro>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">He drew the court's attention to the way in which the Recorder dealt with this offence:</span></p>
+	  </intro>
+	  <subparagraph>
+	    <content>
+	      <p class="Parenthetical" style="text-align:justify;margin-left:0.8in;margin-right:0.51in"><span style="font-family:'Times New Roman'">The category range in respect of a category 1 offence is one of nine to sixteen years' custody with a&#160;starting point of twelve years' custody.  Your case is aggravated by reason of the location of the offence, that is in a public street, and the fact that it took place in the early hours of the morning.  I&#160;am equally affected by the ongoing effect upon the victim which has been referred to in the victim impact statement.  It was&#160;group activity whilst under the influence of alcohol, and involved the use of a very large vehicle with the inevitable consequences of very serious injuries.  </span></p>
+	    </content>
+	  </subparagraph>
+	  <subparagraph>
+	    <content>
+	      <p class="Parenthetical" style="text-align:justify;margin-left:0.8in;margin-right:0.51in"><span style="font-family:'Times New Roman'">For that reason the starting point is one of twelve years' imprisonment.</span></p>
+	    </content>
+	  </subparagraph>
+	</paragraph>
+	<paragraph eId="para_45">
+	  <num style="font-family:'Times New Roman';font-size:12pt">45.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">She then went on to give credit for the plea.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_46">
+	  <num style="font-family:'Times New Roman';font-size:12pt">46.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">That short citation from the sentencing remarks, Mr&#160;Jarvis submits, indicates the error of the Recorder: the aggravating factors which she either identified or partly identified were not given proper weight.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_47">
+	  <num style="font-family:'Times New Roman';font-size:12pt">47.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">As to the drugs offences, Mr&#160;Jarvis makes no criticism of the decision of the Recorder to take a&#160;global view of those offences.  It was a&#160;category 3 case of harm and the offender undoubtedly occupied a&#160;leading role, so the starting point was 4 years.  The offending was aggravated by a&#160;similar previous conviction from 2011 and the fact that some of these offences were committed on bail and the latter factor in particular should have served to seriously aggravate this offending because having been caught out a&#160;number of times, the offender continued to deal in cannabis.  Again, there was little mitigation available to him, although he was entitled to credit of 25 per cent for his guilty pleas.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_48">
+	  <num style="font-family:'Times New Roman';font-size:12pt">48.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">In the course of reaching her conclusion as to the sentences for the drug offences, the Recorder included in that assessment the sentences for the money laundering offences and Mr&#160;Jarvis submits that that was an&#160;error on her part.  The Sentencing Council definitive guideline for fraud provides that where an&#160;offender's culpability is high in a&#160;case of money laundering, as it was here, and the amount laundered is between &#163;10,000 and &#163;100,000, the starting point based on a&#160;figure of &#163;50,000 is 3 years' imprisonment with a&#160;range of 18 months to 4 years.  It was significant that the offender used his partner and her family to assist in the laundering of the fruits of his criminal activities by purchasing a house and a car.  Money laundering is a&#160;different species of criminality from drug dealing and so Mr&#160;Jarvis submits the sentences on counts 1 and 2 on indictment 520 and also count&#160;3 on indictment 382 should not simply have been subsumed within the sentences for the drug offences; they should have resulted in concurrent sentences as between themselves but with the final term running consecutively to the sentences for the drug offences and the violence.  On this basis, it was submitted on behalf of the Solicitor General that the overall sentence of 12 years' imprisonment was unduly lenient; it should have been significantly higher than that.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_49">
+	  <num style="font-family:'Times New Roman';font-size:12pt">49.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">For the offender, Mr&#160;Jacobs accepted that in relation to the section&#160;18 offences the first assault, count&#160;1, made the second assault, count&#160;2, more serious but he submitted that it did not amount to a&#160;series of assaults over time and therefore its effect as an aggravating feature was more limited.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_50">
+	  <num style="font-family:'Times New Roman';font-size:12pt">50.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">The offender had pleaded guilty to the section&#160;18 offences on 23&#160;April&#160;2017 and had asked to be dealt with on that day, as he had on each occasion that he had pleaded guilty to other offences on 17&#160;May and 28&#160;July.  In fact, he had not been sentenced until 4&#160;January&#160;2018 due to the fact that Gentles did not plead guilty to count&#160;1 until 3&#160;January.  The time on remand pending sentence was a&#160;mitigating factor.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_51">
+	  <num style="font-family:'Times New Roman';font-size:12pt">51.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Mr&#160;Jacobs also submitted that the offender had shown a&#160;measure of remorse, reflected in both his pleas and in a&#160;letter sent to the court reflecting his regret at the injury caused to Mr&#160;McDonagh and the steps he had taken while in prison to address the underlying issues behind his offending.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_52">
+	  <num style="font-family:'Times New Roman';font-size:12pt">52.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">We should say at this point that the court has received a&#160;report from HMP Lindholme dated 12 March 2018.  The report is mixed in terms of the offender&#8217;s conduct, although there has been a&#160;more recent improvement and there have been two tests for drugs which have proved negative.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_53">
+	  <num style="font-family:'Times New Roman';font-size:12pt">53.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">So far as the money laundering offences were concerned, Mr&#160;Jacobs accepts that they constitute criminality which is different to drug dealing but he submits that on the facts of the present case there was a clear link: the offender was laundering the profits of his drug dealing.  To order that the sentences should be served concurrently was the proper exercise of a&#160;judicial discretion and reflected the principle of totality.  He also draws our attention to the fact that the offender was a relatively young man who had never been to prison before.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_54">
+	  <num style="font-family:'Times New Roman';font-size:12pt">54.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">We have considered the submissions on each side.  We start with a&#160;few preliminary observations.  First, we recognise that in dealing with a number of defendants for a&#160;number of different crimes the Recorder faced a&#160;challenging sentencing exercise.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_55">
+	  <num style="font-family:'Times New Roman';font-size:12pt">55.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Second, it was important to recognise and keep in mind that there were three different categories of offending: violence, drug dealing and money laundering.  While we recognise that there was a&#160;degree of overlap between the drug offences and the money laundering offences in the sense that the Recorder was able to categorise the drug offending by reference to the cash that was generated, it was nevertheless important for the sentencer to mark the distinct criminality of money laundering as an&#160;offence and to do so in accordance with the guidelines.  We accept the categorisation of the offence on count&#160;1, indictment 520, advanced by Mr&#160;Jarvis.</span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_56">
+	  <num style="font-family:'Times New Roman';font-size:12pt">56.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Third, accordingly, we accept Mr&#160;Jarvis' submission that the sentences for the money laundering offences should have been marked by concurrent sentences as between themselves but with the final term running consecutively to the sentences for drugs and the section 18 offences.  The definitive guidelines, where the offender's culpability is high and the amount laundered is of the order of &#163;50,000, indicate a&#160;starting point of 3 years and a range of 18 months to 4&#160;years.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_57">
+	  <num style="font-family:'Times New Roman';font-size:12pt">57.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Fourth, the section&#160;18 offence charged as count&#160;2 in indictment 290 was a&#160;particularly serious offence.  The Recorder took as a starting point a&#160;term of 12 years.  In our judgment, that was too low.  By this stage the offender was subject to three sets of police bail.  After an earlier beating, the subject of count 1, which rendered the victim vulnerable, he was hunted down and deliberately run over.  A car was used as a weapon.  The physical harm caused was extensive and the ongoing effect on the victim has been grave.  We would have expected a starting point of the order of 16 years before credit for the plea.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_58">
+	  <num style="font-family:'Times New Roman';font-size:12pt">58.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Fifth, in respect of all the sentences the offender was entitled to credit for his pleas.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_59">
+	  <num style="font-family:'Times New Roman';font-size:12pt">59.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">Sixth, we recognise that it was and is important to take into account the principle of totality.  </span></p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_60">
+	  <num style="font-family:'Times New Roman';font-size:12pt">60.</num>
+	  <content>
+	    <p class="ContinCol" style="text-align:justify;margin-left:0.4in;margin-right:0.01in"><span style="font-family:'Times New Roman'">In the light of these points, we are clear that the overall sentence of 12 years was unduly lenient.  There are a&#160;number of ways in which the sentence might have been structured but we propose to give effect to our judgment in the following way.  We quash the sentence of 18 months concurrent on count&#160;1 of indictment 520 and substitute a&#160;term of 2 years to be severed consecutively.  The overall term to be served will consequently be a sentence of 14 years.</span></p>
+	  </content>
+	</paragraph>
+      </decision>
+    </judgmentBody>
+  </judgment>
+</akomaNtoso>

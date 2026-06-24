@@ -1,0 +1,186 @@
+{
+  "case_name": "Regina v Nicholas Richard Adair",
+  "case_reference": "[2018] EWCA Crim 1170",
+  "court": "Court of Appeal (Criminal Division)",
+  "jurisdiction": "England and Wales",
+  "case_date": "2018-03-16",
+  "judge": "Lord Justice Simon, Mr Justice Goose, Her Honour Judge Tayton QC",
+  "docket_number": "201800470 A3",
+  "parties": [
+    "Regina (Prosecutor)",
+    "Nicholas Richard Adair (Offender/Defendant)"
+  ],
+  "case_summary": "This case was a reference by the Solicitor General under Section 36 of the Criminal Justice Act 1988 on the grounds that sentences imposed on Nicholas Richard Adair at the Leeds Crown Court were unduly lenient. Adair was a high-volume street-level and mid-market cannabis dealer between 2015 and 2016. He generated massive cash profits from his illicit trade, which he sought to integrate into the legitimate economy. Adair utilized his domestic partner, Casey Nay, and her mother, Christine Raisbeck, as personal enablers to layer and integrate these profits. Ms. Nay deposited \u00a379,390 in cash into her bank account, falsely asserting to her bank and to a firm of solicitors in Leeds that the funds originated from a Criminal Injuries Compensation Board payout. On January 26, 2016, she transferred \u00a382,485 to the solicitors to purchase a residential property at 37 Poole Crescent, Leeds for \u00a390,000 cash. Adair also converted \u00a35,860 in cash to purchase a BMW vehicle for Ms. Nay. Following a police raid on April 28, 2016, police discovered over 9 kilograms of skunk cannabis (valued at \u00a380,000) in the loft. Adair was arrested, bailed, and subsequently arrested twice more while on bail after being found with dealer-quantities of cannabis, cash, and drug-supply communications. While on bail for these three separate drug and money laundering matters, Adair committed a horrific section 18 GBH assault, hunting down a victim (Martin McDonagh) and driving a Mitsubishi Shogun over him, causing life-altering fractures and injuries. The Court of Appeal had to determine if the sentencing judge erred in ordering that the money laundering counts run concurrently to the predicate drug supply sentences under the principle of totality. The Court of Appeal ruled that money laundering represents a distinct species of criminality from the underlying predicate drug offences and must be penalized with consecutive sentences to reflect its independent social harm, even if the laundered money is the direct product of the predicate offences. The Court of Appeal quashed the concurrent 18-month sentence for the s328 arrangement and substituted a consecutive 2-year sentence, increasing Adair's global term of imprisonment from 12 years to 14 years.",
+  "aml_status": "Confirmed Verdict",
+  "aml_status_reasoning": "The judgment details the appeal of sentences passed on Nicholas Richard Adair, who pleaded guilty to three counts of money laundering under POCA 2002 (specifically entering into or becoming involved in a money laundering arrangement contrary to s328(1), converting criminal property contrary to s327(1)(c), and possessing criminal property contrary to s329(1)). The Court of Appeal confirmed these convictions, held that money laundering is a separate and distinct species of criminality, and increased the offender's overall sentence by directing that the money laundering count (s328) run consecutively to his drug supply and violence offences.",
+  "poca_sections": [
+    "s327",
+    "s328",
+    "s329"
+  ],
+  "poca_sections_enriched": {
+    "s327": {
+      "title": "Concealing etc.",
+      "full": "Section 327 of POCA 2002 makes it a criminal offence to conceal, disguise, convert, transfer, or remove criminal property from England and Wales, Scotland, or Northern Ireland. The prosecution must prove that the property in question is 'criminal property' (representing a benefit from criminal conduct) and that the defendant knew or suspected this.",
+      "elements": [
+        "Concealing, disguising, converting, transferring, or removing criminal property",
+        "Property must represent a benefit from criminal conduct",
+        "Defendant must know or suspect the property represents such a benefit",
+        "Exemptions apply if an authorised disclosure is made or there is a reasonable excuse"
+      ],
+      "notes": "Maximum penalty on indictment is 14 years' imprisonment, a fine, or both. This is one of the three principal money laundering offences.",
+      "part_chapter": "Part 7 \u2014 Money Laundering",
+      "confidence": "high",
+      "confidence_reasoning": "Extremely well-established statutory provision, explicitly referenced and partially quoted in the judgment snippet."
+    },
+    "s328": {
+      "title": "Arrangements",
+      "full": "Section 328 of POCA 2002 provides that a person commits an offence if they enter into or become concerned in an arrangement which they know or suspect facilitates (by whatever means) the acquisition, retention, use, or control of criminal property by or on behalf of another person. This section is designed to catch professional intermediaries and facilitators of money laundering.",
+      "elements": [
+        "Entering into or becoming concerned in an arrangement",
+        "Arrangement facilitates the acquisition, retention, use, or control of criminal property",
+        "Facilitation is by or on behalf of another person",
+        "Defendant knows or suspects the property is criminal property"
+      ],
+      "notes": "Maximum penalty on indictment is 14 years' imprisonment. Often used against professional enablers (solicitors, accountants, bankers).",
+      "part_chapter": "Part 7 \u2014 Money Laundering",
+      "confidence": "high",
+      "confidence_reasoning": "Directly quoted in the provided judgment snippet and is a core, highly familiar provision of POCA Part 7."
+    },
+    "s329": {
+      "title": "Acquisition, use and possession",
+      "full": "Section 329 of POCA 2002 makes it an offence to acquire, use, or possess criminal property. Like sections 327 and 328, it requires proof that the property is criminal property and that the defendant knew or suspected this, subject to specific statutory defences such as acquiring it for adequate consideration.",
+      "elements": [
+        "Acquiring, using, or possessing criminal property",
+        "Property must represent a benefit from criminal conduct",
+        "Defendant must know or suspect the property represents such a benefit",
+        "Defence of adequate consideration (excluding provision of goods/services that help in criminal conduct)"
+      ],
+      "notes": "Maximum penalty on indictment is 14 years' imprisonment. This section targets the end-user or possessor of the illicit funds.",
+      "part_chapter": "Part 7 \u2014 Money Laundering",
+      "confidence": "high",
+      "confidence_reasoning": "Well-known principal money laundering offence, referenced in the judgment snippet."
+    }
+  },
+  "poca_analysis": "The judgment substantively discusses and applies three key money laundering provisions of POCA 2002:\n\n1. Section 328(1) (Entering into or becoming involved in a money laundering arrangement): This section was engaged by Count 1 of Indictment 520. Adair, along with Casey Nay and Christine Raisbeck, entered into an arrangement to launder \u00a390,000 in cash\u2014the profits of Adair's drug dealing. Ms. Nay deposited \u00a369,590 on January 5, 2016, and \u00a39,800 on January 12, 2016, into her bank account and subsequently transferred \u00a382,485 to a Leeds solicitors' firm to purchase 37 Poole Crescent. Ms. Nay and Ms. Raisbeck lied to the bank and solicitors, claiming the cash came from a Criminal Injuries Compensation Board payout. The Court of Appeal held that this arrangement involved high culpability and a value of approximately \u00a350,000\u2013\u00a3100,000, attracting a guideline starting point of 3 years. It ruled that because money laundering is a 'different species of criminality from drug dealing,' the sentence for this arrangement must run consecutively to the drug supply and violence counts, substituting a consecutive 2-year sentence.\n\n2. Section 327(1)(c) (Converting criminal property): This section was engaged by Count 2 of Indictment 520. Adair and an accomplice converted \u00a35,860 in cash (drug profits) into a BMW vehicle on March 23, 2016, registering it to Ms. Nay. The court maintained a concurrent sentence for this count but recognized it as part of the broader, structured laundering scheme.\n\n3. Section 329(1) (Acquiring, using or possessing criminal property): This section was engaged by Count 3 of Indictment 382. When stopped by police on July 9, 2016 while on bail, Adair was found in possession of \u00a3845 in cash, which he knew or suspected represented drug proceeds.\n\nThe judgment is a significant authority on the relationship between POCA money laundering offences and their predicate crimes, holding that laundering must be sentenced consecutively to mark its separate status as a distinct head of criminality, even when the offender is laundering his own direct profits.",
+  "precedent_value": "This case establishes the authoritative sentencing principle that money laundering (under s327, s328, or s329 POCA 2002) is a distinct head of criminality from its underlying predicate offense (such as drug supply). Sentences for money laundering should not simply be run concurrently to the predicate sentences under a general totality argument; rather, they should run consecutively (or be otherwise distinctly penalized) to reflect the independent harm of laundering, particularly where the money laundering involves complex layering, the co-opting of domestic enablers, and the deception of regulated financial institutions and legal professionals.",
+  "key_findings": [
+    "Money laundering (POCA 2002) is a separate and distinct species of criminality from the underlying predicate offences (such as drug supply), and sentences for money laundering should generally run consecutively to rather than concurrently with the predicate offence sentences, even when the laundered funds represent the direct profits of those predicate offences.",
+    "An arrangement under Section 328(1) of POCA 2002 is established when an offender uses a domestic partner or family member to deposit large volumes of unexplained cash into a bank account and transfer those funds to a firm of solicitors to purchase real estate under a false narrative regarding the source of wealth.",
+    "Converting criminal property under Section 327(1)(c) of POCA 2002 is demonstrated where an offender uses cash profits from drug dealing to purchase high-value luxury assets, such as a BMW vehicle, and registers them in the name of a third-party nominee.",
+    "Possession of criminal property under Section 329(1) of POCA 2002 is established where a street-level drug dealer is found with significant sums of unexplained cash on their person during a routine police stop, where the context and mobile phone evidence demonstrate active involvement in drug supply.",
+    "Under the Sentencing Council guidelines for money laundering, high culpability (such as utilizing close associates as enablers and deceiving regulated solicitors and banks) and a value between \u00a310,000 and \u00a3100,000 (with a starting point of \u00a350,000) attracts a starting point of 3 years' imprisonment.",
+    "The principle of totality must be applied carefully in complex cases involving multiple indictments for violence, drug supply, and money laundering; the sentencing court must ensure that each distinct head of social harm is independently penalized, and that the global sentence remains proportionate to the overall criminality."
+  ],
+  "defendants": [
+    {
+      "name": "Nicholas Richard Adair",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Adair pleaded guilty to three money laundering counts under POCA (s327, s328, s329), drug supply, and GBH wounding. The Court of Appeal increased his sentence to 14 years by making the money laundering (s328) sentence run consecutively (2 years) instead of concurrently, finding the previous 12-year concurrent sentence unduly lenient.",
+      "poca_section": "Multiple",
+      "poca_section_reasoning": "Engaged s328(1) by arranging for partner Casey Nay to funnel \u00a379,390 in drug cash through her bank to a solicitors' firm for a house purchase. Engaged s327(1)(c) by converting \u00a35,860 cash to buy a BMW. Engaged s329(1) by possessing \u00a3845 in cash representing drug sales when stopped in a Range Rover.",
+      "key_facts": [
+        "Generated massive cash profits from dealing skunk cannabis in Leeds between late 2014 and January 2016.",
+        "Used drug profits to fund the \u00a390,000 cash purchase of 37 Poole Crescent, Leeds, in January 2016.",
+        "Converted \u00a35,860 cash on March 23, 2016, to buy a BMW vehicle.",
+        "Fingerprints found on some of the 9kg of skunk cannabis (value \u00a380,000) and cash seized from his loft on April 28, 2016.",
+        "Found in possession of \u00a3845 cash and dealer-quantities of cannabis when stopped in a Range Rover on July 9, 2016.",
+        "Stopped on November 22, 2016, with 17 bags of cannabis and \u00a3210 in cash while driving a VW Golf."
+      ],
+      "sic_codes": [
+        {
+          "code": "45112",
+          "description": "Sale of used cars and light motor vehicles",
+          "confidence": "85%",
+          "reasoning": "Adair claimed to make a living and support his family as a self-employed car trader, and specifically stated he sold cars."
+        },
+        {
+          "code": "81300",
+          "description": "Landscape service activities",
+          "confidence": "85%",
+          "reasoning": "Adair explicitly claimed in police interviews that he made a living from gardening, which falls under landscape service activities."
+        }
+      ],
+      "sic_overall_reasoning": "Adair claimed to support himself and his family through a legitimate self-employed trade of car dealing and gardening, which he used as a front or explanation for his large cash holdings and purchases, although his actual primary income came from illicit drug distribution."
+    },
+    {
+      "name": "Casey Nay",
+      "role": "Defendant",
+      "verdict": "Charged/Pending",
+      "verdict_reasoning": "Arrested on suspicion of money laundering on April 28, 2016, and subsequently charged under POCA 2002 for her role in depositing and layering Adair's drug cash through her bank account. Her final verdict is not finalized in this specific appellate judgment, which is restricted to Adair's sentence appeal.",
+      "poca_section": "s328",
+      "poca_section_reasoning": "Participated directly in a money laundering arrangement by depositing \u00a379,390 in drug cash into her bank account and transferring \u00a382,485 to a Leeds solicitors' firm to buy 37 Poole Crescent, falsely claiming the cash was a Criminal Injuries Compensation Board payout to obscure its illicit source.",
+      "key_facts": [
+        "Deposited \u00a369,590 cash on January 5, 2016, and \u00a39,800 on January 12, 2016, into her bank account.",
+        "Transferred \u00a382,485 to a Leeds solicitors' firm on January 26, 2016, to purchase 37 Poole Crescent for \u00a390,000.",
+        "Falsely claimed to her bank and solicitors that the funds were from a Criminal Injuries Compensation Board payout.",
+        "Registered owner of a BMW X5 purchased by Adair with \u00a35,700/\u00a35,860 in cash.",
+        "Fingerprints found on drugs and cash seized from the loft of her home on April 28, 2016."
+      ],
+      "sic_codes": [
+        {
+          "code": "68100",
+          "description": "Buying and selling of own real estate",
+          "confidence": "75%",
+          "reasoning": "Nay personally purchased 37 Poole Crescent, Leeds, for \u00a390,000 cash, which constitutes buying own real estate."
+        },
+        {
+          "code": "96090",
+          "description": "Other service activities n.e.c.",
+          "confidence": "60%",
+          "reasoning": "Nay has no other active commercial business or professional trade disclosed in the judgment, acting primarily as a domestic nominee."
+        }
+      ],
+      "sic_overall_reasoning": "Nay engaged in personal real estate transactions, specifically purchasing 37 Poole Crescent, Leeds from her aunt for \u00a390,000 using bank and solicitor channels, but has no other legitimate trade or corporate entity disclosed."
+    },
+    {
+      "name": "Christine Raisbeck",
+      "role": "Defendant",
+      "verdict": "Charged/Pending",
+      "verdict_reasoning": "Charged with money laundering offences for her involvement in supporting and validating the false narrative given to the Leeds solicitors to justify the source of the \u00a390,000 cash house purchase. Her final verdict is not finalized in this specific appeal.",
+      "poca_section": "s328",
+      "poca_section_reasoning": "Acted as an enabler in the s328(1) arrangement by repeating the false Criminal Injuries Compensation Board payout story to the Leeds solicitors' firm to facilitate the purchase of 37 Poole Crescent.",
+      "key_facts": [
+        "Mother of Casey Nay and grandmother of Adair's child.",
+        "Participated in the real estate transaction meetings with solicitors in Leeds.",
+        "Backed up her daughter's false explanation that the \u00a390,000 cash for 37 Poole Crescent was a legitimate compensation payout.",
+        "Charged in due course with money laundering offences under POCA 2002."
+      ],
+      "sic_codes": [
+        {
+          "code": "96090",
+          "description": "Other service activities n.e.c.",
+          "confidence": "50%",
+          "reasoning": "Raisbeck has no professional business or trade described in the judgment, acting purely in a personal facilitating capacity."
+        }
+      ],
+      "sic_overall_reasoning": "Christine Raisbeck did not have any active business, commercial operations, or professional trade mentioned in the judgment, acting solely as a personal facilitator in the property transaction."
+    },
+    {
+      "name": "Gentles",
+      "role": "Defendant",
+      "verdict": "Convicted",
+      "verdict_reasoning": "Pleaded guilty on the first day of trial (January 3, 2018) to wounding with intent (count 1, indictment 209) and was sentenced to 4 years and 6 months' imprisonment.",
+      "poca_section": "N/A",
+      "poca_section_reasoning": "Only involved in the violent section 18 wounding assault; did not participate in or face charges for the drug supply or POCA money laundering offences.",
+      "key_facts": [
+        "Passenger in the Mitsubishi Shogun driven by Adair to a garage shop on February 25, 2017.",
+        "Struck Martin McDonagh on the upper body and shoulder with a bottle of spirits.",
+        "Attempted to stamp on McDonagh while he was on the ground.",
+        "Sentenced to 4 years and 6 months' imprisonment on January 4, 2018."
+      ],
+      "sic_codes": [
+        {
+          "code": "96090",
+          "description": "Other service activities n.e.c.",
+          "confidence": "50%",
+          "reasoning": "Gentles has no professional business, trade, or employment described in the judgment."
+        }
+      ],
+      "sic_overall_reasoning": "Gentles was a co-defendant on a violent assault charge (wounding with intent) and had no commercial, professional, or corporate business activities mentioned in the judgment."
+    }
+  ],
+  "defendant_count": 4,
+  "source_file": "Adair, R v.xml"
+}
