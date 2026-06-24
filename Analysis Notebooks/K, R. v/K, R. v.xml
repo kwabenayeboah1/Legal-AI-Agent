@@ -1,0 +1,539 @@
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:uk="https://caselaw.nationalarchives.gov.uk/akn">
+  <judgment name="judgment">
+    <meta>
+      <identification source="#tna">
+	<FRBRWork>
+	  <FRBRthis value="https://caselaw.nationalarchives.gov.uk/id/ewca/crim/2007/491"/>
+	  <FRBRuri value="https://caselaw.nationalarchives.gov.uk/id/ewca/crim/2007/491"/>
+	  <FRBRdate date="2007-03-08" name="judgment"/>
+	  <FRBRauthor href="#ewca-criminal"/>
+	  <FRBRcountry value="GB-UKM"/>
+	  <FRBRnumber value="491"/>
+	  <FRBRname value="K, R. v"/>
+	</FRBRWork>
+	<FRBRExpression>
+	  <FRBRthis value="https://caselaw.nationalarchives.gov.uk/ewca/crim/2007/491"/>
+	  <FRBRuri value="https://caselaw.nationalarchives.gov.uk/ewca/crim/2007/491"/>
+	  <FRBRdate date="2007-03-08" name="judgment"/>
+	  <FRBRauthor href="#ewca-criminal"/>
+	  <FRBRlanguage language="eng"/>
+	</FRBRExpression>
+	<FRBRManifestation>
+	  <FRBRthis value="https://caselaw.nationalarchives.gov.uk/ewca/crim/2007/491/data.xml"/>
+	  <FRBRuri value="https://caselaw.nationalarchives.gov.uk/ewca/crim/2007/491/data.xml"/>
+	  <FRBRdate date="2024-11-07T05:05:46" name="transform"/>
+	  <FRBRdate date="2024-11-20T13:10:08" name="tna-enriched"/>
+	  <FRBRauthor href="#tna"/>
+	  <FRBRformat value="application/xml"/>
+	</FRBRManifestation>
+      </identification>
+      <lifecycle source="#">
+	<eventRef date="2007-03-08" refersTo="#judgment" source="#"/>
+      </lifecycle>
+      <references source="#tna">
+	<TLCOrganization eId="ewca-criminal" href="https://www.gov.uk/courts-tribunals/court-of-appeal-criminal-division" shortForm="Court of Appeal Criminal Division" showAs="The Court of Appeal of England and Wales (Criminal Division)"/>
+	<TLCOrganization eId="tna" href="https://www.nationalarchives.gov.uk/" showAs="The National Archives"/>
+	<TLCEvent eId="judgment" href="#" showAs="judgment"/>
+	<TLCPerson eId="regina" href="" showAs="Regina"/>
+	<TLCPerson eId="i-k" href="" showAs="I K"/>
+	<TLCRole eId="appellant" href="" showAs="Appellant"/>
+	<TLCRole eId="respondent" href="" showAs="Respondent"/>
+	<TLCPerson eId="judge-lord-justice-dyson" href="/judge-lord-justice-dyson" showAs="LORD JUSTICE DYSON"/>
+	<TLCPerson eId="judge-mr-justice-crane" href="/judge-mr-justice-crane" showAs="MR JUSTICE CRANE"/>
+	<TLCPerson eId="judge-his-honour-judge-radford" href="/judge-his-honour-judge-radford" showAs="HIS HONOUR JUDGE RADFORD"/>
+      </references>
+      <proprietary source="#">
+	<uk:court>EWCA-Criminal</uk:court>
+	<uk:year>2007</uk:year>
+	<uk:number>491</uk:number>
+	<uk:cite>[2007] EWCA Crim 491</uk:cite>
+	<uk:parser>0.26.10</uk:parser>
+	<uk:hash>fc8bc4ac03d7a895369e8e4ea1462853eb1e0504ca1e175cb84fa79a62a15888</uk:hash>
+	<uk:tna-enrichment-engine>6.0.2</uk:tna-enrichment-engine>
+      </proprietary>
+      <presentation source="#">
+	<html:style>
+#judgment { font-family: 'Times New Roman'; font-size: 12pt; }
+#judgment .Normal { font-size: 12pt; }
+#judgment .CoverText { text-align: right; text-decoration-line: underline; text-decoration-style: solid; font-size: 12pt; }
+#judgment .CoverMain { font-weight: bold; text-decoration-line: underline; text-decoration-style: solid; font-size: 12pt; }
+#judgment .Header { font-family: Univers; font-size: 12pt; }
+#judgment .Footer { font-family: Univers; font-size: 12pt; }
+#judgment .CoverDesc { text-align: center; font-weight: bold; font-size: 18pt; }
+#judgment .ParaLevel1 { text-align: justify; margin-left: 0.5in; font-size: 12pt; }
+#judgment .ParaLevel2 { text-align: justify; margin-left: 0.98in; font-size: 12pt; }
+#judgment .ParaLevel3 { text-align: justify; margin-left: 1.48in; font-size: 12pt; }
+#judgment .ParaLevel4 { text-align: justify; margin-left: 1.97in; font-size: 12pt; }
+#judgment .ParaLevel5 { text-align: justify; margin-left: 2.46in; font-size: 12pt; }
+#judgment .ParaLevel6 { text-align: justify; margin-left: 2.95in; font-size: 12pt; }
+#judgment .ParaLevel7 { text-align: justify; margin-left: 3.45in; font-size: 12pt; }
+#judgment .ParaLevel8 { text-align: justify; margin-left: 3.94in; font-size: 12pt; }
+#judgment .ParaLevel9 { text-align: justify; margin-left: 4.43in; font-size: 12pt; }
+#judgment .Quote { text-align: justify; margin-left: 1in; margin-right: 1in; font-size: 12pt; }
+#judgment .HeaderChar { font-size: 12pt; }
+#judgment .FooterChar { font-size: 12pt; }
+#judgment .QuoteChar { font-style: italic; font-size: 12pt; color: #404040; }
+</html:style>
+      </presentation>
+    </meta>
+    <header>
+      <p class="CoverText" style="text-align:left">Neutral Citation Number: <neutralCitation>[2007] EWCA Crim 491</neutralCitation></p>
+      <p class="CoverText">Case No: <docketNumber>2007/01066/C5</docketNumber></p>
+      <p class="CoverMain"><courtType refersTo="#ewca-criminal">IN THE SUPREME COURT OF JUDICATURE</courtType></p>
+      <p class="CoverMain"><courtType refersTo="#ewca-criminal">COURT OF APPEAL (CRIMINAL DIVISION)</courtType></p>
+      <p class="CoverMain">ON APPEAL FROM SOUTHWARK CROWN COURT</p>
+      <p class="CoverMain"><docTitle>IN THE MATTER OF A PROSECUTOR&#8217;S APPEAL UNDER SECTION 58 OF THE CRIMINAL JUSTICE ACT 2003</docTitle></p>
+      <p class="CoverMain">HIS HONOUR JUDGE ELWEN</p>
+      <p class="CoverText">Royal Courts of Justice</p>
+      <p class="CoverText">Strand, London, WC2A 2LL</p>
+      <p class="CoverText"><docDate date="2007-03-08" refersTo="#judgment">8<span style="vertical-align:super;font-size:smaller">th</span> March 2007</docDate></p>
+      <p style="text-align:center"><span style="font-weight:bold">Before :</span></p>
+      <p class="CoverMain" style="text-align:center"><judge refersTo="#judge-lord-justice-dyson">LORD JUSTICE DYSON</judge></p>
+      <p class="CoverMain" style="text-align:center"><judge refersTo="#judge-mr-justice-crane">MR JUSTICE CRANE</judge></p>
+      <p class="CoverMain" style="text-align:center"><span style="font-weight:normal;text-decoration-line:none">and</span></p>
+      <p class="CoverMain" style="text-align:center"><judge refersTo="#judge-his-honour-judge-radford">HIS HONOUR JUDGE RADFORD</judge></p>
+      <p style="text-align:center">- - - - - - - - - - - - - - - - - - - - -</p>
+      <p style="text-align:center"><span style="font-weight:bold">Between :</span></p>
+      <table uk:widths="0.91in 4.31in 1in">
+	<tr>
+	  <td>
+	    <p/>
+	  </td>
+	  <td>
+	    <p style="text-align:center"><party as="#appellant" refersTo="#regina" style="font-weight:bold">Regina</party></p>
+	  </td>
+	  <td>
+	    <p class="CoverMain" style="text-align:center"><role refersTo="#appellant">Appellant</role></p>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <p/>
+	  </td>
+	  <td>
+	    <p style="text-align:center"><span style="font-weight:bold">- and -</span></p>
+	  </td>
+	  <td>
+	    <p style="text-align:right"/>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <p/>
+	  </td>
+	  <td>
+	    <p style="text-align:center"><party as="#respondent" refersTo="#i-k" style="font-weight:bold">I K</party></p>
+	  </td>
+	  <td>
+	    <p class="CoverMain" style="text-align:center"><role refersTo="#respondent">Respondent</role></p>
+	  </td>
+	</tr>
+      </table>
+      <p style="text-align:center">- - - - - - - - - - - - - - - - - - - - -</p>
+      <p style="text-align:center">(Transcript of the Handed Down Judgment of</p>
+      <p style="text-align:center">WordWave International Ltd</p>
+      <p style="text-align:center">A Merrill Communications Company</p>
+      <p style="text-align:center">190 Fleet Street, London EC4A 2AG</p>
+      <p style="text-align:center">Tel No: 020 7421 4040  Fax No:  020 7831 8838</p>
+      <p style="text-align:center">Official Shorthand Writers to the Court)</p>
+      <p style="text-align:center">- - - - - - - - - - - - - - - - - - - - -</p>
+      <p style="text-align:center">Martin Evans &amp; Denis Barry (instructed by RCPO) for the Appellant</p>
+      <p style="text-align:center"><span style="font-weight:bold">Louis French &amp; Simon Stirling </span>(instructed by<span style="font-weight:bold"> Grove Tompkins Bosworth</span>) for the Respondent</p>
+      <p style="text-align:center">Hearing dates: 05 March 2007</p>
+      <p style="text-align:center">- - - - - - - - - - - - - - - - - - - - -</p>
+      <p class="CoverDesc"><span style="font-weight:normal;text-decoration-line:underline;text-decoration-style:solid;font-size:20pt">Judgment</span></p>
+    </header>
+    <judgmentBody>
+      <decision>
+	<level class="author">
+	  <content>
+	    <p><span style="font-weight:bold">Lord Justice Dyson: </span></p>
+	  </content>
+	</level>
+	<level eId="lvl_1">
+	  <paragraph eId="para_1">
+	    <num>1.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">The question of law that arises on this appeal is whether the proceeds of cheating the Revenue can amount to &#8220;criminal property&#8221; within the meaning of <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340/5" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340(5)</ref> of the <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29" uk:canonical="2002 c. 29" uk:origin="TNA" uk:type="legislation">Proceeds of Crime Act 2002</ref> (&#8220;POCA&#8221;), where the trade whose profits are liable to income tax or whose turnover is subject to VAT is a legitimate trade.  This is an appeal pursuant to <ref href="http://www.legislation.gov.uk/id/ukpga/2003/44/section/58" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 58</ref> of the <ref href="http://www.legislation.gov.uk/id/ukpga/2003/44" uk:canonical="2003 c. 44" uk:origin="TNA" uk:type="legislation">Criminal Justice Act 2003</ref> against a ruling by His Honour Judge Elwen on 26 February 2007 that there was no case to answer against IK on counts 1 and 2 of the indictment.   </p>
+	    </content>
+	  </paragraph>
+	  <paragraph eId="para_2">
+	    <num>2.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">The indictment contains 12 counts.  Counts 1 and 2 charge SK and IK with money laundering contrary to section 328(1) of POCA.  The particulars are that between 1 April and 6 December 2003, they entered into or became concerned in an arrangement which they knew or suspected would facilitate the retention, use or control of criminal property, namely banknotes, by persons unknown.  Counts 3-7 allege offences of false accounting contrary to <ref href="http://www.legislation.gov.uk/id/ukpga/1968/60/section/17/1" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 17(1)</ref>(a) of the <ref href="http://www.legislation.gov.uk/id/ukpga/1968/60" uk:canonical="1968 c. 60" uk:origin="TNA" uk:type="legislation">Theft Act 1968</ref> against SK and IK. Counts 8-10 allege offences of false accounting against another defendant. Count 11 charges MR with cheating the Revenue contrary to common law.  The particulars are that between 1 January 1999 and 6 December 2003 MR &#8220;did with intent to defraud and to the prejudice of Her Majesty the Queen and the Commissioners of Inland Revenue and the Commissioners of Customs and Excise, keep an account which purported to be a true trading record of Ambrosia, which account omitted receipts from one of the tills at his market stall&#8221;.   Count 12 charges SK and MR with money laundering contrary to section 328(1) of POCA.  The particulars are that between 1 October and 6 December 2003, SK and MR &#8220;entered into or became concerned in an arrangement knowing or suspecting that the arrangement would facilitate the retention, use or control of [MR&#8217;s] criminal property, namely banknotes&#8221;.  </p>
+	    </content>
+	  </paragraph>
+	</level>
+	<level eId="lvl_2">
+	  <heading class="ParaLevel1" style="margin-left:0.5in;text-indent:-0.5in"><span style="font-style:italic">The prosecution case</span></heading>
+	  <paragraph eId="para_3">
+	    <num>3.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">The prosecution case is that between 1 April and 6 December 2003, a money service business called Kaz Money Exchange (&#8220;KME&#8221;) was used to launder almost &#163;6 million criminal cash.  Its head office is in Green Street, London E13.  SK was the owner of KME.  It is the prosecution case that his son IK assisted him in running KME.</p>
+	    </content>
+	  </paragraph>
+	  <paragraph eId="para_4">
+	    <num>4.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">KME is a money transfer business.  Customers in the UK wishing to send money to friends or relatives in Pakistan deposit cash at KME or one of its agents.  The cash is paid into the KME bank account.  Between 1 April and 6 December 2003, a total of some &#163;60 million was deposited into the KME account. </p>
+	    </content>
+	  </paragraph>
+	  <paragraph eId="para_5">
+	    <num>5.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">In the autumn of 2003, KME was investigated by HMCE.  On 6 October, officers stopped two men in Green Street.  They were taking &#163;197,000 in cash to KME.  On 6 October, SK was interviewed about the money.  He claimed that it was money that had been accumulated in the course of his business on 4 and 6 October together with money from an agent called PME.  His account was supported by receipts and other documents which were demonstrably false.  There was no challenge to this part of the prosecution case.  </p>
+	    </content>
+	  </paragraph>
+	  <paragraph eId="para_6">
+	    <num>6.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">On 6 December 2003, 2 men were stopped at the door of KME.  One was carrying a box of fruit.  Hidden under the fruit was &#163;100,000 in cash.  The cash had come from MR who runs a two-unit grocery and greengrocery shop called Ambrosia.  The shop is about 100 metres away from the head office of KME.  This was money which the prosecution say was being taken to KME to be sent on to Pakistan.  There is evidence strongly suggesting that MR had sent &#163;100,000 in cash to KME on 14 November 2003 as well, as was conceded by counsel for MR for the purposes of the submission of no case to answer.</p>
+	    </content>
+	  </paragraph>
+	  <paragraph eId="para_7">
+	    <num>7.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">There was evidence that both amounts of cash (totalling &#163;200,000) were undeclared takings from the trading of Ambrosia.  It was the prosecution case that MR syphoned off his undeclared turnover and sent the money out of the jurisdiction via KME.  There was evidence that MR had (at least) 2 tills in use at Ambrosia, provided his accountants with the figures from only one till and that he had under-declared his takings to the Revenue authorities by a substantial amount.  MR kept memo books in which were recorded the true takings of his business.  These were not disclosed to his accountants, who prepared the accounts for the purposes of income tax and VAT returns.  MR told the customs officers that the takings recorded in the memo books were dishonestly inflated so that, if he ever wished to sell his business, they would give a misleadingly rosy picture of the size of his turnover.  </p>
+	    </content>
+	  </paragraph>
+	  <paragraph eId="para_8">
+	    <num>8.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">In summary, the prosecution case in relation to counts 11 and 12 was that MR had systematically cheated the Revenue of tax and VAT between 1 January 1999 and 6 December 2003 (count 11).  The banknotes which were the subject of count 12 were undeclared takings from Ambrosia and represented, at least in part, tax and/or VAT of which the Revenue had been cheated.     </p>
+	    </content>
+	  </paragraph>
+	  <paragraph eId="para_9">
+	    <num>9.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">We turn to counts 1 and 2.  When the records of KME were analysed following the arrest of SK and MR, it was discovered that, although approximately &#163;60 million had been deposited into the KME sterling account, a smaller sum was shown in the daily reconciliation sheets.  The existence of a discrepancy of &#163;5.9 million was not in dispute.  It is the prosecution case that this discrepancy represents the proceeds of criminal conduct and that this is the reason why it was not shown in the records. More than 2500 false customer receipts were produced.  It was an admitted fact in the case that the receipts are false.  In addition, false customer lists and statement summaries were produced which purported to show business with a Pakistan based business called &#8220;Wall Street Lahore&#8221;.  The name &#8220;Wall Street Lahore&#8221; does not appear on any of the reconciliation sheets.   It is the prosecution case that SK and IK deliberately and dishonestly concealed &#163;5.9 million of large cash transactions and then manufactured false documents which purported to be a true record of KME money transfers.  </p>
+	    </content>
+	  </paragraph>
+	  <paragraph eId="para_10">
+	    <num>10.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">There was no evidence of the provenance of the &#163;5.9 million.  The case was put on the basis that the jury could properly infer a criminal source from the dishonest non-recording of the transactions and the subsequent wholesale forging of documents designed to paper over the absence of records of the money laundering.   It was said that the cheating of the Revenue which was the subject of count 11 and which gave rise to the criminal property which was the subject of count 12 was an example of the type of criminal conduct which might have given rise to the discrepancy which was the subject of counts 1 and 2.  </p>
+	    </content>
+	  </paragraph>
+	</level>
+	<level eId="lvl_3">
+	  <heading class="ParaLevel1"><span style="font-style:italic">The statutory provisions</span></heading>
+	  <paragraph eId="para_11">
+	    <num>11.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">Section 328(1) of POCA provides: </p>
+	      <block name="embeddedStructure"><embeddedStructure>
+		  <paragraph>
+		    <num>&#8220;(1)</num>
+		    <content>
+		      <p class="Quote" style="margin-left:1in;text-indent:0.5in">A person commits an offence if he enters into or becomes concerned in an arrangement which he knows or suspects facilitates (by whatever means) the acquisition, retention, use or control of criminal property by or on behalf of another person.&#8221;</p>
+		    </content>
+		  </paragraph>
+		</embeddedStructure></block>
+	    </content>
+	  </paragraph>
+	  <paragraph eId="para_12">
+	    <num>12.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">So far as material, <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340</ref> provides: </p>
+	      <block name="embeddedStructure"><embeddedStructure>
+		  <paragraph>
+		    <num>&#8220;(1)</num>
+		    <content>
+		      <p class="Quote" style="margin-left:1in;text-indent:0.5in">This section applies for the purposes of this Part.</p>
+		    </content>
+		  </paragraph>
+		  <paragraph>
+		    <num>(2)</num>
+		    <intro>
+		      <p class="Quote" style="margin-left:1in;text-indent:0.5in">Criminal conduct is conduct which-</p>
+		    </intro>
+		    <subparagraph>
+		      <num>(a)</num>
+		      <content>
+			<p class="Quote" style="margin-left:1.18in;text-indent:0.32in">constitutes an offence in any part of the United Kingdom, or </p>
+		      </content>
+		    </subparagraph>
+		    <subparagraph>
+		      <num>(b)</num>
+		      <content>
+			<p class="Quote" style="margin-left:1.18in;text-indent:0.32in">would constitute an offence in any part of the United Kingdom if it occurred there.</p>
+		      </content>
+		    </subparagraph>
+		  </paragraph>
+		  <paragraph>
+		    <num>(3)</num>
+		    <intro>
+		      <p class="Quote" style="margin-left:1in;text-indent:0.5in">Property is criminal property if-</p>
+		    </intro>
+		    <subparagraph>
+		      <num>(a)</num>
+		      <content>
+			<p class="Quote" style="margin-left:1.18in;text-indent:0.32in">it constitutes a person&#8217;s benefit from criminal conduct or it represents such a benefit (in whole or part and whether directly or indirectly), and</p>
+		      </content>
+		    </subparagraph>
+		    <subparagraph>
+		      <num>(b)</num>
+		      <content>
+			<p class="Quote" style="margin-left:1.18in;text-indent:0.32in">the alleged offender knows or suspects that it constitutes or represents such a benefit.</p>
+		      </content>
+		    </subparagraph>
+		  </paragraph>
+		  <paragraph>
+		    <num>(4)</num>
+		    <intro>
+		      <p class="Quote" style="margin-left:1in;text-indent:0.5in">It is immaterial-</p>
+		    </intro>
+		    <subparagraph>
+		      <num>(a)</num>
+		      <content>
+			<p class="Quote" style="margin-left:1.18in;text-indent:0.32in">who carried out the conduct;</p>
+		      </content>
+		    </subparagraph>
+		    <subparagraph>
+		      <num>(b)</num>
+		      <content>
+			<p class="Quote" style="margin-left:1.18in;text-indent:0.32in">who benefited from it;</p>
+		      </content>
+		    </subparagraph>
+		    <subparagraph>
+		      <num>(c)</num>
+		      <content>
+			<p class="Quote" style="margin-left:1.18in;text-indent:0.32in">whether the conduct occurred before or after the passing of <ref href="http://www.legislation.gov.uk/id/ukpga/1968/60" uk:canonical="1968 c. 60" uk:origin="TNA" uk:type="legislation">this Act</ref>.</p>
+		      </content>
+		    </subparagraph>
+		  </paragraph>
+		  <paragraph>
+		    <num>(5)</num>
+		    <content>
+		      <p class="Quote" style="margin-left:1in;text-indent:0.5in">A person benefits from conduct if he obtains property as a result of or in connection with the conduct.</p>
+		    </content>
+		  </paragraph>
+		  <paragraph>
+		    <num>(6)</num>
+		    <content>
+		      <p class="Quote" style="margin-left:1in;text-indent:0.5in">If a person obtains a pecuniary advantage as a result of or in connection with conduct, he is to be taken to obtain as a result of or in connection with the conduct a sum of money equal to the value of the pecuniary advantage.&#8221;</p>
+		    </content>
+		  </paragraph>
+		</embeddedStructure></block>
+	    </content>
+	  </paragraph>
+	</level>
+	<level eId="lvl_4">
+	  <heading class="ParaLevel1"><span style="font-style:italic">The judge&#8217;s rulings</span></heading>
+	  <paragraph eId="para_13">
+	    <num>13.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">On 23 February, the judge ruled that there was no case to answer in relation to count 12.  He acceded to the argument advanced on behalf of SK and MR that the &#163;200,000 cash were the proceeds of legitimate trading and were not criminal property within the meaning of <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340/3" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340(3)</ref>.  It was submitted that &#8220;the banknotes relied upon cannot be criminal property, because they are the product of legitimate trading, and nothing done or not done in relation to them can suddenly convert them into criminal property&#8221; (transcript p 50F).  The judge accepted that neither the trading conducted by MR at Ambrosia nor the takings from that trading were illegal.  He considered that he was in any event bound to reach this conclusion by the decision of this court in <span style="font-style:italic">R v Gabriel</span> <ref href="https://caselaw.nationalarchives.gov.uk/ewca/crim/2006/229" uk:canonical="[2006] EWCA Crim 229" uk:isNeutral="true" uk:origin="TNA" uk:type="case" uk:year="2006">[2006] EWCA Crim 229</ref>.  He said: </p>
+	      <block name="embeddedStructure"><embeddedStructure>
+		  <level>
+		    <content>
+		      <p class="Quote" style="margin-left:1in">&#8220;It is absolutely plain to me that in relation to any confiscation proceedings that may follow upon a conviction for cheating the Revenue, that the arguments advanced by the Crown in relation to the meaning of &#8220;criminal property&#8221; would hold water. With regard to the money laundering count, awkward though it may be, it seems to me that the conclusions reached by Lord Justice Gage in <span style="font-weight:bold">Gabriel</span> carry the day and that there is a fatal flaw in Count 12.</p>
+		    </content>
+		  </level>
+		  <level>
+		    <content>
+		      <p class="Quote" style="margin-left:1in">I will conclude that incomplete disclosure of takings cannot convert legitimate takings into criminal property as defined. Count 12 will therefore be withdrawn from the jury.&#8221;</p>
+		    </content>
+		  </level>
+		</embeddedStructure></block>
+	    </content>
+	  </paragraph>
+	  <paragraph eId="para_14">
+	    <num>14.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">On 26 February, submission was made to the judge that in the light of his earlier ruling, he should rule that there was no case to answer in relation to counts 1 and 2.  He ruled as follows: </p>
+	      <block name="embeddedStructure"><embeddedStructure>
+		  <level>
+		    <content>
+		      <p class="Quote" style="margin-left:1in">&#8220;In the light of my ruling on Friday, feeling myself bound by the Court of Appeal&#8217;s decision in <span style="font-weight:bold">Gabriel, 2006 EWCA Crim</span><span/><span style="font-weight:bold">[3] [229],</span> I ruled that there was no case for [SK] and [MR] to answer on Count 12 on the indictment.</p>
+		    </content>
+		  </level>
+		  <level>
+		    <content>
+		      <p class="Quote" style="margin-left:1in">In the light of that ruling the submission is now made that there can, therefore, be no case to answer on counts 1 and 2. Those counts arise under Section 328 (1) of the <span style="font-weight:bold">Proceeds of Crime</span><span/><span style="font-weight:bold">Act 2002</span>, which make it an offence for a person to enter into or become concerned in an arrangement which he knows or suspects facilitates, by whatever means, the acquisition, retention, use or control of criminal property, by or on behalf of another person.</p>
+		    </content>
+		  </level>
+		  <level>
+		    <content>
+		      <p class="Quote" style="margin-left:1in">All that has been said and argued, both on Friday and today, centres on this question of what is criminal property within the meaning of <span style="font-weight:bold"><ref href="http://www.legislation.gov.uk/id/ukpga/2002/29" uk:canonical="2002 c. 29" uk:origin="TNA" uk:type="legislation">Proceeds of Crime Act 2002</ref></span>, in other words, what is the correct interpretation of the various subsections of <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340" uk:canonical="" uk:origin="TNA" uk:type="legislation">Section 340</ref>.</p>
+		    </content>
+		  </level>
+		  <level>
+		    <content>
+		      <p class="Quote" style="margin-left:1in">The Crown accepts that there is no predicate offence in relation to Counts 1 and 2. It did, however, open the case on the basis that the events giving rise to the allegation in Count 12, where a clear illustration of criminal property being laundered. Notwithstanding Mr Martin Evans&#8217; careful submissions, it is clear to me that in the light of the decision in <span style="font-weight:bold">Galbraith</span>, it would be wrong to invite the jury, taking the Crown&#8217;s case at its highest, to infer, in the context of Counts 1 and 2, that there was criminal property which had been laundered, and I so rule.&#8221;</p>
+		    </content>
+		  </level>
+		</embeddedStructure></block>
+	    </content>
+	  </paragraph>
+	  <paragraph eId="para_15">
+	    <num>15.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">Following these rulings, the judge certified that the prosecution be granted leave to appeal on two grounds.  The first is that he erred in law when he ruled that the cash from MR (count 12) could not amount to &#8220;criminal property&#8221; either in whole or in part for the purposes of <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340/5" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340(5)</ref> or (6) of POCA.  The second ground of appeal is that the judge erred in law when he ruled that, since the prosecution could not show that any of the &#163;5.9 million was <span style="font-style:italic">not </span>the proceeds of cheating the Revenue (exemplified in count 11), there was insufficient evidence that the money referred to in counts 1 and 2 was criminal property. </p>
+	    </content>
+	  </paragraph>
+	  <paragraph eId="para_16">
+	    <num>16.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">Having decided that there was no case to answer in relation to counts 1,2 and 12, the judge directed the jury to acquit SK on all three counts and MR on count 12.  The unfortunate result is that, if this appeal is allowed, IK alone will face counts 1 and 2.  Although no defendant now has to face count 12, it remains relevant to the issues that arise on this appeal.  This is because, as is apparent from his second ruling, the judge&#8217;s reasoning in relation to count 12 informed his decision in relation to counts 1 and 2.  It is clear that the reason why the judge certified that leave to appeal should be given was because count 12 raised a point of law of some importance as to the meaning of &#8220;criminal property&#8221; in <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340</ref> and as to the reach of the decision of this court in <span style="font-style:italic">Gabriel.  </span></p>
+	    </content>
+	  </paragraph>
+	</level>
+	<level eId="lvl_5">
+	  <heading class="ParaLevel1"><span style="font-style:italic">R v Gabriel</span></heading>
+	  <paragraph eId="para_17">
+	    <num>17.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">The appellant was convicted on two counts of possession of criminal property contrary to section 329(1)(c) of POCA.  He had been found by the police to be in possession of certain sums of cash which the prosecution said were the proceeds of crime.   After the jury had retired, the jury asked a question whether the regular buying and selling of goods to supplement the household income without declaring it constitute a criminal offence &#8220;given the declarations made on application for benefit (or lack of declaration to the Inland Revenue)&#8221;.  The Recorder answered that &#8220;both matters can constitute a criminal offence provided that there is dishonesty on the part of the person concerned&#8221;.</p>
+	    </content>
+	  </paragraph>
+	  <paragraph eId="para_18">
+	    <num>18.</num>
+	    <content>
+	      <p class="ParaLevel1" style="margin-left:0.5in">The appeal was allowed.  Gage LJ (giving the judgment of the court) said: </p>
+	      <block name="embeddedStructure"><embeddedStructure>
+		  <paragraph>
+		    <num>&#8220;20.</num>
+		    <content>
+		      <p class="Quote" style="margin-left:1in;text-indent:0.5in">In our judgment the difficulty raised by the jury's question is that it appears to assume that a failure to declare income from the buying and selling of goods to the Inland Revenue and the Department of Work and Pensions per se gave rise to criminal property. The Recorder's answer does nothing to dispel this assumption. Mr O'Brien on behalf of the prosecution accepts that that would appear to be the proper assumption to be gleaned from the jury's question. He submits that a trade in stolen goods would mean that the profits obtained were criminal property. We agree with that proposition. However, we do not agree with his submission that profits made from trading in legitimate goods, without declaring the profits to the Inland Revenue or the Department of Work and Pensions, could in any circumstances convert the profits into criminal property. We do not see how it can be said that, after the second and third occasion of the claim for benefits, in the knowledge that there were profits obtained from legitimate trading, that could of itself convert the profits into criminal property. In our judgment the failure to declare the profits does not make the trading a criminal offence.</p>
+		    </content>
+		  </paragraph>
+		  <paragraph>
+		    <num style="font-family:Arial;font-size:10pt">21.</num>
+		    <content>
+		      <p class="Quote" style="margin-left:1in;text-indent:0.5in">It was for the prosecution to prove that the money the subject of the counts was criminal property. The answer given by the Recorder to the jury did not explain that profits from legitimate trading could not constitute criminal property. In our judgment he ought so to have done. This difficulty is not overcome by the Recorder's direction that it must be dishonest. He did not explain who must have acted dishonestly and at what stage or in what connection, and with what transaction the dishonesty must be proved. We recognise that the failure to declare profits for the purposes of income tax may give rise to an offence, but that does not make the legitimate trading in goods an offence of itself.</p>
+		    </content>
+		  </paragraph>
+		  <paragraph>
+		    <num style="font-family:Arial;font-size:10pt">22.</num>
+		    <content>
+		      <p class="Quote" style="margin-left:1in;text-indent:0.5in">The prosecution's submissions in relation to that part of the question which relates to benefit fraud are stronger. We can see how benefits obtained on the basis of a false declaration or a failure to disclose a change in circumstances may amount to obtaining a pecuniary advantage, namely the benefits: see <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340/6" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340(6)</ref> of <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29" uk:canonical="2002 c. 29" uk:origin="TNA" uk:type="legislation">the Act</ref>. But in this case no attempt was made to prove that the appellant or anyone else in her family had made any false declaration or failed to disclose a change of circumstances. Miss Manley points out that it appears that at least some of the benefits that were obtained were benefits which were granted on a non-means-tested basis. There was no evidence as to how much were on a non-means-tested basis.</p>
+		    </content>
+		  </paragraph>
+		  <paragraph>
+		    <num style="font-family:Arial;font-size:10pt">23.</num>
+		    <content>
+		      <p class="Quote" style="margin-left:1in;text-indent:0.5in">This gives rise to what we consider to be one of the main difficulties in the way of the prosecution's attempt to uphold these convictions. The case as opened by counsel, and as put to the appellant, was one of alleged money laundering. It was not put on the basis of an income tax fraud or benefit fraud. The suggestion made to the appellant was that either she or someone else in her house had been engaged in some criminal activity. It was never suggested that she was trading legitimately and not declaring income to the Inland Revenue or the Department of Work and Pensions. The question from the jury raised a matter which had never been the subject of any evidence or any allegation.&#8221;</p>
+		    </content>
+		  </paragraph>
+		</embeddedStructure></block>
+	    </content>
+	  </paragraph>
+	</level>
+	<level eId="lvl_6">
+	  <content>
+	    <p class="ParaLevel1"><span style="font-style:italic">Discussion</span></p>
+	    <p class="ParaLevel1"><span style="font-style:italic">Count 12</span></p>
+	  </content>
+	</level>
+	<paragraph eId="para_19">
+	  <num>19.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">We shall start by considering the judge&#8217;s ruling in relation to count 12.  It is important to keep in mind that in this case there was an allegation that between January 1999 and December 2003, MR had cheated the Revenue (count 11). It is unnecessary to decide whether keeping separate records as a preliminary step could amount to cheating the Revenue, since it was accepted by MR that count 11 raised a case to answer.  The case was that, over a period of four years, MR had systematically cheated the Revenue of income tax and VAT by under-declaring the takings of his business and transferring to KME for transmission to Pakistan sums of money which had not been declared.  The sums so transferred represented, at least in part, the tax and VAT of which the Revenue had been cheated.  In fact, count 12 was restricted to the sum of &#163;200,000 which, the prosecution alleged, SK and MR intended to transfer between 1 October and 6 December 2003.</p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_20">
+	  <num>20.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">Was it open to the jury to find that the &#163;200,000 was &#8220;criminal property&#8221;?  In our judgment, a person who cheats the Revenue obtains a pecuniary advantage as a result of criminal conduct within the meaning of <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340/6" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340(6)</ref> of POCA.  We did not understand Mr French to contend otherwise.  Accordingly, MR was taken to have obtained a sum equal to the value of the amount of which the Revenue was cheated: again, <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340/6" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340(6)</ref>. That sum is a benefit by reason of <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340/5" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340(5)</ref>.  The question is whether the undeclared takings &#8220;constitutes a person&#8217;s benefit from criminal conduct or it represents such a benefit (in whole or part and whether directly or indirectly)&#8221;: <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340/3" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340(3)</ref>(a).  </p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_21">
+	  <num>21.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">To take a simplified paradigm case, let us suppose that over a 2 year period D fraudulently under-declares the takings of his business by &#163;250,000 per annum with the result that he deprives the Revenue of &#163;100,000 in income tax and &#163;25,000 in VAT in each of the 2 years.  In each year, D has obtained a pecuniary advantage of &#163;125,000 as a result of his cheating the Revenue.  That is a &#8220;benefit&#8221; within the meaning of <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340/3" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340)(3)</ref>(a) of POCA.  The undeclared takings of &#163;500,000 &#8220;<span style="font-style:italic">represent&#8221;  </span>that benefit &#8220;<span style="font-style:italic">in part&#8221; </span>within the meaning of <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340/3" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340(3)</ref>(a) in the sense that the undeclared takings of &#163;500,000 should have borne tax and a sum representing or equivalent to part of that figure should have been paid in tax.    </p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_22">
+	  <num>22.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">We did not understand Mr French to contest any of this. He submitted that, if a trader receives or retains money received legitimately in the course of business, but whilst doing so harbours a secret intention not to disclose the true trading levels to the Revenue, the mere fact of harbouring such a secret intention cannot convert the legitimately received or retained funds into criminal property within the meaning of POCA.  He said that such funds would only become criminal property once a false declaration was made.  </p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_23">
+	  <num>23.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">We are prepared to assume that these submissions of Mr French are correct.  In the present case, the prosecution submitted that it was open to the jury to infer that part of the &#163;200,000 found in the circumstances in which the cash was found in this case, represented the fruits of cheating which had already taken place.   </p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_24">
+	  <num>24.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">The basis on which the judge ruled as he did in relation to count 12 was that he was bound by <span style="font-style:italic">Gabriel </span>to do so.  He ruled that the fact that the cash was the takings of MR&#8217;s business was of itself fatal to the submission that it (or part of it) represented the fruits of criminal conduct and was therefore criminal property.  MR&#8217;s business was lawful and that was determinative of the issue.  If that were correct, it would mean that the money laundering provisions of POCA can never be invoked in relation to tax evasion where the business concerned is engaged in a lawful trade or other activity.  That would be a surprising conclusion to reach.  It is clear from the pre-POCA jurisprudence that unpaid tax which was the product of cheating was a pecuniary advantage and, therefore, a &#8220;benefit&#8221; for the purpose of confiscation order proceedings under the <ref href="http://www.legislation.gov.uk/id/ukpga/1988/33" uk:canonical="1988 c. 33" uk:origin="TNA" uk:type="legislation">Criminal Justice Act 1988</ref>: see, for example, <span style="font-style:italic">R v Moran </span><ref href="https://caselaw.nationalarchives.gov.uk/ewca/crim/2001/1770" uk:canonical="[2001] EWCA Crim 1770" uk:isNeutral="true" uk:origin="TNA" uk:type="case" uk:year="2001">[2001] EWCA Crim 1770</ref>, <ref href="#" uk:canonical="[2002] 1 WLR 253" uk:isNeutral="false" uk:origin="TNA" uk:type="case" uk:year="2002">[2002] 1 WLR 253</ref>.  It cannot have been intended that the money laundering provisions of POCA, particularly those relating to the obtaining of benefit in the form of a pecuniary advantage, should not extend to the fruits of cheating the Revenue.  </p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_25">
+	  <num>25.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">Was the judge bound by <span style="font-style:italic">Gabriel </span>so to hold?  In our view, he was not.  We agree that profits made from trading in legitimate goods without declaring the profits to the Revenue or the Department of Work and Pensions do not become criminal property simply by reason of the failure to declare profits.  The profits are not of themselves illegal or criminal property: they are the product of a business carrying on a lawful trade.  We do not consider that the court in <span style="font-style:italic">Gabriel </span>went as far as the judge in the present case thought.  </p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_26">
+	  <num>26.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">In para 20, Gage LJ started by saying that the jury&#8217;s question assumed that a failure to declare income &#8220;per se gave rise to criminal property&#8221;.  It was the failure of the Recorder to dispel that assumption which led to the court allowing the appeal.  With respect to the court, it is obviously right that a failure to declare income does not of itself give rise to criminal property.  The point was made again in the penultimate sentence of para 20 and in the second sentence of para 21: &#8220;profits from legitimate trading could not constitute criminal property&#8221;.  </p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_27">
+	  <num>27.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">The nearest that Gage LJ came to saying anything that could support the judge&#8217;s ruling in the present case was towards the end of para 20 where he said: &#8220;However, we do not agree &#8230;that profits made from trading in legitimate goods, without declaring the profits to the Inland Revenue or the Department of Work and Pensions could in any circumstances<span style="font-style:italic"/>convert the profits into criminal property&#8221; (emphasis added).   Judge Elwen may have been misled by this sentence.  In our judgment, however, these words do not mean more than that profits from legitimate trading can never without more give rise to criminal property.  Understood in this way, they are consistent with the other passages to which we have referred.  They are also consistent with the recognition (at the end of para 21) that failure to declare profits may give rise to an offence and with the whole of para 23.  At para 23, Gage LJ said that benefits obtained on the basis of a false declaration may amount to obtaining a pecuniary advantage (<ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340/6" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340(6)</ref>), but that was not how the prosecution had put its case.  </p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_28">
+	  <num>28.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">If (contrary to our view) the judge was right in holding that <span style="font-style:italic">Gabriel </span>decided that the mere fact that a business is engaged in a lawful trade is of itself fatal to a successful money laundering prosecution based on takings not declared to the Revenue, then that conclusion was not necessary for its decision, and, for the reasons that we have given, we would respectfully disagree with it. In <span style="font-style:italic">Gabriel</span> it was not necessary to analyse <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340</ref> closely.</p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_29">
+	  <num>29.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">The view that we have expressed as to the scope of the decision in <span style="font-style:italic">Gabriel </span>appears to accord with that expressed by Professor Ormerod at [2006] Crim LR 854 in his commentary on the decision.  He argues that there are 3 potential ways of proving that the property which forms the basis of the charge of money laundering constituted &#8220;criminal property&#8221; within the meaning of <ref href="http://www.legislation.gov.uk/id/ukpga/2002/29/section/340" uk:canonical="" uk:origin="TNA" uk:type="legislation">section 340</ref>.  The second of these is that the property was acquired as a result of legitimate dealing, but not subsequently declared as trading income for tax purposes.  He says property so acquired is not criminal property, since there is no prior offence.  D committed none in acquiring the property and at the time that D came into possession of the property, the fact that she had not declared it as trading income did not render it criminal property.  There is no offence unless the Crown can prove cheat.  </p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_30">
+	  <num>30.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">The difference between <span style="font-style:italic">Gabriel </span>and the present case is that in the present case, as was not disputed, the prosecution had made out a prima facie case of cheat.  </p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_31">
+	  <num>31.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">We conclude, therefore, that the judge was wrong to withdraw count 12 from the jury.  </p>
+	  </content>
+	</paragraph>
+	<level eId="lvl_7">
+	  <content>
+	    <p class="ParaLevel1"><span style="font-style:italic">Counts 1 and 2</span></p>
+	  </content>
+	</level>
+	<paragraph eId="para_32">
+	  <num>32.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">It is submitted by Mr French that the second ruling was a straightforward application of the principles enunciated in <span style="font-style:italic">R v Galbraith </span><ref href="#" uk:canonical="[1981] 1 WLR 1039" uk:isNeutral="false" uk:origin="TNA" uk:type="case" uk:year="1981">[1981] 1 WLR 1039</ref>.  But it is clear that the judge decided that there was no case to answer in relation to counts 1 and 2 only because of his ruling in relation to count 12.  It was the defence who argued that the earlier ruling required the judge to take this course. No submission about counts 1 and 2 had been made or suggested as a possibility until after that ruling. Their argument was that the jury could not be sure that the whole of the discrepancy of &#163;5.9 million which formed the basis of counts 1 and 2 was not the fruits of the same kind of cheating of the Revenue as had formed the basis of count 12.  The judge had ruled that no part of the &#163;200,000 was capable of being criminal property, since it was the proceeds of legitimate trading.  Since the prosecution could not identify the provenance of any of the &#163;5.9 million, the possibility could not be ruled out that all of it was the proceeds of legitimate trading in the same way as was the &#163;200,000 emanating from MR&#8217;s business.</p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_33">
+	  <num>33.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">Since the judge was wrong to rule as he did in relation to count 12, the basis on which he ruled on counts 1 and 2 must also fall away.  No other argument was advanced that there was no case to answer in relation to counts 1 and 2.  It is clear that, but for their success in relation to count 12, the defence would not have submitted that there was no case to answer in relation to counts 1 and 2.  </p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_34">
+	  <num>34.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">It was open to jury to infer that the discrepancy of &#163;5.9 million was the product of criminal conduct and was therefore criminal property.   It is true that the prosecution could not identify the provenance of the money.  But the facts to which we have referred at paras 9 and 10 above provided ample material from which the jury could make the necessary inference.</p>
+	  </content>
+	</paragraph>
+	<paragraph eId="para_35">
+	  <num>35.</num>
+	  <content>
+	    <p class="ParaLevel1" style="margin-left:0.5in">Accordingly, we allow the prosecution appeal against the judge&#8217;s ruling in relation to counts 1 and 2 in so far as it affects IK.</p>
+	  </content>
+	</paragraph>
+      </decision>
+    </judgmentBody>
+  </judgment>
+</akomaNtoso>
