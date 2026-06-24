@@ -829,6 +829,10 @@ Not all BAILII documents conform identically to the AkomaNtoso standard. Older j
 
 *Full case log available on request.*
 
+### D. JSON_Reader.py
+<img width="1902" height="984" alt="Screenshot 2026-06-24 at 5 54 38 pm" src="https://github.com/user-attachments/assets/b42c0a3a-2955-4a1f-90af-fb8d94706968" />
+<img width="1902" height="984" alt="Screenshot 2026-06-24 at 5 54 46 pm" src="https://github.com/user-attachments/assets/759eec57-c8fb-47e3-ab6b-6493d6990642" />
+*This is how the JSON Reader parses the JSON Output*
 ---
 
 *This write-up is a technical companion to the [LinkedIn Post](https://www.linkedin.com/posts/kwabena-yeboah-810727166_ai-datascience-aml-ugcPost-7466158046080135168-W_wY/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACeeScwBujQtxaIRw-O14153gR56hJ2VlxM) and post summarising this project. It is not legal advice. All case analysis is experimental and should not be relied upon for any legal or compliance purpose. This project represents independent research and does not reflect the views of my employer.*
