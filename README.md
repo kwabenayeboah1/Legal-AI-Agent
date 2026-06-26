@@ -833,7 +833,7 @@ Not all BAILII documents conform identically to the AkomaNtoso standard. Older j
 <img width="1902" height="984" alt="Screenshot 2026-06-24 at 5 54 38 pm" src="https://github.com/user-attachments/assets/b42c0a3a-2955-4a1f-90af-fb8d94706968" />
 <img width="1902" height="984" alt="Screenshot 2026-06-24 at 5 54 46 pm" src="https://github.com/user-attachments/assets/759eec57-c8fb-47e3-ab6b-6493d6990642" />
 
-*This is how the JSON Reader parses the JSON Output*
+**This is how the JSON Reader parses the JSON Output**
 
 ---
 
