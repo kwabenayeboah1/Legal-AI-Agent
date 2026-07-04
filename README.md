@@ -621,7 +621,7 @@ The viewer is not the primary output of the pipeline. It is the review interface
 ## 11. Findings
 
 > ⚠️
-> **Important caveat:** The sample size is **100 cases**, of which **19** returned a verdict of `CONVICTED` for AML offences, which saw **100 Defendants** charged and convicted for crimes under the POCA 2002. The initial run of 100 cases saw **1171 Total Defendants**. One finding that I found very interesting within my batch of randomly selected cases, 'R v Herbert Charles Austin' saw a confirmed conviction - but no application of statutory law as per the instructions. Further analysis reveals the agent had recognised the crimes had taken place prior to the introduction of POCA 2002, having been committed in 2000, meaning our system prompts worked very well in making the agent strict in its judgement. It's analysis still picked up on the 'CONVICTED' status.
+> **Important caveat:** The sample size is **100 cases**, of which **19** returned a verdict of `CONVICTED` for AML offences, which saw **100 Defendants** charged and convicted for crimes under the POCA 2002. The initial run of 100 cases saw **742 Total Defendants**. One finding that I found very interesting within my batch of randomly selected cases, 'R v Herbert Charles Austin' saw a confirmed conviction - but no application of statutory law as per the instructions. Further analysis reveals the agent had recognised the crimes had taken place prior to the introduction of POCA 2002, having been committed in 2000, meaning our system prompts worked very well in making the agent strict in its judgement. It's analysis still picked up on the 'CONVICTED' status.
 >
 > Our initial hypothesis of looking in the legal sector, before branching out to other SIC Codes saw Solicitors account for a small number of the defendants seen in the case filings. 48 Defendants in total, with only **2** that were convicted of AML offences,  with a further **2** awaiting appropriate charges and **12** defendants that had not finished proceedings for their cases. Our initial 'Better Call Saul' hypothesis holds some weight considering it was the 6th most common SIC Code found in our outputs. The full table tells a story of the most common SIC Codes found in AML Cases, though a few of them can be explained as institutions that are often used or report AML offences, hence their frequent appearance in findings.
 > 
@@ -635,11 +635,11 @@ The viewer is not the primary output of the pipeline. It is the review interface
 
 | Verdict | Count | % of Sample |
 |---|---|---|
-| CONVICTED | 165 | 14% |
-| ACQUITTED | 62 | 5% |
-| CHARGED/PENDING | 72 | 6% |
-| MENTIONED ONLY | 570 | 48% |
-| NOT FINALISED | 302 | 25% |
+| CONVICTED | 100 | 13.47% |
+| ACQUITTED | 33 | 4.44% |
+| CHARGED/PENDING | 39 | 5.25% |
+| MENTIONED ONLY | 391 | 52.69% |
+| NOT FINALISED | 179 | 24.12% |
 
 ### SIC Code Patterns
 
