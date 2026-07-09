@@ -1,0 +1,163 @@
+<svg width="680" height="660" viewBox="0 0 680 660" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>AML pipeline architecture</title>
+<desc>Animated diagram showing data flowing from a court case XML source through extractor.py and poca_loader.py, branching into tools.py and main.py, converging at executor.py, then fanning out to JSON, Streamlit, and Excel outputs.</desc>
+<style>
+  text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .title { font-size: 14px; font-weight: 600; }
+  .sub { font-size: 12px; font-weight: 400; }
+  .legend-text { font-size: 12px; font-weight: 400; fill: #5F5E5A; }
+
+  .arr { stroke: #5F5E5A; }
+  .dot { fill: #0F6E56; }
+
+  .box-gray { fill: #F1EFE8; stroke: #5F5E5A; }
+  .title-gray { fill: #444441; }
+  .sub-gray { fill: #5F5E5A; }
+
+  .box-teal { fill: #E1F5EE; stroke: #0F6E56; }
+  .title-teal { fill: #085041; }
+  .sub-teal { fill: #0F6E56; }
+
+  .box-purple { fill: #EEEDFE; stroke: #534AB7; }
+  .title-purple { fill: #3C3489; }
+  .sub-purple { fill: #534AB7; }
+
+  .box-coral { fill: #FAECE7; stroke: #993C1D; }
+  .title-coral { fill: #712B13; }
+  .sub-coral { fill: #993C1D; }
+
+  .box-pink { fill: #FBEAF0; stroke: #993556; }
+  .title-pink { fill: #72243E; }
+  .sub-pink { fill: #993556; }
+
+  @media (prefers-color-scheme: dark) {
+    .arr { stroke: #B4B2A9; }
+    .dot { fill: #5DCAA5; }
+    .legend-text { fill: #D3D1C7; }
+
+    .box-gray { fill: #444441; stroke: #B4B2A9; }
+    .title-gray { fill: #D3D1C7; }
+    .sub-gray { fill: #B4B2A9; }
+
+    .box-teal { fill: #085041; stroke: #5DCAA5; }
+    .title-teal { fill: #9FE1CB; }
+    .sub-teal { fill: #5DCAA5; }
+
+    .box-purple { fill: #3C3489; stroke: #AFA9EC; }
+    .title-purple { fill: #CECBF6; }
+    .sub-purple { fill: #AFA9EC; }
+
+    .box-coral { fill: #712B13; stroke: #F0997B; }
+    .title-coral { fill: #F5C4B3; }
+    .sub-coral { fill: #F0997B; }
+
+    .box-pink { fill: #72243E; stroke: #ED93B1; }
+    .title-pink { fill: #F4C0D1; }
+    .sub-pink { fill: #ED93B1; }
+  }
+</style>
+
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" class="arr" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<path class="arr" fill="none" stroke-width="1" d="M340,96 L340,140" marker-end="url(#arrow)"/>
+<path class="arr" fill="none" stroke-width="1" d="M340,196 L340,240" marker-end="url(#arrow)"/>
+<path class="arr" fill="none" stroke-width="1" d="M340,296 L340,320 L210,320 L210,340" marker-end="url(#arrow)"/>
+<path class="arr" fill="none" stroke-width="1" d="M340,296 L340,320 L470,320 L470,340" marker-end="url(#arrow)"/>
+<path class="arr" fill="none" stroke-width="1" d="M310,368 L370,368" marker-end="url(#arrow)"/>
+<path class="arr" fill="none" stroke-width="1" d="M210,396 L210,420 L340,420 L340,440" marker-end="url(#arrow)"/>
+<path class="arr" fill="none" stroke-width="1" d="M470,396 L470,420 L340,420 L340,440" marker-end="url(#arrow)"/>
+<path class="arr" fill="none" stroke-width="1" d="M340,496 L340,518 L150,518 L150,540" marker-end="url(#arrow)"/>
+<path class="arr" fill="none" stroke-width="1" d="M340,496 L340,540" marker-end="url(#arrow)"/>
+<path class="arr" fill="none" stroke-width="1" d="M340,496 L340,518 L530,518 L530,540" marker-end="url(#arrow)"/>
+
+<circle class="dot" r="4">
+  <animateMotion dur="2.2s" repeatCount="indefinite" begin="0s" path="M340,96 L340,140"/>
+</circle>
+<circle class="dot" r="4">
+  <animateMotion dur="2.6s" repeatCount="indefinite" begin="0.25s" path="M340,196 L340,240"/>
+</circle>
+<circle class="dot" r="4">
+  <animateMotion dur="3.0s" repeatCount="indefinite" begin="0.5s" path="M340,296 L340,320 L210,320 L210,340"/>
+</circle>
+<circle class="dot" r="4">
+  <animateMotion dur="2.2s" repeatCount="indefinite" begin="0.75s" path="M340,296 L340,320 L470,320 L470,340"/>
+</circle>
+<circle class="dot" r="4">
+  <animateMotion dur="2.6s" repeatCount="indefinite" begin="1s" path="M310,368 L370,368"/>
+</circle>
+<circle class="dot" r="4">
+  <animateMotion dur="3.0s" repeatCount="indefinite" begin="1.25s" path="M210,396 L210,420 L340,420 L340,440"/>
+</circle>
+<circle class="dot" r="4">
+  <animateMotion dur="2.2s" repeatCount="indefinite" begin="1.5s" path="M470,396 L470,420 L340,420 L340,440"/>
+</circle>
+<circle class="dot" r="4">
+  <animateMotion dur="2.6s" repeatCount="indefinite" begin="1.75s" path="M340,496 L340,518 L150,518 L150,540"/>
+</circle>
+<circle class="dot" r="4">
+  <animateMotion dur="3.0s" repeatCount="indefinite" begin="2s" path="M340,496 L340,540"/>
+</circle>
+<circle class="dot" r="4">
+  <animateMotion dur="2.2s" repeatCount="indefinite" begin="2.25s" path="M340,496 L340,518 L530,518 L530,540"/>
+</circle>
+
+<g>
+  <rect x="210" y="40" width="260" height="56" rx="8" class="box-gray" stroke-width="1"/>
+  <text x="340" y="60" text-anchor="middle" class="title title-gray">Case source</text>
+  <text x="340" y="78" text-anchor="middle" class="sub sub-gray">BAILII XML judgments</text>
+</g>
+
+<g>
+  <rect x="210" y="140" width="260" height="56" rx="8" class="box-teal" stroke-width="1"/>
+  <text x="340" y="160" text-anchor="middle" class="title title-teal">extractor.py</text>
+  <text x="340" y="178" text-anchor="middle" class="sub sub-teal">XML parsing and metadata</text>
+</g>
+
+<g>
+  <rect x="210" y="240" width="260" height="56" rx="8" class="box-purple" stroke-width="1"/>
+  <text x="340" y="260" text-anchor="middle" class="title title-purple">poca_loader.py</text>
+  <text x="340" y="278" text-anchor="middle" class="sub sub-purple">Shared POCA reference</text>
+</g>
+
+<g>
+  <rect x="110" y="340" width="200" height="56" rx="8" class="box-coral" stroke-width="1"/>
+  <text x="210" y="360" text-anchor="middle" class="title title-coral">tools.py</text>
+  <text x="210" y="378" text-anchor="middle" class="sub sub-coral">Function call schema</text>
+</g>
+
+<g>
+  <rect x="370" y="340" width="200" height="56" rx="8" class="box-coral" stroke-width="1"/>
+  <text x="470" y="360" text-anchor="middle" class="title title-coral">main.py</text>
+  <text x="470" y="378" text-anchor="middle" class="sub sub-coral">Orchestrates pipeline</text>
+</g>
+
+<g>
+  <rect x="210" y="440" width="260" height="56" rx="8" class="box-teal" stroke-width="1"/>
+  <text x="340" y="460" text-anchor="middle" class="title title-teal">executor.py</text>
+  <text x="340" y="478" text-anchor="middle" class="sub sub-teal">Output assembly</text>
+</g>
+
+<g>
+  <rect x="60" y="540" width="180" height="56" rx="8" class="box-gray" stroke-width="1"/>
+  <text x="150" y="560" text-anchor="middle" class="title title-gray">JSON output</text>
+  <text x="150" y="578" text-anchor="middle" class="sub sub-gray">Case-level output</text>
+</g>
+
+<g>
+  <rect x="250" y="540" width="180" height="56" rx="8" class="box-pink" stroke-width="1"/>
+  <text x="340" y="560" text-anchor="middle" class="title title-pink">Streamlit viewer</text>
+  <text x="340" y="578" text-anchor="middle" class="sub sub-pink">Results dashboard</text>
+</g>
+
+<g>
+  <rect x="440" y="540" width="180" height="56" rx="8" class="box-gray" stroke-width="1"/>
+  <text x="530" y="560" text-anchor="middle" class="title title-gray">Excel export</text>
+  <text x="530" y="578" text-anchor="middle" class="sub sub-gray">.xlsx workbook</text>
+</g>
+
+<text x="340" y="625" text-anchor="middle" class="legend-text">gray = data / io &#8226; teal = processing &#8226; purple = shared reference &#8226; coral = orchestration &#8226; pink = ui</text>
+</svg>
