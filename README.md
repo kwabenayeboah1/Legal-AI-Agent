@@ -52,53 +52,7 @@ This document covers the Agent pipeline in full technical detail. The App is dis
 
 The pipeline is deterministic in structure and agentic in reasoning. Each module has a single, clearly scoped responsibility; the LLM operates within a defined function-calling schema rather than returning free-form text.
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                  National Archives Case Source                  │
-│              (AkomaNtoso XML — UK Court Judgments)              │
-└───────────────────────────┬─────────────────────────────────────┘
-                            │
-              ┌─────────────▼──────────────┐
-              │        extractor.py        │
-              │  XML Parsing & Metadata    │
-              │  Case body · Parties ·     │
-              │  Court · Date · Sections   │
-              └─────────────┬──────────────┘
-                            │
-              ┌─────────────▼──────────────┐
-              │       poca_loader.py       │
-              │  Shared POCA 2002 Reference│
-              │  s.327 · s.328 · s.329     │
-              │  (single source of truth)  │
-              └──────┬──────────────┬──────┘
-                     │              │
-         ┌───────────▼───┐    ┌─────▼──────────────┐
-         │   tools.py    │    │     main.py        │
-         │Gemini Function│    │    Pipeline        │
-         │Calling Schema │    │    Orchestration   │
-         │ (structured   │    │  · _send_with_     │
-         │  tool defs)   │    │    retry()         │
-         └───────────┬───┘    │  · Self-healing    │
-                     │        │    POCA fetch      │
-                     └────────┤  · Agentic loop    │
-                              └─────────┬──────────┘
-                                        │
-                              ┌─────────▼────────────┐
-                              │     executor.py      │
-                              │  Pipeline State &    │
-                              │  Output Assembly     │
-                              │  · Tool result       │
-                              │    processing        │
-                              │  · JSON construction │
-                              └─────────┬────────────┘
-                                        │
-                    ┌───────────────────┼───────────────────┐
-                    │                   │                   │
-        ┌───────────▼──────┐  ┌─────────▼───────┐  ┌────────▼────────┐
-        │  Structured JSON │  │  streamlit_app  │  │  Excel Export   │
-        │  Output per Case │  │  Results Viewer │  │  (.xlsx)        │
-        └──────────────────┘  └─────────────────┘  └─────────────────┘
-```
+<img src="aml_pipeline_flow.svg" alt="AML pipeline architecture" width="680">
 
 **Key architectural principles:**
 
