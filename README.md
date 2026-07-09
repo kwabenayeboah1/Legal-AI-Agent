@@ -112,6 +112,8 @@ The XML structure gives `extractor.py` direct access to case metadata (reference
 
 ## 5. Module Breakdown
 
+<img src="aml_pipeline_flow.svg" alt="AML pipeline architecture" width="680">
+
 ### `main.py` — Orchestration
 
 The entry point and orchestration layer. Responsibilities:
