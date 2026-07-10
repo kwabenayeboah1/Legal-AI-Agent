@@ -1,35 +1,51 @@
+# ── Gemini API (main.py uses `from google import genai` — the new SDK) ────────
+google-genai==2.6.0
+google-api-core==2.30.3
+google-api-python-client==2.196.0
+google-auth==2.53.0
+google-auth-httplib2==0.4.0
+googleapis-common-protos==1.75.0
+grpcio==1.80.0
+grpcio-status==1.71.2
+httplib2==0.31.2
+proto-plus==1.28.0
+protobuf==5.29.6
+uritemplate==4.2.0
+
+# ── XML/PDF ingestion (extractor.py, archived scripts) ────────────────────────
+pdfminer.six==20251230
+pdfplumber==0.11.9
+pillow==12.2.0
+pypdfium2==5.8.0
+
+# ── Results viewers (streamlit_app.py, JSON_Reader.py) ─────────────────────────
+streamlit==1.57.0
+streamlit-autorefresh==1.0.1
+rich==15.0.0
+
+# ── Core utilities ───────────────────────────────────────────────────────────
+python-dotenv==1.2.2
+requests==2.34.2
+tqdm==4.67.3
+
+# ── Transitive/shared deps, pinned for reproducibility ─────────────────────────
 annotated-types==0.7.0
 certifi==2026.5.20
 cffi==2.0.0
 charset-normalizer==3.4.7
 cryptography==48.0.0
-google-ai-generativelanguage==0.6.15
-google-api-core==2.30.3
-google-api-python-client==2.196.0
-google-auth==2.53.0
-google-auth-httplib2==0.4.0
-google-generativeai==0.8.6
-googleapis-common-protos==1.75.0
-grpcio==1.80.0
-grpcio-status==1.71.2
-httplib2==0.31.2
 idna==3.16
-pdfminer.six==20251230
-pdfplumber==0.11.9
-pillow==12.2.0
-proto-plus==1.28.0
-protobuf==5.29.6
 pyasn1==0.6.3
 pyasn1_modules==0.4.2
 pycparser==3.0
 pydantic==2.13.4
 pydantic_core==2.46.4
 pyparsing==3.3.2
-pypdfium2==5.8.0
-python-dotenv==1.2.2
-requests==2.34.2
-tqdm==4.67.3
 typing-inspection==0.4.2
 typing_extensions==4.15.0
-uritemplate==4.2.0
 urllib3==2.7.0
+
+# ── Analysis Notebooks/ (aml_insights.ipynb) — not required to run the pipeline ─
+pandas==3.0.3
+openpyxl==3.1.5
+ipykernel==7.2.0
