@@ -31,6 +31,11 @@ def load_poca_definitions() -> dict:
 
 
 def save_poca_definitions(sections: dict) -> None:
-    """Writes the POCA reference dictionary back to disk."""
+    """
+    Writes the POCA reference dictionary back to disk.
+    Called by main.py's update_poca_reference() after Gemini fetches data for
+    a section this file didn't already have, so the next run doesn't need to
+    re-fetch it.
+    """
     with open(POCA_DEF_FILE, "w", encoding="utf-8") as f:
         json.dump(sections, f, indent=4)

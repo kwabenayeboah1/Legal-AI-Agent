@@ -1,3 +1,27 @@
+"""
+Parses UK National Archives Akoma Ntoso XML judgments (the .xml files fed
+into main.py's batch_process) into the two things run_pipeline needs before
+it ever calls Gemini:
+  - body_text    — flattened judgment prose, sent to the model for analysis
+  - xml_metadata — structural fields (citation, court, judge, parties, cited
+                   POCA sections) pulled directly from the markup itself
+
+xml_metadata exists as a fallback, not the source of truth: the model is
+still asked to extract these same fields via extract_case_metadata (see
+tools.py), and executor.py's build_output() prefers the model's answer,
+only falling back to this dict for fields the model left blank. The POCA
+section list here is also used independently in main.py's batch_process to
+detect sections missing from poca_reference.json and trigger
+fetch_missing_poca_sections for them — that check runs against this regex
+scan, not against what the model reports.
+
+The regex/prefix-matching approach below is deliberately conservative: UK
+judgments about POCA offences routinely cite other Acts (CJPA 2001, PACE
+1984, Serious Crime Act 2007) whose sections reuse the same numbers, so a
+bare "s327" match is only trusted if its number is a known POCA 2002
+provision (_POCA_VALID_PREFIXES) — anything else is treated as noise from
+another statute rather than a POCA citation.
+"""
 import xml.etree.ElementTree as ET
 import re
 
@@ -178,11 +202,11 @@ def extract_from_xml(file_path: str) -> tuple[str, dict]:
         elif tag == "party" and text:
             # The XML links the role using the 'as' attribute (e.g., as="#claimant")
             role_ref = elem.get("as", "").lstrip("#")
-            
-            # Match the reference to the TLCRole dictionary you built earlier
+
+            # Resolve against role_map (built above from TLCRole elements);
+            # fall back to titlecasing the raw ref if there's no TLCRole match
             role_label = role_map.get(role_ref, role_ref.capitalize())
-            
-            # Format it nicely for the LLM context block
+
             if role_label:
                 xml_metadata["parties"].append(f"{text} ({role_label})")
             else:
