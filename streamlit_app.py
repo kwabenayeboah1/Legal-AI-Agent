@@ -706,7 +706,6 @@ hr { border: none; border-top: 1px solid #1c1c1c; margin: 0.75rem 0; }
 
 # ── Constants ──────────────────────────────────────────────────────────────────
 
-OUTPUT_DIR   = Path("outputs")
 REFRESH_SECS = 120  # 120s — aggressive refresh disrupts open expanders
 
 AML_MAP = {
@@ -1251,10 +1250,10 @@ def render_case(case: dict):
         else:
             for idx, d in enumerate(defendants):
                 with defendant_container:
-                    render_defendant(d, idx, ref, poca_enriched)
+                    render_defendant(d, idx, poca_enriched)
 
 
-def render_defendant(d: dict, idx: int, case_ref: str, poca_enriched: dict | None = None):
+def render_defendant(d: dict, idx: int, poca_enriched: dict | None = None):
     """
     Renders one defendant as a collapsed-by-default expander: role, verdict
     + POCA section pills, verdict/POCA reasoning, key facts, and SIC code
@@ -1262,7 +1261,6 @@ def render_defendant(d: dict, idx: int, case_ref: str, poca_enriched: dict | Non
     render_case so poca_tag() can render the same detail card for a
     defendant's individual section as for the case-level POCA tags.
     """
-    name    = safe(d.get("name") or "Unknown")
     role    = safe(d.get("role") or "—")
     verdict = d.get("verdict") or "—"
     poca    = d.get("poca_section") or "N/A"
