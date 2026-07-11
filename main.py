@@ -41,7 +41,7 @@ load_dotenv()
 client  = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 tracker = APITracker()
 
-from poca_loader import POCA_DEF_FILE, load_poca_definitions, save_poca_definitions
+from poca_loader import load_poca_definitions, save_poca_definitions
 
 # Initialize the state globally for the script
 # (loaded from the same poca_reference.json that executor.py reads — see poca_loader.py)
@@ -877,15 +877,6 @@ def run_pipeline(file_path: str, stage: StageTracker) -> dict:
 
     body_text = check_token_length(body_text, Path(file_path).name)
 
-    # NOTE: this `config` (with temperature=0.0) is never used — it's
-    # superseded by the second `config` assignment below (without
-    # temperature, so the model default applies) before any call reads it.
-    config = types.GenerateContentConfig(
-        system_instruction=SYSTEM_PROMPT,
-        tools=[tools],
-        temperature=0.0
-    )
-
 # ── Token Count Guard ─────────────────────────────────────────────────────
     # Pre-flight check: measure the true prompt footprint (system prompt +
     # judgment body) via the API's own tokenizer, since check_token_length()
@@ -909,7 +900,6 @@ def run_pipeline(file_path: str, stage: StageTracker) -> dict:
         tqdm.write(f"  ⚠ Token counter failed to execute: {e}")
     # ──────────────────────────────────────────────────────────────────────────
 
-    # Actual config used for the chat session (see NOTE above re: the earlier one)
     config = types.GenerateContentConfig(
         system_instruction=SYSTEM_PROMPT,
         tools=[tools]
@@ -1013,13 +1003,11 @@ def batch_process(folder: str) -> list:
         backoff (90s/180s/270s).
       - anything else: logged as a failure for this file, batch continues.
 
-    Each attempt (initial + every retry) repeats the same POCA-enrichment
-    check and output-folder-grouping steps, since a successful retry is a
-    brand-new run_pipeline() call producing a brand-new `output` dict that
-    still needs the same post-processing as the first attempt. That
-    duplication (identical logic inlined 3x below) is a known wart, not an
-    intentional pattern — the retry/backoff branches were extended
-    incrementally rather than factored into a helper.
+    Each attempt (initial + every retry) needs the same POCA-enrichment and
+    output-folder-grouping post-processing on success, since a retry is a
+    brand-new run_pipeline() call producing a brand-new `output` dict —
+    handled by the shared _finalize_success() helper below rather than
+    repeating that logic at each of the 3 call sites.
 
     Returns (results, successes, failures): results is a list of case dicts
     (or {"source_file", "error"} for failed files), for the caller to
@@ -1037,6 +1025,54 @@ def batch_process(folder: str) -> list:
     successes = 0
     failures  = 0
 
+    def _finalize_success(output: dict, file: Path, stage: StageTracker) -> None:
+        """
+        Shared post-processing for a successful run_pipeline() call, used by
+        the normal path and both retry branches below: POCA reference
+        gap-fill, then grouping the case's JSON output + source XML into
+        outputs/<case>/. Mutates the enclosing `results` list and
+        `successes` counter.
+        """
+        nonlocal successes
+
+        # POCA reference gap-fill: build_output() enriched the cited
+        # sections against POCA_SECTIONS as it stood before this case ran;
+        # any section this case cites that isn't in that dict yet gets
+        # fetched now and the enrichment redone so the saved output isn't
+        # left with a placeholder entry.
+        identified_sections = output.get("poca_sections", [])
+        missing_in_this_case = []
+
+        for section in identified_sections:
+            if not section or section == "N/A":
+                continue
+            clean_sec = section.strip()
+            if clean_sec not in POCA_SECTIONS:
+                missing_in_this_case.append(clean_sec)
+
+        if missing_in_this_case:
+            new_poca_data = fetch_missing_poca_sections(list(set(missing_in_this_case)), body_text=pipeline_state.get("body_text", ""))
+            update_poca_reference(new_poca_data)
+            output["poca_sections_enriched"] = _enrich_poca_sections(identified_sections)
+
+        output["source_file"] = file.name
+        results.append(output)
+        stage.complete(output)
+
+        # Group the case's JSON output and its source XML together under
+        # outputs/<case name>/ rather than a flat outputs/ dir, named after
+        # the XML filename (stripped of a literal "&amp;" left over from
+        # the XML's escaped ampersands).
+        folder_name = file.stem.replace("&amp;", "&").replace("amp;", "").strip()
+        case_folder = output_dir / folder_name
+        case_folder.mkdir(parents=True, exist_ok=True)
+
+        _save_result(output, case_folder, file)
+        successes += 1
+
+        shutil.move(str(file), str(case_folder / file.name))
+        tqdm.write(f"  → Grouped JSON and XML in: {case_folder}/")
+
     with tqdm(
         files,
         desc="Batch Progress",
@@ -1053,44 +1089,7 @@ def batch_process(folder: str) -> list:
 
             try:
                 output = run_pipeline(str(file), stage)
-
-                # POCA reference gap-fill: build_output() enriched the cited
-                # sections against POCA_SECTIONS as it stood before this
-                # case ran; any section this case cites that isn't in that
-                # dict yet gets fetched now and the enrichment redone so the
-                # saved output isn't left with a placeholder entry.
-                identified_sections = output.get("poca_sections", [])
-                missing_in_this_case = []
-
-                for section in identified_sections:
-                    if not section or section == "N/A":
-                        continue
-                    clean_sec = section.strip()
-                    if clean_sec not in POCA_SECTIONS:
-                        missing_in_this_case.append(clean_sec)
-
-                if missing_in_this_case:
-                    new_poca_data = fetch_missing_poca_sections(list(set(missing_in_this_case)), body_text=pipeline_state.get("body_text", ""))
-                    update_poca_reference(new_poca_data)
-                    output["poca_sections_enriched"] = _enrich_poca_sections(identified_sections)
-
-                output["source_file"] = file.name
-                results.append(output)
-                stage.complete(output)
-
-                # Group the case's JSON output and its source XML together
-                # under outputs/<case name>/ rather than a flat outputs/ dir,
-                # named after the XML filename (stripped of a literal
-                # "&amp;" left over from the XML's escaped ampersands).
-                folder_name = file.stem.replace("&amp;", "&").replace("amp;", "").strip()
-                case_folder = output_dir / folder_name
-                case_folder.mkdir(parents=True, exist_ok=True)
-
-                _save_result(output, case_folder, file)
-                successes += 1
-
-                shutil.move(str(file), str(case_folder / file.name))
-                tqdm.write(f"  → Grouped JSON and XML in: {case_folder}/")
+                _finalize_success(output, file, stage)
 
             except Exception as e:
                 err = str(e)
@@ -1114,40 +1113,13 @@ def batch_process(folder: str) -> list:
                         time.sleep(1)
 
                     try:
-                        # Retry of the same file after the 429 cooldown above — repeats
-                        # the same POCA gap-fill and folder-grouping steps as the first
-                        # attempt (see the comments on that path above) since this is a
-                        # fresh run_pipeline() call producing a fresh `output`.
+                        # Retry of the same file after the 429 cooldown above — this is
+                        # a fresh run_pipeline() call producing a fresh `output`, which
+                        # needs the same post-processing as the first attempt.
                         pipeline_state.clear()
                         stage2 = StageTracker(file.name, file.stat().st_size)
                         output = run_pipeline(str(file), stage2)
-                        identified_sections = output.get("poca_sections", [])
-                        missing_in_this_case = []
-
-                        for section in identified_sections:
-                            if not section or section == "N/A":
-                                continue
-                            clean_sec = section.strip()
-                            if clean_sec not in POCA_SECTIONS:
-                                missing_in_this_case.append(clean_sec)
-
-                        if missing_in_this_case:
-                            new_poca_data = fetch_missing_poca_sections(list(set(missing_in_this_case)), body_text=pipeline_state.get("body_text", ""))
-                            update_poca_reference(new_poca_data)
-                            output["poca_sections_enriched"] = _enrich_poca_sections(identified_sections)
-
-                        output["source_file"] = file.name
-                        results.append(output)
-                        stage2.complete(output)
-
-                        folder_name = file.stem.replace("&amp;", "&").replace("amp:", "").strip()
-                        case_folder = output_dir / folder_name
-                        case_folder.mkdir(parents=True, exist_ok=True)
-
-                        _save_result(output, case_folder, file)
-                        successes += 1
-                        shutil.move(str(file), str(case_folder / file.name))
-                        tqdm.write(f"  → Grouped JSON and XML in: {case_folder}/")
+                        _finalize_success(output, file, stage2)
 
                     except Exception as e2:
                         stage.failed(str(e2))
@@ -1156,8 +1128,7 @@ def batch_process(folder: str) -> list:
 
                 # ── 503 service unavailable — exponential backoff, 3 retries ──
                 elif "503" in err:
-                    retry_waits   = [90, 180, 270]
-                    retry_success = False
+                    retry_waits = [90, 180, 270]
 
                     for attempt, wait in enumerate(retry_waits, start=1):
                         tqdm.write(f"  ↻  503 retry {attempt}/3 — waiting {wait}s...")
@@ -1171,42 +1142,14 @@ def batch_process(folder: str) -> list:
                             time.sleep(1)
 
                         try:
-                            # Retry of the same file after a 503 backoff wait — same
-                            # POCA gap-fill / folder-grouping steps as the first attempt
-                            # above, since this is another fresh run_pipeline() call.
+                            # Retry of the same file after a 503 backoff wait — this is
+                            # another fresh run_pipeline() call, needing the same
+                            # post-processing as the first attempt.
                             pipeline_state.clear()
                             stage2 = StageTracker(file.name, file.stat().st_size)
                             tqdm.write(f"  ↻  Retrying {file.name} (attempt {attempt}/3)...")
                             output = run_pipeline(str(file), stage2)
-                            identified_sections = output.get("poca_sections", [])
-                            missing_in_this_case = []
-
-                            for section in identified_sections:
-                                if not section or section == "N/A":
-                                    continue
-                                clean_sec = section.strip()
-                                if clean_sec not in POCA_SECTIONS:
-                                    missing_in_this_case.append(clean_sec)
-
-                            if missing_in_this_case:
-                                new_poca_data = fetch_missing_poca_sections(list(set(missing_in_this_case)), body_text=pipeline_state.get("body_text", ""))
-                                update_poca_reference(new_poca_data)
-                                output["poca_sections_enriched"] = _enrich_poca_sections(identified_sections)
-
-                            output["source_file"] = file.name
-                            results.append(output)
-                            stage2.complete(output)
-
-                            folder_name = file.stem.replace("&amp;", "&").replace("amp:", "").strip()
-                            case_folder = output_dir / folder_name
-                            case_folder.mkdir(parents=True, exist_ok=True)
-
-                            _save_result(output, case_folder, file)
-                            successes += 1
-
-                            shutil.move(str(file), str(case_folder / file.name))
-                            tqdm.write(f"  → Grouped JSON and XML in: {case_folder}/")
-                            retry_success = True
+                            _finalize_success(output, file, stage2)
                             break
                         except Exception as retry_err:
                             retry_str = str(retry_err)
@@ -1221,13 +1164,6 @@ def batch_process(folder: str) -> list:
                                 results.append({"source_file": file.name, "error": retry_str})
                                 failures += 1
                                 break
-
-                    # NOTE: this branch is a no-op (`pass`) — by this point `err`
-                    # was already established to contain "503" (it's the condition
-                    # that routed execution into this `elif` in the first place),
-                    # so `"503" not in str(err)` can never be true here.
-                    if not retry_success and "503" not in str(err):
-                        pass
 
                 # ── Any other error — log and move on ─────────────────────
                 else:
