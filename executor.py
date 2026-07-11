@@ -1,3 +1,21 @@
+"""
+Receives Gemini's function-call results for the case currently being
+processed and assembles them into the final structured case JSON.
+
+Wiring (see main.py's run_pipeline): every time the model emits a function
+call declared in tools.py, main.py hands it to execute_tool(), which stashes
+the raw args into the module-level pipeline_state dict. Once the chat has
+finished calling all three tools for a case, main.py calls build_output(),
+which reads pipeline_state back out, deduplicates/cross-references the
+three tool outputs against each other (defendants <-> SIC classifications
+by name, cited POCA sections <-> reference data), and returns the single
+dict that gets written to outputs/<case>/*.json.
+
+pipeline_state is intentionally module-level and mutable rather than passed
+around as an argument: main.py's batch_process() calls pipeline_state.clear()
+between cases, so this module only ever holds state for the one case
+currently in flight.
+"""
 import json
 from poca_loader import load_poca_definitions
 
@@ -15,6 +33,21 @@ pipeline_state = {}
 
 
 def execute_tool(name: str, args: dict) -> str:
+    """
+    Dispatches one Gemini function call by name into pipeline_state, and
+    returns the JSON string main.py sends back to the chat as the tool's
+    result (Gemini's function-calling protocol expects a response for every
+    call before it continues).
+
+    Defendants and SIC classifications are deduplicated by lowercased name
+    here rather than left for build_output() to sort out, since the model
+    can occasionally re-emit the same entity across calls. For duplicate
+    defendants, the entry with the longer verdict_reasoning wins on the
+    assumption that more detail means a more complete extraction; for
+    duplicate classifications, the first one seen wins (SIC classification
+    calls don't accumulate detail across repeats the way defendant reasoning
+    can).
+    """
 
     if name == "extract_case_metadata":
         pipeline_state["case"] = args
@@ -78,6 +111,20 @@ def _enrich_poca_sections(sections: list[str]) -> dict:
 
 
 def build_output() -> dict:
+    """
+    Assembles the final per-case JSON from whatever execute_tool() has
+    accumulated in pipeline_state for the case currently in flight. Called
+    once per case, after the model has finished all its tool calls, from
+    main.py's run_pipeline().
+
+    Cross-references the three tool outputs by defendant name (case
+    metadata, defendants, SIC classifications aren't naturally linked
+    otherwise) and enriches every cited POCA section with full reference
+    data via _enrich_poca_sections(). Falls back to extractor.py's
+    xml_metadata for judge/docket/parties whenever the model left those
+    fields blank, so structural facts already visible in the XML are never
+    lost just because the model omitted them.
+    """
     case = pipeline_state.get("case", {})
 
     sic_lookup = {

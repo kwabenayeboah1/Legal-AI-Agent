@@ -1,3 +1,22 @@
+"""
+Streamlit viewer for the case JSON files main.py's batch pipeline writes to
+outputs/<case>/*.json (see executor.py's build_output() for their shape).
+
+Independent of JSON_Reader.py — same underlying data, rendered as a dark,
+custom-styled dashboard instead of a terminal table. Auto-refreshes every
+REFRESH_SECS so newly completed cases from a running batch appear without
+restarting Streamlit.
+
+File layout:
+  - A large injected <style> block (custom dark theme — Streamlit's own
+    widgets are heavily overridden via CSS since the default theme doesn't
+    support this layout/density)
+  - Constants: paths, refresh interval, and the status->style-class maps
+    used throughout rendering
+  - Helpers: small formatting/escaping functions shared by every render_*
+  - render_sidebar / render_case / render_defendant: the actual page,
+    assembled by main() at the bottom
+"""
 import streamlit as st
 import json
 from pathlib import Path
@@ -714,6 +733,13 @@ AML_DOT = {
 
 @st.cache_data(ttl=REFRESH_SECS)
 def load_cases() -> list[dict]:
+    """
+    Loads every case JSON under outputs/ (recursively, since batch_process
+    groups each case into its own outputs/<case>/ subfolder). Cached for
+    REFRESH_SECS so repeated Streamlit reruns between st_autorefresh ticks
+    don't re-read the whole tree on every widget interaction; the cache
+    naturally picks up newly written files once it expires.
+    """
     # Anchor the outputs directory to the location of this script
     BASE_DIR = Path(__file__).parent
     OUTPUT_DIR = BASE_DIR / "outputs"
@@ -776,6 +802,7 @@ def safe(text: str) -> str:
 
 
 def parse_conf(raw) -> int:
+    """Coerces a SIC confidence value (int, or a string like '85%') to an int clamped to 0-100."""
     try:
         return max(0, min(100, int(str(raw).replace("%", "").strip())))
     except Exception:
@@ -783,21 +810,25 @@ def parse_conf(raw) -> int:
 
 
 def conf_color(v: int) -> str:
+    """Maps a 0-100 confidence score to a traffic-light colour for the SIC confidence bar/text."""
     if v >= 75: return "#22c55e"
     if v >= 50: return "#f59e0b"
     return "#555"
 
 
 def pill(text: str, cls: str) -> str:
+    """Renders a <span> status pill with the given CSS class (see .status-pill / .sp-* in the style block)."""
     return f'<span class="status-pill {cls}">{safe(text)}</span>'
 
 
 def aml_pill(status: str) -> str:
+    """Case-level AML status pill; falls back to a neutral style for any status not in AML_MAP."""
     cls, label = AML_MAP.get(status, ("sp-not-aml", status or "Unknown"))
     return pill(label, cls)
 
 
 def verdict_pill(verdict: str) -> str:
+    """Per-defendant verdict pill; falls back to a neutral style for any verdict not in VERDICT_MAP."""
     cls, label = VERDICT_MAP.get(verdict, ("sp-mentioned", verdict or "Unknown"))
     return pill(label, cls)
 
@@ -877,6 +908,7 @@ def poca_tag(s: str, enriched: dict | None = None) -> str:
 
 
 def info_block(label: str, text: str) -> str:
+    """Renders a labelled prose block (.info-block) — the shared layout for case summary/reasoning sections in render_case."""
     if not text:
         return ""
     return f"""
@@ -889,6 +921,13 @@ def info_block(label: str, text: str) -> str:
 # ── Sidebar ────────────────────────────────────────────────────────────────────
 
 def render_sidebar(cases: list[dict]) -> list[dict]:
+    """
+    Renders the sidebar (logo, summary stats, AML-status toggle filters,
+    text search, and the clickable case list) and returns the subset of
+    `cases` currently passing those filters. The AML-status toggle and the
+    currently-selected case both live in st.session_state so they survive
+    the periodic st_autorefresh rerun instead of resetting to defaults.
+    """
     with st.sidebar:
         st.markdown("""
         <div class="sidebar-logo">
@@ -1025,6 +1064,13 @@ def render_sidebar(cases: list[dict]) -> list[dict]:
 # ── Case view ──────────────────────────────────────────────────────────────────
 
 def render_case(case: dict):
+    """
+    Renders the full detail view for one selected case: header (title,
+    status pill, POCA tags, metadata row, parties), then a two-column body
+    — left column for case-level prose (summary, AML/POCA reasoning, key
+    findings), right column for the list of defendants (each delegated to
+    render_defendant).
+    """
     name       = safe(case.get("case_name") or "Untitled")
     ref        = safe(case.get("case_reference") or "—")
     court      = safe(case.get("court") or "—")
@@ -1209,6 +1255,13 @@ def render_case(case: dict):
 
 
 def render_defendant(d: dict, idx: int, case_ref: str, poca_enriched: dict | None = None):
+    """
+    Renders one defendant as a collapsed-by-default expander: role, verdict
+    + POCA section pills, verdict/POCA reasoning, key facts, and SIC code
+    breakdown with confidence bars. poca_enriched is threaded through from
+    render_case so poca_tag() can render the same detail card for a
+    defendant's individual section as for the case-level POCA tags.
+    """
     name    = safe(d.get("name") or "Unknown")
     role    = safe(d.get("role") or "—")
     verdict = d.get("verdict") or "—"
@@ -1317,6 +1370,12 @@ def render_defendant(d: dict, idx: int, case_ref: str, poca_enriched: dict | Non
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
+    """
+    Page entry point: sets up auto-refresh, loads + filters cases via the
+    sidebar, picks which case is "selected" (persisted in session_state,
+    defaulting to the first filtered case), and renders it — or an
+    empty/no-match state if there's nothing to show.
+    """
     st_autorefresh(
         interval=REFRESH_SECS * 1000, 
         key="aml_refresh"

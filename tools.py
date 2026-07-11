@@ -1,3 +1,23 @@
+"""
+Gemini function-calling tool declarations for the case-extraction pipeline.
+
+main.py hands this `tools` object to the Gemini chat session so the model
+reports its findings as structured function calls instead of free-text —
+each call is routed by executor.py's execute_tool() into pipeline_state,
+which build_output() later assembles into the final case JSON. There are
+three tools, called in sequence by the model for every case:
+  1. extract_case_metadata — case-level fields (name, court, summary, AML
+     status, POCA sections cited, etc.)
+  2. extract_defendants     — one entry per individual/entity involved
+  3. classify_sic_codes     — SIC industry classification per entity from
+                              extract_defendants, restricted to the codes
+                              supplied in SIC_PROMPT_BLOCK (see sic_loader.py)
+
+Field-level guidance for the model lives entirely in each Schema's
+`description=` string below — those are prompt content, not comments, so
+they're deliberately verbose; do not treat them as documentation to be
+trimmed.
+"""
 from google.genai import types
 
 tools = types.Tool(

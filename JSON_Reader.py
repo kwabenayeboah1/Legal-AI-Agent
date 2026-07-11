@@ -1,3 +1,14 @@
+"""
+Standalone CLI viewer for the JSON case files produced by main.py's batch
+pipeline (executor.py's build_output()) under outputs/<case>/*.json.
+
+This is independent of streamlit_app.py — same underlying case JSON, but
+rendered as Rich tables/panels in the terminal instead of a web UI, for
+quickly spot-checking pipeline output without starting Streamlit. Run
+directly (`python JSON_Reader.py`): it walks outputs/ for JSON files, lets
+you pick which to load, optionally filter by text/AML status/POCA section,
+then lets you select one case at a time to view in full via display_full_case().
+"""
 import json
 from pathlib import Path
 from rich.console import Console
@@ -225,6 +236,13 @@ def display_full_case(case: dict):
 # ── Runtime Pipeline Data Loading ─────────────────────────────────────────────
 
 def load_case_data(file: Path) -> list[dict]:
+    """
+    Loads one output JSON file and normalises it to a list of case dicts.
+    A file can hold either a single case object or a list of them (batch runs
+    write one file per case, but this stays permissive for hand-assembled
+    files too). Entries with an "error" key are pipeline failures recorded by
+    batch_process() in main.py, not real cases, so they're dropped here.
+    """
     with open(file, "r", encoding="utf-8") as f:
         data = json.load(f)
     if isinstance(data, dict):
@@ -234,13 +252,16 @@ def load_case_data(file: Path) -> list[dict]:
     return []
 
 def search_cases(cases: list[dict], term: str) -> list[dict]:
+    """Free-text filter: keeps cases whose full JSON (any field) contains term."""
     term = term.lower()
     return [c for c in cases if term in json.dumps(c).lower()]
 
 def filter_by_aml(cases: list[dict], status: str) -> list[dict]:
+    """Keeps cases with an exact (case-insensitive) aml_status match."""
     return [c for c in cases if (c.get("aml_status") or "").lower() == status.lower()]
 
 def filter_by_poca(cases: list[dict], section: str) -> list[dict]:
+    """Keeps cases that cite the given POCA section (e.g. 's327'), exact match."""
     section = section.strip().lower()
     return [c for c in cases if any(s.lower() == section for s in c.get("poca_sections", []))]
 
@@ -248,6 +269,12 @@ def filter_by_poca(cases: list[dict], section: str) -> list[dict]:
 # ── Main Runtime Entry Point ──────────────────────────────────────────────────
 
 def main():
+    """
+    Interactive CLI entry point: pick which output JSON file(s) to load,
+    optionally narrow them down with the search/AML/POCA filters above, then
+    loop letting the user select one case at a time to render in full via
+    display_full_case() until they quit with 'q'.
+    """
     # Target the 'outputs' directory and recursively find all .json files inside its subfolders
     outputs_dir = Path("outputs/")
     json_files = sorted(list(outputs_dir.rglob("*.json")))

@@ -1,3 +1,19 @@
+"""
+Entry point and orchestration for the AML case-analysis batch pipeline.
+
+Run directly (`python main.py [urls...]`): picks up XML judgments (either
+downloaded from URLs passed as args, or the smallest file waiting in
+ACTIVE_DIR), then hands each one through batch_process() -> run_pipeline()
+for the actual Gemini extraction. See extractor.py for XML parsing,
+tools.py for the function-calling schema sent to the model, executor.py for
+turning the model's tool calls into the final case JSON, and api_tracker.py
+for the session-wide usage/cost counters referenced below as `tracker`.
+
+The embedded SYSTEM_PROMPT below is the domain brief given to the model on
+every case (AML/POCA legal knowledge, classification rules) — it's prompt
+content, not code, so its length and repetition are intentional rather than
+something to trim.
+"""
 from google import genai
 from google.genai import types
 from tqdm import tqdm
@@ -319,6 +335,7 @@ def pretty_print_api_error(e: Exception):
         tqdm.write(f"  Raw Fallback: {str(e)}")
         
 def format_size(b: int) -> str:
+    """Human-readable file size for StageTracker's per-case header."""
     if b < 1024:
         return f"{b}B"
     if b < 1024 * 1024:
@@ -327,6 +344,12 @@ def format_size(b: int) -> str:
 
 
 def estimate_duration(b: int) -> str:
+    """
+    Rough wall-clock estimate shown in StageTracker's header, bucketed by
+    file size. These bands are empirical (observed run times for judgments
+    of roughly this size), not derived from any pricing/token model — purely
+    to set user expectations while a case is processing.
+    """
     kb = b / 1024
     if kb <= 200:  return "~30–45s"
     if kb <= 500:  return "~60–90s"
@@ -335,12 +358,19 @@ def estimate_duration(b: int) -> str:
 
 
 def fmt_time(seconds: float) -> str:
+    """Formats a duration in seconds as MM:SS for StageTracker.complete()."""
     return f"{int(seconds // 60):02d}:{int(seconds % 60):02d}"
 
 
 # ── Web Download Helpers ───────────────────────────────────────────────────────
 
 def resolve_xml_url(url: str) -> str:
+    """
+    Turns a National Archives case-law page URL into its machine-readable
+    XML endpoint. Caselaw pages serve human-readable HTML at the base URL
+    and the actual Akoma Ntoso XML at "<url>/data.xml" — URLs that already
+    point straight at an .xml file are passed through unchanged.
+    """
     url = url.strip().rstrip("?")
     if url.endswith(".xml"):
         return url
@@ -350,12 +380,20 @@ def resolve_xml_url(url: str) -> str:
 
 
 def _safe_xml_name(title: str) -> str:
+    """Strips filesystem-illegal characters from a case title so it can be used as a filename."""
     safe = re.sub(r'[\\/*?"<>|]', '', title)
     safe = re.sub(r' +', ' ', safe).strip()
     return f"{safe[:150]}.xml"
 
 
 def derive_filename(url: str) -> str:
+    """
+    Picks a human-readable filename for a downloaded judgment by re-fetching
+    the (HTML) case page and scraping its <h1> title and neutral citation —
+    e.g. "Shah v HSBC-[2012] EWHC 1283.xml" — since the XML endpoint itself
+    carries no such metadata in its URL. Falls back to a sanitised version of
+    the URL path itself if the page can't be fetched or parsed.
+    """
     try:
         response = requests.get(
             url.strip().rstrip("?"),
@@ -393,6 +431,7 @@ def derive_filename(url: str) -> str:
 
 
 def download_xml(url: str, dest: Path) -> bool:
+    """Streams the resolved XML URL to dest; returns False on any request failure rather than raising."""
     xml_url = resolve_xml_url(url)
     tqdm.write(f"  Downloading: {xml_url}")
     try:
@@ -423,6 +462,14 @@ WARN_CHARS = 800_000   # warn early before hitting the limit
 
 
 def check_token_length(text: str, filename: str) -> str:
+    """
+    Guards against exceeding Gemini 3.5 Flash's 1M-token context window.
+    Truncates the judgment body (keeping the head, dropping the tail) if it
+    would exceed MAX_CHARS, logging the risk so a partial-document analysis
+    is visible rather than silent; just warns, without truncating, above
+    WARN_CHARS. char-to-token is a rough /4 estimate for the log line only —
+    the real enforcement is the character-count guard rail itself.
+    """
     char_count = len(text)
     token_est  = char_count // 4
 
@@ -521,6 +568,14 @@ TOTAL_STAGES = 5
 
 
 class StageTracker:
+    """
+    Prints a live per-case progress readout to the console: a header when a
+    case starts, one line per completed stage (XML read, each tool call,
+    output build), and a final summary or failure line. One instance is
+    created per case by batch_process()/run_pipeline() — not reused across
+    cases — so run_start/current always reflect just the case in flight.
+    """
+
     def __init__(self, filename: str, filesize: int):
         self.filename    = filename
         self.filesize    = filesize
@@ -766,6 +821,19 @@ def update_poca_reference(new_items: list):
 # ── Core pipeline ──────────────────────────────────────────────────────────────
 
 def run_pipeline(file_path: str, stage: StageTracker) -> dict:
+    """
+    Runs the full extraction pipeline for a single XML judgment: parse the
+    XML (extractor.py), seed pipeline_state with what was found structurally,
+    open a fresh Gemini chat with the system prompt + tool schema, then loop
+    sending the model's function calls to execute_tool() and feeding the
+    results back until it stops calling tools (or max_iterations is hit).
+    Finishes by calling build_output() to assemble the case JSON.
+
+    Called fresh (new chat, new pipeline_state) for every case by
+    batch_process() — including on retry, which is why _send_with_retry
+    exists to retry within a single call's chat history rather than forcing
+    a full run_pipeline restart for every transient failure.
+    """
     # Stage 1 — extract XML
     body_text, xml_metadata = extract_from_xml(file_path)
     pipeline_state["body_text"] = body_text
@@ -809,6 +877,9 @@ def run_pipeline(file_path: str, stage: StageTracker) -> dict:
 
     body_text = check_token_length(body_text, Path(file_path).name)
 
+    # NOTE: this `config` (with temperature=0.0) is never used — it's
+    # superseded by the second `config` assignment below (without
+    # temperature, so the model default applies) before any call reads it.
     config = types.GenerateContentConfig(
         system_instruction=SYSTEM_PROMPT,
         tools=[tools],
@@ -816,36 +887,35 @@ def run_pipeline(file_path: str, stage: StageTracker) -> dict:
     )
 
 # ── Token Count Guard ─────────────────────────────────────────────────────
-    # Combine the system prompt and the judgment text to calculate the true footprint
+    # Pre-flight check: measure the true prompt footprint (system prompt +
+    # judgment body) via the API's own tokenizer, since check_token_length()
+    # above only estimates from character count. Aborts the case rather than
+    # letting an oversized request fail server-side mid-call.
     text_to_measure = SYSTEM_PROMPT + "\n" + body_text
-    
+
     try:
         token_count_resp = client.models.count_tokens(
             model="gemini-3.5-flash",
             contents=text_to_measure
         )
         total_tokens = token_count_resp.total_tokens
-        
-        # Log the footprint so you can monitor usage in your console
         tqdm.write(f"  📊 Total Context Footprint: {total_tokens:,} tokens")
-        
-        # Guard rail: Stop the execution if a massive case risks blowing past limits
+
         if total_tokens > 950_000:
             tqdm.write(f"  ❌ File skipped: {total_tokens:,} tokens exceeds safety threshold.")
             return {"error": f"Context size ({total_tokens} tokens) is too large."}
-            
+
     except Exception as e:
         tqdm.write(f"  ⚠ Token counter failed to execute: {e}")
     # ──────────────────────────────────────────────────────────────────────────
 
+    # Actual config used for the chat session (see NOTE above re: the earlier one)
     config = types.GenerateContentConfig(
         system_instruction=SYSTEM_PROMPT,
         tools=[tools]
     )
 
 # ── Model Configuration ─────────────────────────────────────────────────────
-    # gemini-3.5-flash
-    # gemini-3-flash-preview
     chat = client.chats.create(model="gemini-3.5-flash", config=config)
 
     # ── Initial extraction call ────────────────────────────────────────────────
@@ -923,6 +993,7 @@ def run_pipeline(file_path: str, stage: StageTracker) -> dict:
 # ── Save helper ────────────────────────────────────────────────────────────────
 
 def _save_result(output: dict, output_dir: Path, file: Path) -> None:
+    """Writes one case's output JSON, named after its case_reference (falling back to the source filename if the model didn't return one)."""
     case_ref = output.get("case_reference") or sanitize_filename(file.stem)
     filename = output_dir / f"{sanitize_filename(case_ref)}.json"
     with open(filename, "w") as f:
@@ -933,6 +1004,28 @@ def _save_result(output: dict, output_dir: Path, file: Path) -> None:
 # ── Batch processor ────────────────────────────────────────────────────────────
 
 def batch_process(folder: str) -> list:
+    """
+    Runs run_pipeline() over every .xml file in folder, handling failures
+    with a tiered retry cascade:
+      - 429 (rate limit): tracker.handle_429() computes a cooldown from the
+        error's retryDelay, then one full retry.
+      - 503 (service unavailable): up to 3 retries with a fixed exponential
+        backoff (90s/180s/270s).
+      - anything else: logged as a failure for this file, batch continues.
+
+    Each attempt (initial + every retry) repeats the same POCA-enrichment
+    check and output-folder-grouping steps, since a successful retry is a
+    brand-new run_pipeline() call producing a brand-new `output` dict that
+    still needs the same post-processing as the first attempt. That
+    duplication (identical logic inlined 3x below) is a known wart, not an
+    intentional pattern — the retry/backoff branches were extended
+    incrementally rather than factored into a helper.
+
+    Returns (results, successes, failures): results is a list of case dicts
+    (or {"source_file", "error"} for failed files), for the caller to
+    print a summary and for each success to have already been written to
+    outputs/.
+    """
     files = sorted(Path(folder).glob("*.xml"))
     if not files:
         print(f"No XML files found in {folder}")
@@ -960,43 +1053,44 @@ def batch_process(folder: str) -> list:
 
             try:
                 output = run_pipeline(str(file), stage)
-                # --- NEW POCA INTERCEPTION LOGIC ---
-                # Check for any POCA sections identified in the final output
+
+                # POCA reference gap-fill: build_output() enriched the cited
+                # sections against POCA_SECTIONS as it stood before this
+                # case ran; any section this case cites that isn't in that
+                # dict yet gets fetched now and the enrichment redone so the
+                # saved output isn't left with a placeholder entry.
                 identified_sections = output.get("poca_sections", [])
                 missing_in_this_case = []
-                
+
                 for section in identified_sections:
                     if not section or section == "N/A":
                         continue
                     clean_sec = section.strip()
                     if clean_sec not in POCA_SECTIONS:
                         missing_in_this_case.append(clean_sec)
-                        
+
                 if missing_in_this_case:
                     new_poca_data = fetch_missing_poca_sections(list(set(missing_in_this_case)), body_text=pipeline_state.get("body_text", ""))
                     update_poca_reference(new_poca_data)
-                    # Re-enrich now that POCA_SECTIONS has just been updated — build_output()
-                    # already ran against the OLD (incomplete) dict, so output's enrichment
-                    # is stale until we redo it here.
                     output["poca_sections_enriched"] = _enrich_poca_sections(identified_sections)
-                # -----------------------------------
+
                 output["source_file"] = file.name
                 results.append(output)
-                stage.complete(output) 
-                
-                # --- NEW FOLDER GROUPING LOGIC ---
-                # Create folder named after XML file (removing 'amp:') inside outputs/
+                stage.complete(output)
+
+                # Group the case's JSON output and its source XML together
+                # under outputs/<case name>/ rather than a flat outputs/ dir,
+                # named after the XML filename (stripped of a literal
+                # "&amp;" left over from the XML's escaped ampersands).
                 folder_name = file.stem.replace("&amp;", "&").replace("amp;", "").strip()
                 case_folder = output_dir / folder_name
                 case_folder.mkdir(parents=True, exist_ok=True)
-                
-                # Save JSON to the new case folder
+
                 _save_result(output, case_folder, file)
                 successes += 1
-                
+
                 shutil.move(str(file), str(case_folder / file.name))
                 tqdm.write(f"  → Grouped JSON and XML in: {case_folder}/")
-                # ---------------------------------
 
             except Exception as e:
                 err = str(e)
@@ -1020,43 +1114,40 @@ def batch_process(folder: str) -> list:
                         time.sleep(1)
 
                     try:
+                        # Retry of the same file after the 429 cooldown above — repeats
+                        # the same POCA gap-fill and folder-grouping steps as the first
+                        # attempt (see the comments on that path above) since this is a
+                        # fresh run_pipeline() call producing a fresh `output`.
                         pipeline_state.clear()
                         stage2 = StageTracker(file.name, file.stat().st_size)
                         output = run_pipeline(str(file), stage2)
-                        # --- NEW POCA INTERCEPTION LOGIC ---
-                        # Check for any POCA sections identified in the final output
                         identified_sections = output.get("poca_sections", [])
                         missing_in_this_case = []
-                
+
                         for section in identified_sections:
                             if not section or section == "N/A":
                                 continue
                             clean_sec = section.strip()
                             if clean_sec not in POCA_SECTIONS:
                                 missing_in_this_case.append(clean_sec)
-                        
+
                         if missing_in_this_case:
                             new_poca_data = fetch_missing_poca_sections(list(set(missing_in_this_case)), body_text=pipeline_state.get("body_text", ""))
                             update_poca_reference(new_poca_data)
                             output["poca_sections_enriched"] = _enrich_poca_sections(identified_sections)
-                            # -----------------------------------
-                        # -----------------------------------
+
                         output["source_file"] = file.name
                         results.append(output)
-                        stage2.complete(output) 
+                        stage2.complete(output)
 
-                        # --- NEW FOLDER GROUPING LOGIC ---
-                        # Create folder named after XML file (removing 'amp:') inside outputs/
                         folder_name = file.stem.replace("&amp;", "&").replace("amp:", "").strip()
                         case_folder = output_dir / folder_name
                         case_folder.mkdir(parents=True, exist_ok=True)
 
-                        # Save JSON to the new case folder
                         _save_result(output, case_folder, file)
                         successes += 1
                         shutil.move(str(file), str(case_folder / file.name))
                         tqdm.write(f"  → Grouped JSON and XML in: {case_folder}/")
-                        # ---------------------------------
 
                     except Exception as e2:
                         stage.failed(str(e2))
@@ -1080,46 +1171,41 @@ def batch_process(folder: str) -> list:
                             time.sleep(1)
 
                         try:
+                            # Retry of the same file after a 503 backoff wait — same
+                            # POCA gap-fill / folder-grouping steps as the first attempt
+                            # above, since this is another fresh run_pipeline() call.
                             pipeline_state.clear()
                             stage2 = StageTracker(file.name, file.stat().st_size)
                             tqdm.write(f"  ↻  Retrying {file.name} (attempt {attempt}/3)...")
                             output = run_pipeline(str(file), stage2)
-                            # --- NEW POCA INTERCEPTION LOGIC ---
-                            # Check for any POCA sections identified in the final output
                             identified_sections = output.get("poca_sections", [])
                             missing_in_this_case = []
-                
+
                             for section in identified_sections:
                                 if not section or section == "N/A":
                                     continue
                                 clean_sec = section.strip()
                                 if clean_sec not in POCA_SECTIONS:
                                     missing_in_this_case.append(clean_sec)
-                        
+
                             if missing_in_this_case:
                                 new_poca_data = fetch_missing_poca_sections(list(set(missing_in_this_case)), body_text=pipeline_state.get("body_text", ""))
                                 update_poca_reference(new_poca_data)
                                 output["poca_sections_enriched"] = _enrich_poca_sections(identified_sections)
-                            # -----------------------------------
-                           # -----------------------------------
+
                             output["source_file"] = file.name
                             results.append(output)
-                            stage2.complete(output) 
+                            stage2.complete(output)
 
-                            # --- NEW FOLDER GROUPING LOGIC ---
-                            # Create folder named after XML file (removing 'amp:') inside outputs/
                             folder_name = file.stem.replace("&amp;", "&").replace("amp:", "").strip()
                             case_folder = output_dir / folder_name
                             case_folder.mkdir(parents=True, exist_ok=True)
 
-                            # Save JSON to the new case folder
                             _save_result(output, case_folder, file)
                             successes += 1
 
-                            # Move the XML file to the new case folder instead of PROCESSED_DIR
                             shutil.move(str(file), str(case_folder / file.name))
                             tqdm.write(f"  → Grouped JSON and XML in: {case_folder}/")
-                            # ---------------------------------
                             retry_success = True
                             break
                         except Exception as retry_err:
@@ -1136,6 +1222,10 @@ def batch_process(folder: str) -> list:
                                 failures += 1
                                 break
 
+                    # NOTE: this branch is a no-op (`pass`) — by this point `err`
+                    # was already established to contain "503" (it's the condition
+                    # that routed execution into this `elif` in the first place),
+                    # so `"503" not in str(err)` can never be true here.
                     if not retry_success and "503" not in str(err):
                         pass
 
@@ -1156,6 +1246,12 @@ if __name__ == "__main__":
     CASES_DIR.mkdir(parents=True, exist_ok=True)
 
 
+    # Two ways to populate CASES_DIR (the folder batch_process actually reads):
+    # either download the judgment(s) at the URL(s) passed as CLI args, or —
+    # with no args — pull the smallest already-downloaded file waiting in
+    # ACTIVE_DIR. Smallest-first is a deliberate throttle for manual batches:
+    # it lets you sanity-check the pipeline on a cheap/fast case before
+    # committing API spend to the larger files sitting alongside it.
     urls = sys.argv[1:]
 
     if urls:
